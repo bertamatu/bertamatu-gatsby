@@ -1,8 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `BERTA MATU`,
-    description: `PORTFOLIO`,
-    author: `BERTAMATU`,
+    title: `BERTA•MATU`,
+    description: `PORTFOLIO. Junior front-end developer.`,
+    author: `@berta.codes`,
+    menuLinks: [
+      {
+        name: "HOME",
+        link: "/",
+      },
+      {
+        name: "ABOUT",
+        link: "/about",
+      },
+      {
+        name: "WORK",
+        link: "/work",
+      },
+      {
+        name: "CONTACT",
+        link: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,6 +43,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

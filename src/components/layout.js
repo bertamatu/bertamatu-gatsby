@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Navbar from "./navbar/Navbar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,6 +19,10 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          menuLinks {
+            link
+            name
+          }
         }
       }
     }
@@ -34,6 +39,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
