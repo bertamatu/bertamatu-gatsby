@@ -9,14 +9,12 @@ const HomeLogo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  // padding-top: 30vh;
-  letter-spacing: 1px;
+  /* height: 80vh; */
+  padding-top: 30vh;
 `
 
 const LogoText = styled.div`
-  /* background-image: url(/imgs/giphy_logo.webp); */
-  background-image: url(https://media.giphy.com/media/lPHrJvdUC7ffW/giphy.gif);
+  background-image: url(https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif);
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -28,12 +26,12 @@ const LogoText = styled.div`
   line-height: 0.75;
   margin: 10px 0;
   padding-left: 1vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 `
 
 const HomePageLogo = () => {
   return (
     <HomeLogo>
-      {/* <div className="home_logo"> */}
       <LogoText>
         BERTA
         <br />
