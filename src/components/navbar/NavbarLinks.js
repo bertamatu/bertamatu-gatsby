@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding: 0 1rem;
   display: inline-block;
   white-space: nowrap;
@@ -14,7 +14,6 @@ const NavItem = styled(Link)`
 
   :hover {
     color: red;
-    text-decoration: line-through;
     transition: all 400ms ease-in;
   }
 

@@ -1,20 +1,14 @@
 // import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import Navbar from "../components/navbar/Navbar"
+import styled from "styled-components"
 
-const Header = ({ siteTitle }) => (
-  <header>
+const HeaderStyle = styled.header`
+  background-color: #000;
+`
+const Header = () => (
+  <HeaderStyle>
     <Navbar />
-  </header>
+  </HeaderStyle>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
 export default Header

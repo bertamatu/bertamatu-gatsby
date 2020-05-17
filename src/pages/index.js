@@ -1,22 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import HomePageLogo from "../components/HomePageLogo"
+
+const HomePage = styled.section`
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>HELLO!</h1>
-    <p>Welcome to my Portfolio.</p>
-    <button>
-      <Link to="/work">See my projects</Link>
-    </button>
+    <HomePage>
+      <SEO title="Home" />
+      <HomePageLogo />
 
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+      {/* <button>
+        <Link to="/work">See my projects</Link>
+      </button> */}
+    </HomePage>
   </Layout>
 )
 
