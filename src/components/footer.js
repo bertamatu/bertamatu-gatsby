@@ -24,7 +24,7 @@ const FooterDate = styled.section`
 const footer = () => {
   return (
     <Footer>
-      <FooterText>less is more</FooterText>
+      <FooterText>LESS IS MORE</FooterText>
       <FooterDate>© {new Date().getFullYear()}</FooterDate>
     </Footer>
   )
