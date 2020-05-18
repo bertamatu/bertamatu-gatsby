@@ -12,6 +12,17 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Footer from "../components/footer"
+import styled from "styled-components"
+
+const LayoutStyle = styled.section`
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle farthest-corner at 28.8% 83.9%,
+    rgba(255, 110, 112, 1) 0%,
+    rgba(255, 116, 142, 1) 90%
+  );
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,11 +40,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <LayoutStyle>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer />
-    </>
+    </LayoutStyle>
   )
 }
 

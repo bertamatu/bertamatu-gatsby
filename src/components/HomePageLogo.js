@@ -24,14 +24,17 @@ const LogoText = styled.div`
   line-height: 1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
+  letter-spacing: -25px;
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    letter-spacing: -9px;
+  }
 `
 const HomePageLogo = () => {
   return (
     <HomeLogo>
-      <LogoText>
-        BERTA
-        <span>MATU</span>
-      </LogoText>
+      <LogoText>BERTAMATU</LogoText>
     </HomeLogo>
   )
 }

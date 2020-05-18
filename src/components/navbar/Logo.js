@@ -5,7 +5,7 @@ import styled from "styled-components"
 const LogoDesign = styled(Link)`
   text-decoration: none;
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   :hover {
     color: black;
     transition-duration: 0.9s;

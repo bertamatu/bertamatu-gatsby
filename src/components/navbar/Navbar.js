@@ -50,12 +50,12 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background: linear-gradient(
-      to right,
-      rgb(242, 112, 156),
-      rgb(255, 148, 114)
-    );
-    transition: all 0.3s ease-in;
+  background-image: radial-gradient(
+    circle farthest-corner at 28.8% 83.9%,
+    rgba(255, 110, 112, 1) 0%,
+    rgba(255, 116, 142, 1) 90%
+  );
+    transition: all 0.35s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }

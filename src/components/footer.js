@@ -14,7 +14,7 @@ const Footer = styled.footer`
 const FooterText = styled.div`
   position: absolute;
   left: 2rem;
-  letter-spacing: 14px;
+  letter-spacing: 18px;
 `
 const FooterDate = styled.section`
   position: absolute;
