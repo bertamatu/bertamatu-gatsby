@@ -5,7 +5,7 @@ const Footer = styled.footer`
   height: 4vh;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.3rem;
+  font-size: 0.6rem;
   position: absolute;
   bottom: 0;
   width: 100%;

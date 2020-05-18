@@ -10,7 +10,8 @@ const Navigation = styled.nav`
   text-transform: uppercase;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
-  padding: 1rem 5vw;
+  padding-left: 2rem;
+  padding-top: 2rem;
   z-index: 2;
   align-self: center;
   border: none;
@@ -30,7 +31,7 @@ const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 2vw;
+  padding: 0 2rem;
 
   @media (max-width: 768px) {
     display: flex;

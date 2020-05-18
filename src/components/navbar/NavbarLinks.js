@@ -6,7 +6,7 @@ const NavItem = styled(Link)`
   text-decoration: none;
   font-size: 0.6rem;
   color: #fff;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: inline-block;
   /* margin: 0 1vw; */
   transition: all 200ms ease-in;
