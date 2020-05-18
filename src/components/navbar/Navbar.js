@@ -13,7 +13,7 @@ const Navigation = styled.nav`
   padding: 1rem 5vw;
   z-index: 2;
   align-self: center;
-  border:none;
+  border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   @media (max-width: 768px) {
@@ -30,7 +30,7 @@ const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 10vw;
+  padding: 0 2vw;
 
   @media (max-width: 768px) {
     display: flex;
@@ -49,7 +49,11 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: #000;
+    background: linear-gradient(
+      to right,
+      rgb(242, 112, 156),
+      rgb(255, 148, 114)
+    );
     transition: all 0.3s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -57,9 +61,9 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: white;
   width: 30px;
-  height: 3px;
+  height: 1px;
   transition: all 0.3s linear;
   align-self: center;
   position: relative;
@@ -68,8 +72,8 @@ const Hamburger = styled.div`
   ::before,
   ::after {
     width: 30px;
-    height: 3px;
-    background-color: #111;
+    height: 1px;
+    background-color: black;
     content: "";
     position: absolute;
     transition: all 0.3s linear;

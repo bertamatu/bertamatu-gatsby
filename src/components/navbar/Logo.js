@@ -5,6 +5,11 @@ import styled from "styled-components"
 const LogoDesign = styled(Link)`
   text-decoration: none;
   color: white;
+  font-size: 0.6rem;
+  :hover {
+    color: black;
+    transition-duration: 0.9s;
+  }
 `
 
 const Logo = () => {

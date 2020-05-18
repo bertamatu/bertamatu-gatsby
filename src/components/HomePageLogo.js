@@ -9,8 +9,7 @@ const HomeLogo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 80vh; */
-  padding-top: 30vh;
+  height: 90vh;
 `
 
 const LogoText = styled.div`
@@ -21,20 +20,16 @@ const LogoText = styled.div`
   background-clip: border-box;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  text-transform: uppercase;
-  font-size: 120px;
-  line-height: 0.75;
-  margin: 10px 0;
-  padding-left: 1vh;
+  font-size: 10vw;
+  line-height: 1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
 `
-
 const HomePageLogo = () => {
   return (
     <HomeLogo>
       <LogoText>
         BERTA
-        <br />
         <span>MATU</span>
       </LogoText>
     </HomeLogo>

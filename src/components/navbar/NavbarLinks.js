@@ -4,23 +4,23 @@ import styled from "styled-components"
 
 const NavItem = styled(Link)`
   text-decoration: none;
+  font-size: 0.6rem;
   color: #fff;
   padding: 0 1rem;
   display: inline-block;
-  white-space: nowrap;
-  margin: 0 1vw;
+  /* margin: 0 1vw; */
   transition: all 200ms ease-in;
-  position: relative;
+  /* position: relative; */
 
   :hover {
-    color: red;
+    color: black;
     transition: all 400ms ease-in;
   }
 
   @media (max-width: 768px) {
     padding: 20px 0;
     font-size: 4rem;
-    transition: all 200ms ease-out;
+    transition: all 10ms ease-in;
     z-index: 6;
   }
 `

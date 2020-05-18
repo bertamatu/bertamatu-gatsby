@@ -4,7 +4,7 @@ import Navbar from "../components/navbar/Navbar"
 import styled from "styled-components"
 
 const HeaderStyle = styled.header`
-  background-color: #000;
+height:1rem;
 `
 const Header = () => (
   <HeaderStyle>
