@@ -50,17 +50,17 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-  background: #eb3349; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #f45c43,
-    #ea2e44
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #f45c43,
-    #ea2e44
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #eb3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #f45c43,
+      #ea2e44
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #f45c43,
+      #ea2e44
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: all 0.35s ease-in;
     top: 8vh;
     left: ${props => (props.open ? "-100%" : "0")};
@@ -68,7 +68,7 @@ const Navbox = styled.div`
 `
 
 const Hamburger = styled.div`
-  background-color: white;
+  background-color: red;
   width: 30px;
   height: 1px;
   transition: all 0.3s linear;

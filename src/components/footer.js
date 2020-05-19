@@ -11,14 +11,16 @@ const Footer = styled.footer`
   width: 100%;
 `
 
-const FooterText = styled.div`
+const FooterText = styled.footer`
   position: absolute;
   left: 2rem;
   letter-spacing: 18px;
+  color: black;
 `
 const FooterDate = styled.section`
   position: absolute;
   right: 2rem;
+  color: black;
 `
 
 const footer = () => {

@@ -23,7 +23,7 @@ const WorkContainer = styled.section`
 `
 const GithubLink = styled.a`
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;

@@ -1,5 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
+import Footer from "../components/footer"
+
 import styled from "styled-components"
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from "react-icons/fa"
 
@@ -10,10 +12,10 @@ const ContactContainer = styled.section`
 
 const Icons = styled.a`
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
-  font-size:3rem;
+  font-size: 3rem;
   padding: 1rem;
 `
 
@@ -42,6 +44,7 @@ const Contact = () => {
           <FaPhoneAlt />
         </Icons>
       </ContactContainer>
+      <Footer />
     </Layout>
   )
 }
