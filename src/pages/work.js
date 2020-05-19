@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa"
 const WorkContainer = styled.section`
   margin: 0 auto;
   margin-top: 30vh;
-  margin-bottom:40vh;
+  margin-bottom: 40vh;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
   width: 50vw;

@@ -1,11 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 
 export default function BlogTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
+      <Link to="/blog">Go back</Link>
+      <br />
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
