@@ -17,6 +17,10 @@ module.exports = {
         link: "/work",
       },
       {
+        name: "BLOG",
+        link: "/blog",
+      },
+      {
         name: "CONTACT",
         link: "/contact",
       },
@@ -24,6 +28,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

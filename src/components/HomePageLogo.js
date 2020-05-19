@@ -9,7 +9,6 @@ const HomeLogo = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
 `
 
 const LogoText = styled.div`
@@ -20,12 +19,13 @@ const LogoText = styled.div`
   background-clip: border-box;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  font-size: 10vw;
+  font-size: 11vw;
   line-height: 1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
   letter-spacing: -25px;
   padding: 1rem;
+  margin-top:30vh;
 
   @media (max-width: 768px) {
     letter-spacing: -9px;

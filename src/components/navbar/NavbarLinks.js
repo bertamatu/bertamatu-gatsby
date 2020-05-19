@@ -31,6 +31,7 @@ const NavbarLinks = () => {
       <NavItem to="/">HOME</NavItem>
       <NavItem to="/about">ABOUT</NavItem>
       <NavItem to="/work">WORK</NavItem>
+      <NavItem to="/blog">BLOG</NavItem>
       <NavItem to="/contact">CONTACT</NavItem>
     </>
   )

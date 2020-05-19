@@ -17,11 +17,18 @@ import styled from "styled-components"
 const LayoutStyle = styled.section`
   height: 100vh;
   width: 100vw;
-  background-image: radial-gradient(
-    circle farthest-corner at 28.8% 83.9%,
-    rgba(255, 110, 112, 1) 0%,
-    rgba(255, 116, 142, 1) 90%
-  );
+
+  background: #eb3349; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f45c43,
+    #ea2e44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f45c43,
+    #ea2e44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `
 
 const Layout = ({ children }) => {
