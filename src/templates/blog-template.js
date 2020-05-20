@@ -3,17 +3,21 @@ import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
-import { BsArrowCounterclockwise } from "react-icons/bs"
+import { GiReturnArrow } from "react-icons/gi"
+import { GoPerson, GoCalendar } from "react-icons/go"
+import Img from "gatsby-image"
 
 const Container = styled(Layout)`
   background-color: white;
   color: black;
+  border: 1px solid black;
 `
 const Post = styled.article`
   margin: 4rem 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 1rem;
+  text-align: center;
 `
 const Title = styled.header`
   padding-top: 1rem;
@@ -22,11 +26,14 @@ const Title = styled.header`
   font-family: roboto;
   color: gray;
 `
-const Date = styled.small`
+const DateBy = styled.small`
   font-weight: 600;
   color: coral;
   padding-bottom: 5rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  /* ::before {
+    content: "";
+  } */
 `
 const Text = styled.p`
   padding-top: 2rem;
@@ -36,8 +43,7 @@ const Text = styled.p`
 `
 const LinkBack = styled(Link)`
   text-decoration: none;
-  font-size: 0.6rem;
-  color: gray;
+  font-size: 0.5rem;
 `
 
 export default function BlogTemplate({ data }) {
@@ -46,16 +52,23 @@ export default function BlogTemplate({ data }) {
   return (
     <Container>
       <Post>
-        <LinkBack to="/blog">
-          Go back to blog page <BsArrowCounterclockwise />
-        </LinkBack>
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="developers-setup"
+        ></Img>
         <Title>{frontmatter.title}</Title>
-        <Date>
-          {frontmatter.date} by {frontmatter.author}
-        </Date>
+        <section>
+          <DateBy>
+            <GoCalendar />
+            {frontmatter.date}
+            <GoPerson />
+            {frontmatter.author}
+          </DateBy>
+        </section>
         <Text dangerouslySetInnerHTML={{ __html: html }} />
         <LinkBack to="/blog">
-          Go back to blog page <BsArrowCounterclockwise />
+          <GiReturnArrow />
+          Go back to blog page
         </LinkBack>
       </Post>
     </Container>
@@ -64,6 +77,15 @@ export default function BlogTemplate({ data }) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
+    file(relativePath: { eq: "black_leaves.jpeg" }) {
+      absolutePath
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {

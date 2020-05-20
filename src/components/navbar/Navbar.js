@@ -12,7 +12,8 @@ const Navigation = styled.nav`
   margin: 0 auto;
   padding-left: 2rem;
   padding-top: 2rem;
-  z-index: 2;
+  overflow: hidden;
+  /* z-index: 200; */
   align-self: center;
   border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
