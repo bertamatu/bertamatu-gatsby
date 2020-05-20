@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const LogoDesign = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 0.7rem;
   :hover {
     color: black;
