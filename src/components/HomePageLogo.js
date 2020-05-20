@@ -25,10 +25,10 @@ const LogoText = styled.div`
   font-weight: 900;
   letter-spacing: -25px;
   padding: 1rem;
-  margin-top:33vh;
-
+  margin-top: 40vh;
   @media (max-width: 768px) {
     letter-spacing: -9px;
+    font-size: 4rem;
   }
 `
 const HomePageLogo = () => {

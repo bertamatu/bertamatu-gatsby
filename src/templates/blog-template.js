@@ -17,6 +17,7 @@ const Container = styled(Layout)`
 const Image = styled(Img)`
   border-radius: 5px;
   margin-bottom: 0.5rem;
+  width: 50vw;
   filter: grayscale(60%);
   -webkit-box-shadow: 6px 7px 39px 2px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 6px 7px 39px 2px rgba(0, 0, 0, 0.21);
@@ -26,11 +27,12 @@ const Image = styled(Img)`
   }
 `
 const Post = styled.article`
-  margin: 4rem 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 1rem;
   text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+  padding-top: 4rem;
 `
 const Title = styled.header`
   padding-top: 1rem;

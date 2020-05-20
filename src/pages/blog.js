@@ -37,7 +37,16 @@ const Article = styled.article`
   }
 `
 const BlogMenu = styled.aside`
-  background-color: rgba(0, 0, 0, 0.1);
+  border: 0.4px solid rgba(0, 0, 0, 0.01);
+  background-image: linear-gradient(
+    to right bottom,
+    #ffffff,
+    #f3f3f3,
+    #e7e7e7,
+    #dcdcdc,
+    #d0d0d0
+  );
+  border-radius: 5px;
   width: 50vw;
   position: relative;
   right: 0;
@@ -45,6 +54,7 @@ const BlogMenu = styled.aside`
   margin-right: 3rem;
   padding: 3rem 2rem;
   text-align: justify;
+
   -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
   box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
@@ -58,7 +68,6 @@ const HelloMessage = styled.small`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `
-
 const PostsList = styled.ul`
   list-style: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -71,7 +80,6 @@ const PostsList = styled.ul`
   font-weight: 600;
   color: coral;
 `
-
 const PostItem = styled(Link)`
   color: black;
   text-decoration: none;
@@ -81,16 +89,15 @@ const Image = styled(Img)`
   margin-top: 1rem 0rem;
 `
 const Post = styled.section`
-  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border: 0.5px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   margin-bottom: 2rem;
   padding: 1rem;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
-  box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
+  box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
   @media (min-width: 768px) {
     width: 30vw;
     position: relative;

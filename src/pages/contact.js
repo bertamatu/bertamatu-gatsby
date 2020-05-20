@@ -6,7 +6,7 @@ import styled from "styled-components"
 import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from "react-icons/fa"
 
 const ContactContainer = styled.section`
-  margin-top: 40vh;
+  margin-top: 45vh;
   text-align: center;
 `
 
@@ -18,7 +18,6 @@ const Icons = styled.a`
   font-size: 3rem;
   padding: 1rem;
 `
-
 const Contact = () => {
   return (
     <Layout>
