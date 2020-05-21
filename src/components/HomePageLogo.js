@@ -19,7 +19,7 @@ const LogoText = styled.div`
   background-clip: border-box;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  font-size: 11vw;
+  font-size: 10vw;
   line-height: 1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;

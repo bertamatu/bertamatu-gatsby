@@ -17,22 +17,24 @@ const Container = styled(Layout)`
 const Image = styled(Img)`
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  width: 50vw;
   filter: grayscale(60%);
-  -webkit-box-shadow: 6px 7px 39px 2px rgba(0, 0, 0, 0.21);
-  -moz-box-shadow: 6px 7px 39px 2px rgba(0, 0, 0, 0.21);
-  box-shadow: 6px 7px 39px 2px rgba(0, 0, 0, 0.21);
-  @media (min-width: 768) {
-    max-width: 50px;
+  -webkit-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
+  @media (max-width: 768) {
+    width: 80vw;
   }
 `
 const Post = styled.article`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
-  width: 50vw;
+  width: 80vw;
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 4.5rem;
+  @media (min-width: 768px) {
+    width: 50vw;
+  }
 `
 const Title = styled.header`
   padding-top: 1rem;
@@ -57,6 +59,7 @@ const Text = styled.p`
 const LinkBack = styled(Link)`
   text-decoration: none;
   font-size: 0.5rem;
+  color: gray;
 `
 export default function BlogTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -64,6 +67,10 @@ export default function BlogTemplate({ data }) {
   return (
     <Container>
       <Post>
+        <LinkBack to="/blog">
+          <GiReturnArrow />
+          Go back to blog page
+        </LinkBack>
         <Image
           fluid={data.file.childImageSharp.fluid}
           alt="developers-setup"

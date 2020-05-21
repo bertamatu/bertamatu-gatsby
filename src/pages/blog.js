@@ -131,7 +131,9 @@ const ReadMore = styled(Link)`
 const BlogPage = ({ data }) => {
   return (
     <BlogContainer>
-      <Logo>BERTAMATU</Logo>
+      <Logo>
+        BERTAMATU <span>blog</span>
+      </Logo>
       <MainContent>
         <Article>
           {data.allMarkdownRemark.edges.map(post => (
@@ -166,7 +168,6 @@ const BlogPage = ({ data }) => {
                 <PostItem to={posted.node.frontmatter.slug}>
                   {posted.node.frontmatter.title}
                 </PostItem>
-                <hr />
                 <br />
               </li>
             ))}

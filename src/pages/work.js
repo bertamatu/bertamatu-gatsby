@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
-
-import { FaGithub } from "react-icons/fa"
+import { GoLogoGithub } from "react-icons/go"
+import workGIF from "../images/gifs/giphy_work.gif"
 
 const WorkPage = styled(Layout)`
   background-image: linear-gradient(
@@ -41,17 +41,16 @@ const Work = () => {
     <WorkPage>
       <WorkContainer>
         <GithubLink href="https://github.com/bertamatu" target="_blank">
-          Visit my Github
-          <br />
-          <FaGithub
+          <GoLogoGithub
             style={{
-              fontSize: 100,
+              fontSize: 150,
             }}
           />
+          <br />
         </GithubLink>
+        <img src={workGIF} alt="plain" style={{ height: 250 }} />
       </WorkContainer>
     </WorkPage>
   )
 }
-
 export default Work
