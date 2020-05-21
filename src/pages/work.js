@@ -48,7 +48,7 @@ const Work = () => {
           />
           <br />
         </GithubLink>
-        <img src={workGIF} alt="plain" style={{ height: 250 }} />
+        <img src={workGIF} alt="work" style={{ height: 250 }} />
       </WorkContainer>
     </WorkPage>
   )

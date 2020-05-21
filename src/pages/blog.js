@@ -47,7 +47,7 @@ const BlogMenu = styled.aside`
     #d0d0d0
   );
   border-radius: 5px;
-  width: 50vw;
+  width: 30vw;
   position: relative;
   right: 0;
   top: 4rem;
