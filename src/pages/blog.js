@@ -30,10 +30,11 @@ const Article = styled.article`
   padding: 0 1rem;
   @media (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap-reverse;
-    flex-flow: row wrap;
+    /* flex-wrap: wrap-reverse;
+    flex-flow: row wrap; */
+    flex-direction: column;
     justify-content: space-between;
-    padding: 2rem 3rem;
+    padding: 0 2rem 0 3rem;
   }
 `
 const BlogMenu = styled.aside`
@@ -92,7 +93,7 @@ const Post = styled.section`
   border: 0.5px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 3rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
@@ -155,10 +156,10 @@ const BlogPage = ({ data }) => {
         <BlogMenu>
           <h5>HELLO</h5>
           <HelloMessage>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum,
-            veritatis voluptatum. Debitis doloremque veritatis nemo sint?
-            Blanditiis, inventore, maxime velit quaerat laboriosam iste
-            laudantium totam temporibus sapiente numquam dolor deserunt?{" "}
+            <blockquote>
+              “I have not failed. I've just found 10,000 ways that won't work.”
+              ― Thomas A. Edison
+            </blockquote>
           </HelloMessage>
           <PostsList>
             {data.allMarkdownRemark.edges.map(posted => (
@@ -180,7 +181,7 @@ const BlogPage = ({ data }) => {
 
 export const data = graphql`
   query BlogQuery {
-    file(relativePath: { eq: "blog_post_photo.jpeg" }) {
+    file(relativePath: { eq: "my_desk.jpg" }) {
       absolutePath
       childImageSharp {
         fluid {

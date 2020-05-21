@@ -17,12 +17,11 @@ const Container = styled(Layout)`
 const Image = styled(Img)`
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  filter: grayscale(60%);
   -webkit-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   @media (max-width: 768) {
-    width: 80vw;
+    width: 5vh;
   }
 `
 const Post = styled.article`
@@ -94,7 +93,7 @@ export default function BlogTemplate({ data }) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    file(relativePath: { eq: "grass.jpg" }) {
+    file(relativePath: { eq: "mydesk2.jpg" }) {
       absolutePath
       childImageSharp {
         fluid {
