@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomePageLogo from "../components/HomePageLogo"
+import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 
@@ -29,6 +30,8 @@ const IndexPage = ({ data }) => (
       {/* <Img fluid={data.file.childImageSharp.fluid} alt=""></Img> */}
       <SEO title="Home" />
       <HomePageLogo />
+      <code>welcome to my porfolio!</code>
+      <Link to="/work">see my projects</Link>
     </Layout>
   </HomePage>
 )

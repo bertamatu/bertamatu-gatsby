@@ -55,7 +55,6 @@ const BlogMenu = styled.aside`
   margin-right: 3rem;
   padding: 3rem 2rem;
   text-align: justify;
-
   -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
   box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
@@ -140,7 +139,7 @@ const BlogPage = ({ data }) => {
           {data.allMarkdownRemark.edges.map(post => (
             <Post key={post.node.frontmatter.id}>
               <Image
-                fluid={data.file.childImageSharp.fluid}
+                fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
                 alt="developers-setup"
               ></Image>
               <Title>{post.node.frontmatter.title}</Title>
@@ -181,14 +180,6 @@ const BlogPage = ({ data }) => {
 
 export const data = graphql`
   query BlogQuery {
-    file(relativePath: { eq: "my_desk.jpg" }) {
-      absolutePath
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
@@ -199,6 +190,13 @@ export const data = graphql`
             slug
             title
             intro
+            postImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

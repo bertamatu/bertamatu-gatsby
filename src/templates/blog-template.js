@@ -71,7 +71,7 @@ export default function BlogTemplate({ data }) {
           Go back to blog page
         </LinkBack>
         <Image
-          fluid={data.file.childImageSharp.fluid}
+          fluid={frontmatter.postImage.childImageSharp.fluid}
           alt="developers-setup"
         ></Image>
         <Title>{frontmatter.title}</Title>
@@ -93,15 +93,6 @@ export default function BlogTemplate({ data }) {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    file(relativePath: { eq: "mydesk2.jpg" }) {
-      absolutePath
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -109,6 +100,13 @@ export const pageQuery = graphql`
         author
         slug
         title
+        postImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
