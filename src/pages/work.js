@@ -16,17 +16,8 @@ const WorkPage = styled(Layout)`
 `
 const WorkContainer = styled.section`
   margin: 0 auto;
-  margin-top: 30vh;
-  margin-bottom: 40vh;
+  margin-top: 25vh;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  @media (min-width: 768px) {
-    width: 20vw;
-    height: 30vh;
-  }
 `
 const GithubLink = styled.a`
   text-decoration: none;
@@ -34,6 +25,7 @@ const GithubLink = styled.a`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+  /* padding-top: 9rem; */
 `
 
 const Work = () => {
@@ -47,8 +39,14 @@ const Work = () => {
             }}
           />
           <br />
+          <img
+            src={workGIF}
+            alt="work"
+            style={{
+              height: 200,
+            }}
+          />
         </GithubLink>
-        <img src={workGIF} alt="work" style={{ height: 250 }} />
       </WorkContainer>
     </WorkPage>
   )

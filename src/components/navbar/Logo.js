@@ -6,6 +6,7 @@ const LogoDesign = styled(Link)`
   text-decoration: none;
   color: black;
   font-size: 0.7rem;
+  font-family: roboto;
   :hover {
     color: black;
     transition-duration: 0.9s;

@@ -8,8 +8,6 @@ import { GiReturnArrow } from "react-icons/gi"
 import Img from "gatsby-image"
 
 const Container = styled(Layout)`
-  background-color: white;
-  color: black;
   border: 1px solid black;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -17,12 +15,14 @@ const Container = styled(Layout)`
 const Image = styled(Img)`
   border-radius: 5px;
   margin-bottom: 0.5rem;
+  height: 30vh;
   -webkit-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
-  @media (max-width: 768) {
-    width: 5vh;
-  }
+  filter: grayscale(100%);
+
+  /* @media (min-width: 768) {
+  } */
 `
 const Post = styled.article`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -32,21 +32,21 @@ const Post = styled.article`
   margin: 0 auto;
   padding-top: 4.5rem;
   @media (min-width: 768px) {
-    width: 50vw;
+    width: 40vw;
   }
 `
 const Title = styled.header`
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: gray;
+  color: black;
 `
 const DateBy = styled.small`
   font-weight: 600;
-  color: coral;
-  font-size: 0.7rem;
+  color: rgb(255, 51, 51);
+  font-size: 0.6rem;
 `
 const Text = styled.p`
   padding-top: 1rem;
@@ -57,9 +57,11 @@ const Text = styled.p`
 `
 const LinkBack = styled(Link)`
   text-decoration: none;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: gray;
+  padding: 1rem;
 `
+
 export default function BlogTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -81,7 +83,10 @@ export default function BlogTemplate({ data }) {
             {frontmatter.author}
           </DateBy>
         </section>
+        <hr />
         <Text dangerouslySetInnerHTML={{ __html: html }} />
+        <hr />
+
         <LinkBack to="/blog">
           <GiReturnArrow />
           Go back to blog page

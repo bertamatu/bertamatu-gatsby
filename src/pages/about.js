@@ -25,14 +25,19 @@ const AboutText = styled.article`
   color: black;
   @media (min-width: 768px) {
     padding-top: 10rem;
-    width: 40vw;
+    width: 60vw;
   }
 `
 const Icons = styled.p`
   color: black;
   font-size: 2.2rem;
   text-align: center;
-  padding: 1rem;
+  color: rgba(0, 0, 0, 0.1);
+  @media (min-width: 768px) {
+    font-size: 7rem;
+    margin: 0;
+    padding: 0;
+  }
 `
 const Link = styled.a`
   text-decoration: none;
@@ -46,6 +51,7 @@ const About = () => {
           <header>
             <b>Hello, I'm Berta! Creative front-end developer.</b>
           </header>
+          <hr />
           <br />
           <p>
             Because of unfulfilled potential about myself I decided to make a
@@ -64,7 +70,8 @@ const About = () => {
             </ul>
           </p>
           <p>
-            I was one of the most driven students at the{" "}
+            In 2020 January I finished a coding school - fullstack classes. I
+            was one of the most driven students at the{" "}
             <Link
               href="https://bit.lt"
               target="_blank"
@@ -87,10 +94,9 @@ const About = () => {
             was web CRUD app, built with Spring Boot and MySQL.
           </p>
           <p>
-            After getting my diploma I am continuing the learning process on my
-            own. I'm focusing on front-end development. Getting familiar with
-            React Js and Gatsby Js at the moment. I also use RESTful API for my
-            projects.
+            After getting my diploma I continued the learning process on my own,
+            focusing on front-end development. Getting familiar with React Js
+            and Gatsby Js at the moment.
           </p>
           <p>
             I am actively looking for a junior developer position. Willing to

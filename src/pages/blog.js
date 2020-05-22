@@ -6,10 +6,8 @@ import Img from "gatsby-image"
 
 import styled from "styled-components"
 
-const BlogContainer = styled(Layout)``
-
 const Logo = styled.p`
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   letter-spacing: -17px;
@@ -22,31 +20,24 @@ const Logo = styled.p`
     letter-spacing: -30px;
   }
 `
+const WordBlog = styled.span`
+  color: rgba(0, 0, 0, 0.3);
+`
 const MainContent = styled.main`
   display: flex;
 `
 const Article = styled.article`
-  margin: 2rem 2rem;
-  padding: 0 1rem;
+  margin: 0 auto;
+
   @media (min-width: 768px) {
     display: flex;
-    /* flex-wrap: wrap-reverse;
-    flex-flow: row wrap; */
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0 2rem 0 3rem;
   }
 `
 const BlogMenu = styled.aside`
   border: 0.4px solid rgba(0, 0, 0, 0.01);
-  background-image: linear-gradient(
-    to right bottom,
-    #ffffff,
-    #f3f3f3,
-    #e7e7e7,
-    #dcdcdc,
-    #d0d0d0
-  );
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   width: 30vw;
   position: relative;
@@ -54,7 +45,7 @@ const BlogMenu = styled.aside`
   top: 4rem;
   margin-right: 3rem;
   padding: 3rem 2rem;
-  text-align: justify;
+  /* text-align: justify; */
   -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
   box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.24);
@@ -78,28 +69,29 @@ const PostsList = styled.ul`
   text-align: left;
   margin-top: 2rem;
   font-weight: 600;
-  color: coral;
+  color: rgb(255, 51, 51);
 `
 const PostItem = styled(Link)`
   color: black;
   text-decoration: none;
 `
 const Image = styled(Img)`
-  height: 30vh;
   margin-top: 1rem 0rem;
+  filter: grayscale(100%);
 `
 const Post = styled.section`
-  border: 0.5px solid rgba(0, 0, 0, 0.06);
-  border-radius: 5px;
-  margin-bottom: 2rem;
-  padding: 3rem;
+  width: 85vw;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 4rem 2rem;
+  padding: 2rem 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
   box-shadow: 10px 10px 24px -6px rgba(0, 0, 0, 0.24);
   @media (min-width: 768px) {
-    width: 30vw;
+    width: 20vw;
     position: relative;
   }
 `
@@ -107,20 +99,28 @@ const Title = styled.header`
   text-transform: uppercase;
   font-weight: 500;
   color: black;
+  padding: 1rem 1rem;
 `
 const ByDate = styled.small`
   /* font-weight: 600; */
-  color: darkgray;
-  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+  padding: 0 1rem;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
 `
 const Intro = styled.p`
   text-align: justify;
   font-size: 0.7rem;
+  padding: 0 1rem;
 `
 const ReadMore = styled(Link)`
   text-decoration: none;
-  color: coral;
+  color: rgb(255, 51, 51);
   font-size: 0.9rem;
+  padding: 1rem;
+  line-height: 1;
+
   @media (min-width: 768px) {
     position: absolute;
     bottom: 1rem;
@@ -130,9 +130,9 @@ const ReadMore = styled(Link)`
 
 const BlogPage = ({ data }) => {
   return (
-    <BlogContainer>
+    <Layout>
       <Logo>
-        BERTAMATU <span>blog</span>
+        BERTAMATU <WordBlog>blog</WordBlog>
       </Logo>
       <MainContent>
         <Article>
@@ -143,12 +143,14 @@ const BlogPage = ({ data }) => {
                 alt="developers-setup"
               ></Image>
               <Title>{post.node.frontmatter.title}</Title>
+              <hr />
+
               <ByDate>
                 {post.node.frontmatter.date} Posted by{" "}
                 {post.node.frontmatter.author}
               </ByDate>
               <Intro>{post.node.frontmatter.intro}</Intro>
-              <ReadMore to={post.node.frontmatter.slug}>Read more</ReadMore>
+              <ReadMore to={post.node.frontmatter.slug}> Read more...</ReadMore>
             </Post>
           ))}
         </Article>
@@ -174,7 +176,7 @@ const BlogPage = ({ data }) => {
           </PostsList>
         </BlogMenu>
       </MainContent>
-    </BlogContainer>
+    </Layout>
   )
 }
 

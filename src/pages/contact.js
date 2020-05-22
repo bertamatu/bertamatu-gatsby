@@ -6,10 +6,9 @@ import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from "react-icons/fa"
 import contactGIF from "../images/gifs/gif_contact.webp"
 
 const ContactContainer = styled.section`
-  margin-top: 20vh;
+  margin-top: 18vh;
   text-align: center;
 `
-
 const Icons = styled.a`
   text-decoration: none;
   color: black;

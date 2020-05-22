@@ -8,23 +8,18 @@ const NavItem = styled(Link)`
   color: black;
   padding: 0 2rem;
   display: inline-block;
-  /* margin: 0 1vw; */
   transition: all 200ms ease-in;
-  /* position: relative; */
-
   :hover {
-    transition: all 400ms ease-in;
-    transform:rotate();
-      }
-
+    transition: all 400ms ease-out;
+    color: gray;
+  }
   @media (max-width: 768px) {
-    padding: 20px 0;
+    padding: 15px 0;
     font-size: 4rem;
     transition: all 10ms ease-in;
     z-index: 6;
   }
 `
-
 const NavbarLinks = () => {
   return (
     <>
@@ -36,5 +31,4 @@ const NavbarLinks = () => {
     </>
   )
 }
-
 export default NavbarLinks

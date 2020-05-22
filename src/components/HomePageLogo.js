@@ -25,7 +25,7 @@ const LogoText = styled.div`
   font-weight: 900;
   letter-spacing: -25px;
   padding: 1rem;
-  margin-top: 40vh;
+  margin-top: 35vh;
   @media (max-width: 768px) {
     letter-spacing: -9px;
     font-size: 4rem;
