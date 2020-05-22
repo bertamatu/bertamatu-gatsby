@@ -6,23 +6,6 @@ import Img from "gatsby-image"
 
 import styled from "styled-components"
 
-const Logo = styled.p`
-  font-size: 4.2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 700;
-  letter-spacing: -17px;
-  padding-top: 8rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.1);
-  margin-left: -1rem;
-  @media (min-width: 768px) {
-    font-size: 7rem;
-    letter-spacing: -30px;
-  }
-`
-const WordBlog = styled.span`
-  color: rgba(0, 0, 0, 0.3);
-`
 const MainContent = styled.main`
   display: flex;
 `
@@ -101,13 +84,13 @@ const Title = styled.header`
   color: black;
   padding: 1rem 1rem;
 `
-const ByDate = styled.small`
-  /* font-weight: 600; */
+const ByDate = styled.p`
   color: rgba(0, 0, 0, 0.4);
   font-size: 0.9rem;
-  padding: 0 1rem;
+  padding: 1rem;
   font-weight: 200;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 `
 const Intro = styled.p`
   text-align: justify;
@@ -131,9 +114,6 @@ const ReadMore = styled(Link)`
 const BlogPage = ({ data }) => {
   return (
     <Layout>
-      <Logo>
-        BERTAMATU <WordBlog>blog</WordBlog>
-      </Logo>
       <MainContent>
         <Article>
           {data.allMarkdownRemark.edges.map(post => (
@@ -146,7 +126,7 @@ const BlogPage = ({ data }) => {
               <hr />
 
               <ByDate>
-                {post.node.frontmatter.date} Posted by{" "}
+                {post.node.frontmatter.date} <span> Posted by</span>
                 {post.node.frontmatter.author}
               </ByDate>
               <Intro>{post.node.frontmatter.intro}</Intro>

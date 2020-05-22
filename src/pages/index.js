@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomePageLogo from "../components/HomePageLogo"
-import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import Img from "gatsby-image"
 
@@ -33,9 +32,8 @@ const WelcomeMessage = styled.p`
   text-transform: uppercase;
   letter-spacing: 8px;
 `
-const Button = styled(Link)`
+const Button = styled.a`
   text-decoration: none;
-  /* background-color: rgba(255, 255, 255, 0.4); */
   background-color: black;
   padding: 1rem;
   border-radius: 5px;
@@ -54,7 +52,9 @@ const IndexPage = ({ data }) => (
       <SEO title="Home" />
       <HomePageLogo />
       <WelcomeMessage>welcome to my porfolio!</WelcomeMessage>
-      <Button to="/work">see my projects</Button>
+      <Button href="https://github.com/bertamatu" target="_blank">
+        see my projects
+      </Button>
     </Layout>
   </HomePage>
 )
