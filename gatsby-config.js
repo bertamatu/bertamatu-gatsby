@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `BERTA•MATU`,
+    titleTemplate: "%s · BERTA•MATU",
     description: `PORTFOLIO. Junior front-end developer.`,
     author: `@berta.codes`,
+    url: "https://www.bertamatu.com",
     menuLinks: [
       {
         name: "HOME",
