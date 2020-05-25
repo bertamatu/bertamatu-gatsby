@@ -11,7 +11,6 @@ const MainContent = styled.main`
 `
 const Article = styled.article`
   margin: 0 auto;
-  width: 70vw;
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -126,7 +125,6 @@ const BlogPage = ({ data }) => {
               ></Image>
               <Title>{post.node.frontmatter.title}</Title>
               <hr />
-
               <ByDate>
                 {post.node.frontmatter.date} <span> Posted by</span>
                 {post.node.frontmatter.author}
@@ -152,7 +150,6 @@ const BlogPage = ({ data }) => {
                 <PostItem to={posted.node.frontmatter.slug}>
                   {posted.node.frontmatter.title}
                 </PostItem>
-                <br />
               </li>
             ))}
           </PostsList>
