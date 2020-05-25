@@ -4,33 +4,32 @@ import Logo from "./Logo"
 import styled from "styled-components"
 
 const Navigation = styled.nav`
+  height: 7vh;
   display: flex;
+  background-color: rgba(255, 255, 255, 1);
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 2px solid #33333320;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  padding: 1rem 5vw;
+  padding: 0 3vw;
   z-index: 2;
   align-self: center;
-  border: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   @media (max-width: 768px) {
     position: sticky;
-    height: 6vh;
+    height: 7vh;
     top: 0;
     left: 0;
     right: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.5);
   }
 `
 const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 2rem;
-  padding-top: 0.5rem;
+  padding: 0 10vw;
 
   @media (max-width: 768px) {
     display: flex;
@@ -44,6 +43,7 @@ const Navbox = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+
     position: fixed;
     width: 100%;
     justify-content: flex-start;
@@ -71,6 +71,9 @@ const Hamburger = styled.div`
   transition: all 0.3s linear;
   /* align-self: center; */
   position: relative;
+  align-self: center;
+  margin-right: -3rem;
+
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
   ::before,
   ::after {

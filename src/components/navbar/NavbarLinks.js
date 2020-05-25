@@ -4,19 +4,36 @@ import styled from "styled-components"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  font-size: 0.7rem;
   color: black;
-  padding: 0 2rem;
   display: inline-block;
+  white-space: nowrap;
+  margin: 0 1vw;
   transition: all 200ms ease-in;
+  position: relative;
+  font-size: 0.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: black;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
   :hover {
-    transition: all 400ms ease-out;
-    color: gray;
+    ::after {
+      width: 100%;
+    }
   }
   @media (max-width: 768px) {
-    padding: 15px 0;
+    padding: 20px 0;
     font-size: 4rem;
-    transition: all 10ms ease-in;
     z-index: 6;
   }
 `

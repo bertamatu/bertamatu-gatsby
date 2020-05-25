@@ -11,7 +11,7 @@ const MainContent = styled.main`
 `
 const Article = styled.article`
   margin: 0 auto;
-
+  width: 70vw;
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -37,8 +37,10 @@ const BlogMenu = styled.aside`
   }
 `
 const HelloMessage = styled.small`
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   padding-top: 2rem;
+  font-weight: 100;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `
@@ -46,12 +48,12 @@ const PostsList = styled.ul`
   list-style: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 300;
   line-height: 1.1;
   text-transform: uppercase;
   text-align: left;
   margin-top: 2rem;
-  font-weight: 600;
   color: rgb(255, 51, 51);
 `
 const PostItem = styled(Link)`

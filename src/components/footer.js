@@ -19,7 +19,7 @@ const FooterText = styled.footer`
 `
 const FooterDate = styled.section`
   position: absolute;
-  right: 2rem;
+  right: 3vw;
   color: black;
 `
 

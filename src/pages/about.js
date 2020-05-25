@@ -9,6 +9,7 @@ import {
   FaSass,
   FaReact,
   FaGithub,
+  FaLinkedin,
 } from "react-icons/fa"
 import { GrGatsbyjs, GrMysql } from "react-icons/gr"
 import { IoLogoJavascript } from "react-icons/io"
@@ -24,6 +25,7 @@ const AboutText = styled.article`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
+  text-align: justify;
   @media (min-width: 768px) {
     padding-top: 10rem;
     width: 60vw;
@@ -31,11 +33,11 @@ const AboutText = styled.article`
 `
 const Icons = styled.p`
   color: black;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.1);
-  @media (min-width: 768px) {
-    font-size: 2.5rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
     margin: 0;
     padding: 0;
   }
@@ -44,16 +46,30 @@ const Link = styled.a`
   text-decoration: none;
   color: red;
 `
+const LinkedIn = styled(FaLinkedin)`
+  font-size: 3rem;
+  margin-bottom: -0.2rem;
+  margin-right: 1rem;
+  color: #0e76a8;
+`
 const About = () => {
   return (
     <AboutPage>
       <Layout>
         <AboutText>
           <header>
+            <Link
+              href="https://www.linkedin.com/in/bertam/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <LinkedIn />
+            </Link>
+
             <b>Hello, I'm Berta! Creative front-end developer.</b>
           </header>
           <hr />
-          <br />
           <p>
             Because of unfulfilled potential about myself I decided to make a
             career shift from finance and accounting to IT development. I didn't
@@ -71,20 +87,19 @@ const About = () => {
             </ul>
           </p>
           <p>
-            In 2020 January I finished a coding school - fullstack classes. I
-            was one of the most driven students at the{" "}
+            I finished full-stack studies in a{" "}
             <Link
               href="https://bit.lt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Baltic Institute of Technolgy.
+              Baltic Institute of Technolgy
             </Link>{" "}
-            I was a self-taught front-end enthusiast, so I mentored my
-            classmates and other students at coding school with our daily tasks
-            and homework during scrum classes in the front-end module. At the
-            coding school we also got familiar with OOP and Java fundamentals.
-            My{" "}
+            in 2020 January - was one of the most driven students. I was a
+            self-taught front-end enthusiast, so I mentored my classmates and
+            other students at coding school with our daily tasks and homework
+            during scrum classes in the front-end module. We also got familiar
+            with OOP and Java fundamentals. My{" "}
             <Link
               href="https://github.com/bertamatu/springCrudApp"
               target="_blank"
@@ -92,12 +107,10 @@ const About = () => {
             >
               final project
             </Link>{" "}
-            was web CRUD app, built with Spring Boot and MySQL.
-          </p>
-          <p>
-            After getting my diploma I continued the learning process on my own,
-            focusing on front-end development. Getting familiar with React Js
-            and Gatsby Js at the moment.
+            was a web CRUD app, built with Spring Boot and MySQL. I enjoyed
+            working on the front-end part the most, so I decided to focus on it
+            after getting my diploma. I am getting familiar with React Js and
+            Gatsby at the moment.
           </p>
           <p>
             I am actively looking for a junior developer position. Willing to
@@ -107,18 +120,6 @@ const About = () => {
               <b>Offers related to the internship are highly welcome!</b>
             </i>
           </p>
-          Let's connect on{" "}
-          <Link
-            href="https://www.linkedin.com/in/bertam/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            LinkedIn
-          </Link>
-          .
-          <br />
-          <br />
           <Icons>
             <FaHtml5 />
             <FaCss3Alt />

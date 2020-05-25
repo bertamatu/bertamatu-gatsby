@@ -15,9 +15,6 @@ import HomePageLogo from "../components/HomePageLogo"
 
 const HomePage = styled.section`
   height: 100vh;
-  text-align: center;
-  justify-content: center;
-
   background: #eb3349; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
@@ -36,12 +33,18 @@ const FrontEndDev = styled.p`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 5px;
+  text-align: center;
 `
 const Icons = styled.p`
-  font-size: 2rem;
-  /* color: rgba(255, 255, 255, 0.7); */
-  color: rgba(0, 0, 0, 1);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  margin-top: -0.5rem;
+  text-align: center;
+  /* color: rgba(0, 0, 0, 1); */
+`
+const Buttons = styled.div`
+  text-align: center;
 `
 const Button = styled.a`
   text-decoration: none;
@@ -63,6 +66,7 @@ const Name = styled.p`
   /* letter-spacing: 0.5rem; */
   color: white;
   margin-bottom: -0.2rem;
+  text-align: center;
 `
 
 const IndexPage = ({ data }) => (
@@ -81,18 +85,20 @@ const IndexPage = ({ data }) => (
         <FaReact />
         <GrGatsbyjs />
       </Icons>
-      <Button href="https://github.com/bertamatu" target="_blank">
-        see my projects
-      </Button>{" "}
-      <br />
-      <br />
-      <Button
-        href="https://www.linkedin.com/in/bertam/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        contact me
-      </Button>
+      <Buttons>
+        <Button href="https://github.com/bertamatu" target="_blank">
+          see my projects
+        </Button>{" "}
+        <br />
+        <br />
+        <Button
+          href="https://www.linkedin.com/in/bertam/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          contact me
+        </Button>
+      </Buttons>
     </Layout>
   </HomePage>
 )

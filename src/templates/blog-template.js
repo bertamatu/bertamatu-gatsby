@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
-import { GiReturnArrow } from "react-icons/gi"
+import { TiArrowBack } from "react-icons/ti"
 // import { GoPerson, GoCalendar } from "react-icons/go"
 import Img from "gatsby-image"
 
@@ -69,7 +69,7 @@ export default function BlogTemplate({ data }) {
     <Container>
       <Post>
         <LinkBack to="/blog">
-          <GiReturnArrow />
+          <TiArrowBack />
           Go back to blog page
         </LinkBack>
         <Image
@@ -88,7 +88,7 @@ export default function BlogTemplate({ data }) {
         <hr />
 
         <LinkBack to="/blog">
-          <GiReturnArrow />
+          <TiArrowBack />
           Go back to blog page
         </LinkBack>
       </Post>
