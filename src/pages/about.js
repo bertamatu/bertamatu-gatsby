@@ -14,20 +14,16 @@ import {
 import { GrGatsbyjs, GrMysql } from "react-icons/gr"
 import { IoLogoJavascript } from "react-icons/io"
 
-const AboutPage = styled.main`
-  height: 100vh;
-  width: 100vw;
-`
+const AboutPage = styled.main``
 const AboutText = styled.article`
   margin: 0 auto;
-  padding: 6rem 2rem 3rem 2rem;
   font-size: 0.7rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
   text-align: justify;
   @media (min-width: 768px) {
-    padding-top: 10rem;
+    padding-top: 6rem;
     width: 60vw;
   }
 `
