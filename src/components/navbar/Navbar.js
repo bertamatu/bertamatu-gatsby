@@ -8,16 +8,13 @@ const Navigation = styled.nav`
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
-  /* border-bottom: 2px solid #33333320; */
+  border-bottom: 2px solid #33333320;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  overflow: hidden;
+  padding: 1rem 5vw;
+  z-index: 2;
   align-self: center;
   border: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
   @media (max-width: 768px) {
     position: sticky;
     height: 6vh;
@@ -25,7 +22,7 @@ const Navigation = styled.nav`
     left: 0;
     right: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.5);
   }
 `
 const Toggle = styled.div`
@@ -72,14 +69,14 @@ const Hamburger = styled.div`
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
-  align-self: center;
+  /* align-self: center; */
   position: relative;
   transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
   ::before,
   ::after {
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: red;
     content: "";
     position: absolute;
     transition: all 0.3s linear;

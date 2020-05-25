@@ -7,8 +7,9 @@ const LogoDesign = styled(Link)`
   color: black;
   font-size: 0.7rem;
   font-family: roboto;
+  align-self: center;
   :hover {
-    color: black;
+    color: gray;
     transition-duration: 0.9s;
   }
 `

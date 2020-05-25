@@ -24,13 +24,16 @@ const LogoText = styled.div`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
   letter-spacing: -25px;
-  padding: 1rem;
-  margin-top: 35vh;
+  margin-top: 30vh;
+  width: 100vw;
+  align-items: center;
+
   @media (max-width: 768px) {
-    letter-spacing: -9px;
+    letter-spacing: -10px;
     font-size: 4rem;
   }
 `
+
 const HomePageLogo = () => {
   return (
     <HomeLogo>

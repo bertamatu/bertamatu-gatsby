@@ -11,6 +11,7 @@ import {
   FaGithub,
 } from "react-icons/fa"
 import { GrGatsbyjs, GrMysql } from "react-icons/gr"
+import { IoLogoJavascript } from "react-icons/io"
 
 const AboutPage = styled.main`
   height: 100vh;
@@ -30,11 +31,11 @@ const AboutText = styled.article`
 `
 const Icons = styled.p`
   color: black;
-  font-size: 2.2rem;
+  font-size: 1rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.1);
   @media (min-width: 768px) {
-    font-size: 7rem;
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
   }
@@ -123,6 +124,7 @@ const About = () => {
             <FaCss3Alt />
             <FaSass />
             <FaBootstrap />
+            <IoLogoJavascript />
             <FaReact />
             <GrGatsbyjs />
             <GrMysql />

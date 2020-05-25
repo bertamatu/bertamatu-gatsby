@@ -1,16 +1,22 @@
 import React from "react"
 import styled from "styled-components"
-
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaSass,
+  FaReact,
+} from "react-icons/fa"
+import { IoLogoJavascript } from "react-icons/io"
+import { GrGatsbyjs } from "react-icons/gr"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomePageLogo from "../components/HomePageLogo"
-// import { graphql } from "gatsby"
-// import Img from "gatsby-image"
 
 const HomePage = styled.section`
   height: 100vh;
-  width: 100vw;
   text-align: center;
+  justify-content: center;
 
   background: #eb3349; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -24,13 +30,18 @@ const HomePage = styled.section`
     #ea2e44
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `
-const WelcomeMessage = styled.p`
-  font-weight: 100;
+const FrontEndDev = styled.p`
+  font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 0.3rem;
+`
+const Icons = styled.p`
+  font-size: 2rem;
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: rgba(0, 0, 0, 1);
 `
 const Button = styled.a`
   text-decoration: none;
@@ -44,30 +55,45 @@ const Button = styled.a`
   font-size: 0.7rem;
   border: 0.5px dotted white;
 `
+const Name = styled.p`
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  /* letter-spacing: 0.5rem; */
+  color: white;
+  margin-bottom: -0.2rem;
+`
 
 const IndexPage = ({ data }) => (
   <HomePage>
     <Layout>
-      {/* <Img fluid={data.file.childImageSharp.fluid} alt=""></Img> */}
       <SEO title="Home" />
       <HomePageLogo />
-      <WelcomeMessage>welcome to my porfolio!</WelcomeMessage>
+      <Name>BERTA MATULIAUSKIENE</Name>
+      <FrontEndDev>FRONT-END DEVELOPER</FrontEndDev>
+      <Icons>
+        <FaHtml5 />
+        <FaCss3Alt />
+        <FaSass />
+        <FaBootstrap />
+        <IoLogoJavascript />
+        <FaReact />
+        <GrGatsbyjs />
+      </Icons>
       <Button href="https://github.com/bertamatu" target="_blank">
         see my projects
+      </Button>{" "}
+      <br />
+      <br />
+      <Button
+        href="https://www.linkedin.com/in/bertam/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        contact me
       </Button>
     </Layout>
   </HomePage>
 )
-// export const query = graphql`
-//          {
-//            file(relativePath: { eq: "walking_outside.png" }) {
-//              absolutePath
-//              childImageSharp {
-//                fluid {
-//                  ...GatsbyImageSharpFluid
-//                }
-//              }
-//            }
-//          }
-//        `
 export default IndexPage
