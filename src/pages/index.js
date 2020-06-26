@@ -49,7 +49,7 @@ const Buttons = styled.div`
 const Button = styled.a`
   text-decoration: none;
   background-color: black;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 5px;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -57,6 +57,7 @@ const Button = styled.a`
   text-transform: uppercase;
   font-size: 0.7rem;
   border: 0.5px dotted white;
+  margin-bottom: 2.5rem;
 `
 const Name = styled.p`
   font-weight: 200;
@@ -89,8 +90,8 @@ const IndexPage = ({ data }) => (
         <Button href="https://github.com/bertamatu" target="_blank">
           see my projects
         </Button>{" "}
-        <br />
-        <br />
+        {/* <br />
+        <br /> */}
         <Button
           href="https://www.linkedin.com/in/bertam/"
           target="_blank"

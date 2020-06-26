@@ -8,6 +8,9 @@ const LogoDesign = styled(Link)`
   font-size: 0.7rem;
   font-family: roboto;
   align-self: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
   :hover {
     color: red;
     transition-duration: 0.9s;

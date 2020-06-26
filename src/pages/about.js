@@ -35,7 +35,7 @@ const Icons = styled.p`
   color: black;
   font-size: 2rem;
   text-align: center;
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
   @media (max-width: 768px) {
     font-size: 2rem;
     margin: 0;
@@ -72,9 +72,9 @@ const About = () => {
           <hr />
           <p>
             Because of unfulfilled potential about myself I decided to make a
-            career shift from finance and accounting to IT development. I didn't
-            choose it because of a decent salary and programming is not my hobby
-            - it's my passion.
+            career shift from finance and accounting to front-end development. I
+            didn't choose it because of a decent salary and programming is not
+            my hobby - it's my passion.
           </p>
           <p>
             <b>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</b>

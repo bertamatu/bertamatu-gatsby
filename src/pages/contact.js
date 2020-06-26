@@ -40,12 +40,12 @@ const Contact = ({ data }) => {
         >
           <FaGithub />
         </Icons>
-        <Icons href="mailto:info.berta@gmail.com">
+        {/* <Icons href="mailto:info.berta@gmail.com">
           <FaEnvelope />
         </Icons>
         <Icons href="tel:+37062612836">
           <FaPhoneAlt />
-        </Icons>
+        </Icons> */}
       </ContactContainer>
       <Footer />
     </Layout>

@@ -20,7 +20,6 @@ const Image = styled(Img)`
   -moz-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   filter: grayscale(100%);
-
   /* @media (min-width: 768) {
   } */
 `
