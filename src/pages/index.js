@@ -57,7 +57,6 @@ const Button = styled.a`
   text-transform: uppercase;
   font-size: 0.7rem;
   border: 0.5px dotted white;
-  margin-bottom: 2.5rem;
 `
 const Name = styled.p`
   font-weight: 200;
@@ -90,8 +89,8 @@ const IndexPage = ({ data }) => (
         <Button href="https://github.com/bertamatu" target="_blank">
           see my projects
         </Button>{" "}
-        {/* <br />
-        <br /> */}
+        <br />
+        <br />
         <Button
           href="https://www.linkedin.com/in/bertam/"
           target="_blank"
