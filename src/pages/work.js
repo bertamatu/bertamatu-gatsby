@@ -32,14 +32,30 @@ const Work = ({ data }) => {
         {data.allMarkdownRemark.edges.map((project, index) => (
           <section key={index}>
             <Img
-              style={{ height: 100 }}
+              style={{ height: 100, width: 200 }}
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
               alt={project.node.frontmatter.postImageAlt}
             ></Img>
             <br />
             {project.node.frontmatter.title}
-            {project.node.frontmatter.author}
-            <a href={project.node.frontmatter.githubLink}>GITHUB</a>
+            <br />
+            <a
+              href={project.node.frontmatter.deploymentLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Preview
+            </a>
+
+            <br />
+            <a
+              href={project.node.frontmatter.githubLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              GITHUB
+            </a>
+            <br />
             <Link to={project.node.frontmatter.slug}>READMORE</Link>
           </section>
         ))}
