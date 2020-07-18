@@ -7,14 +7,14 @@ import workGIF from "../images/gifs/giphy_work.gif"
 import Img from "gatsby-image"
 
 const WorkPage = styled(Layout)`
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to left top,
     #6a2323,
     #874c5a,
     #9b788b,
     #b0a4b3,
     #d0d0d0
-  );
+  ); */
 `
 const WorkContainer = styled.section`
   margin: 0 auto;
@@ -34,8 +34,8 @@ const Work = ({ data }) => {
   return (
     <WorkPage>
       <section>
-        {data.allMarkdownRemark.edges.map(project => (
-          <section key={project.node.frontmatter.id}>
+        {data.allMarkdownRemark.edges.map((project, index) => (
+          <section key={index}>
             <Img
               style={{ height: 100 }}
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
@@ -49,6 +49,7 @@ const Work = ({ data }) => {
           </section>
         ))}
       </section>
+
       <WorkContainer>
         <GithubLink href="https://github.com/bertamatu" target="_blank">
           <GoLogoGithub

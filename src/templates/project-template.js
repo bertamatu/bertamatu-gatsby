@@ -10,7 +10,7 @@ export default function ProjectTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds post data
   const { frontmatter, html } = markdownRemark
   return (
-    <main style={{ backgroundColor: "green" }}>
+    <main>
       <section>
         <Link to="/work">
           <TiArrowBack />
