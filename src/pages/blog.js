@@ -157,7 +157,10 @@ const BlogPage = ({ data }) => {
 
 export const data = graphql`
   query BlogQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "post" } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           id

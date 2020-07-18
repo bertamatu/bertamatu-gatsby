@@ -1,5 +1,6 @@
 ---
-slug: "/projects/portfolio-gatsby-site"
+type: "project"
+slug: "/work/portfolio-gatsby-site"
 title: "Portfolio site"
 author: "@berta.codes"
 deploymentLink: "https://bertamatu.netlify.app/"
@@ -8,6 +9,8 @@ introImage: "portfolio-gatsby-site-intro.jpeg"
 postImage: "portfolio-gatsby-site-post.jpeg"
 postImageAlt: "portfolio-site"
 ---
+
+TEXT IS PROJECT
 
 <ul>
     <li>Gatsby Js</li>

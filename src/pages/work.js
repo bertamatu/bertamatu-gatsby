@@ -1,8 +1,10 @@
 import React from "react"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import { GoLogoGithub } from "react-icons/go"
 import workGIF from "../images/gifs/giphy_work.gif"
+import Img from "gatsby-image"
 
 const WorkPage = styled(Layout)`
   background-image: linear-gradient(
@@ -28,9 +30,25 @@ const GithubLink = styled.a`
   /* padding-top: 9rem; */
 `
 
-const Work = () => {
+const Work = ({ data }) => {
   return (
     <WorkPage>
+      <section>
+        {data.allMarkdownRemark.edges.map(project => (
+          <section key={project.node.frontmatter.id}>
+            <Img
+              style={{ height: 100 }}
+              fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
+              alt={project.node.frontmatter.postImageAlt}
+            ></Img>
+            <br />
+            {project.node.frontmatter.title}
+            {project.node.frontmatter.author}
+            <a href={project.node.frontmatter.githubLink}>GITHUB</a>
+            <Link to={project.node.frontmatter.slug}>READMORE</Link>
+          </section>
+        ))}
+      </section>
       <WorkContainer>
         <GithubLink href="https://github.com/bertamatu" target="_blank">
           <GoLogoGithub
@@ -51,4 +69,34 @@ const Work = () => {
     </WorkPage>
   )
 }
+
+export const data = graphql`
+  query ProjectQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "project" } } }
+      sort: { order: DESC, fields: frontmatter___date }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            author
+            title
+            slug
+            postImageAlt
+            githubLink
+            deploymentLink
+            postImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 export default Work

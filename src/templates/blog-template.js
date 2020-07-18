@@ -1,6 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import { TiArrowBack } from "react-icons/ti"
@@ -8,6 +7,7 @@ import { TiArrowBack } from "react-icons/ti"
 import Img from "gatsby-image"
 
 const Container = styled(Layout)`
+  background-color: red;
   border: 1px solid black;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

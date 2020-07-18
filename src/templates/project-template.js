@@ -1,38 +1,42 @@
 import React from "react"
+import { graphql } from "gatsby"
+import { Link } from "gatsby"
+// import Layout from "../components/layout"
+// import styled from "styled-components"
+import { TiArrowBack } from "react-icons/ti"
+import Img from "gatsby-image"
 
 export default function ProjectTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Container>
-      <Post>
-        <LinkBack to="/work">
+    <main style={{ backgroundColor: "green" }}>
+      <section>
+        <Link to="/work">
           <TiArrowBack />
-          Go back to blog page
-        </LinkBack>
+          Go back to work page
+        </Link>
 
-        <Image
+        <Img
           fluid={frontmatter.postImage.childImageSharp.fluid}
           alt={frontmatter.postImageAlt}
-        ></Image>
-        <Title>{frontmatter.title}</Title>
+        ></Img>
+        <p>{frontmatter.title}</p>
         <section>
-          <Date>{frontmatter.author}</Date>
+          <p>{frontmatter.author}</p>
         </section>
+        <p dangerouslySetInnerHTML={{ __html: html }}></p>
         <hr />
-        <Text dangerouslySetInnerHTML={{ __html: html }} />
-        <hr />
-
-        <LinkBack to="/blog">
+        <Link to="/work">
           <TiArrowBack />
-          Go back to blog page
-        </LinkBack>
-      </Post>
-    </Container>
+          Go back to work page
+        </Link>
+      </section>
+    </main>
   )
 }
 
-export const pageQuery = graphql`
+export const query = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
