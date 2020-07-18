@@ -7,15 +7,14 @@ import { TiArrowBack } from "react-icons/ti"
 import Img from "gatsby-image"
 
 const Container = styled(Layout)`
-  background-color: red;
   border: 1px solid black;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `
 const Image = styled(Img)`
   border-radius: 5px;
-  margin-bottom: 0.5rem;
-  height: 30vh;
+  margin: 1rem 0 0.5rem 0;
+  height: 40vh;
   -webkit-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
   box-shadow: 0px 27px 41px -21px rgba(0, 0, 0, 0.31);
@@ -56,19 +55,18 @@ const Text = styled.p`
 `
 const LinkBack = styled(Link)`
   text-decoration: none;
-  font-size: 0.6rem;
-  color: gray;
-  padding: 1rem;
+  font-size: 0.9rem;
+  color: salmon;
 `
-
 export default function BlogTemplate({ data }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
     <Container>
       <Post>
         <LinkBack to="/blog">
           <TiArrowBack />
+          <br />
           Go back to blog page
         </LinkBack>
         <Image
@@ -79,15 +77,20 @@ export default function BlogTemplate({ data }) {
         <section>
           <DateBy>
             {/* <GoCalendar /> */}-{frontmatter.date}-{/* <GoPerson />  */}
-            {frontmatter.author}
+            <a
+              href="https://www.instagram.com/berta.codes/"
+              rel="noopener noreferrer"
+            >
+              {frontmatter.author}
+            </a>
           </DateBy>
         </section>
         <hr />
         <Text dangerouslySetInnerHTML={{ __html: html }} />
         <hr />
-
         <LinkBack to="/blog">
           <TiArrowBack />
+          <br />
           Go back to blog page
         </LinkBack>
       </Post>
