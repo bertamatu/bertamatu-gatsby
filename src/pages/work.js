@@ -7,16 +7,11 @@ import workGIF from "../images/gifs/giphy_work.gif"
 import Img from "gatsby-image"
 
 const WorkPage = styled(Layout)`
-  /* background-image: linear-gradient(
-    to left top,
-    #6a2323,
-    #874c5a,
-    #9b788b,
-    #b0a4b3,
-    #d0d0d0
-  ); */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 `
-const WorkContainer = styled.section`
+const GithubContainer = styled.section`
   margin: 0 auto;
   margin-top: 25vh;
   text-align: center;
@@ -50,7 +45,7 @@ const Work = ({ data }) => {
         ))}
       </section>
 
-      <WorkContainer>
+      <GithubContainer>
         <GithubLink href="https://github.com/bertamatu" target="_blank">
           <GoLogoGithub
             style={{
@@ -66,7 +61,7 @@ const Work = ({ data }) => {
             }}
           />
         </GithubLink>
-      </WorkContainer>
+      </GithubContainer>
     </WorkPage>
   )
 }
