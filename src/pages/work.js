@@ -25,6 +25,11 @@ const GithubLink = styled.a`
   /* padding-top: 9rem; */
 `
 
+const DeploymentLink = styled.a`
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+`
 const Work = ({ data }) => {
   return (
     <WorkPage>
@@ -39,13 +44,13 @@ const Work = ({ data }) => {
             <br />
             {project.node.frontmatter.title}
             <br />
-            <a
+            <DeploymentLink
               href={project.node.frontmatter.deploymentLink}
               target="_blank"
               rel="noreferrer"
             >
               Live Preview
-            </a>
+            </DeploymentLink>
 
             <br />
             <a
