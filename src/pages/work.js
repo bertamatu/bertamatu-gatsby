@@ -33,6 +33,24 @@ const DeploymentLink = styled.a`
 const Work = ({ data }) => {
   return (
     <WorkPage>
+      <GithubContainer>
+        <GithubLink href="https://github.com/bertamatu" target="_blank">
+          <GoLogoGithub
+            style={{
+              fontSize: 150,
+            }}
+          />
+          <br />
+          <img
+            src={workGIF}
+            alt="work"
+            style={{
+              height: 200,
+            }}
+          />
+        </GithubLink>
+      </GithubContainer>
+
       <section>
         {data.allMarkdownRemark.edges.map((project, index) => (
           <section key={index}>
@@ -65,24 +83,6 @@ const Work = ({ data }) => {
           </section>
         ))}
       </section>
-
-      <GithubContainer>
-        <GithubLink href="https://github.com/bertamatu" target="_blank">
-          <GoLogoGithub
-            style={{
-              fontSize: 150,
-            }}
-          />
-          <br />
-          <img
-            src={workGIF}
-            alt="work"
-            style={{
-              height: 200,
-            }}
-          />
-        </GithubLink>
-      </GithubContainer>
     </WorkPage>
   )
 }
