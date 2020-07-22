@@ -1,7 +1,7 @@
 ---
 type: "project"
 slug: "/work/portfolio-gatsby-site"
-title: "Portfolio site"
+title: "Portfolio site | Gatsby Js | Graphql"
 author: "@berta.codes"
 deploymentLink: "https://bertamatu.netlify.app/"
 githubLink: "https://github.com/bertamatu/bertamatu-gatsby"

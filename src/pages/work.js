@@ -18,8 +18,6 @@ const ItemContainer = styled.section`
   width: 80vw;
   height: auto;
   margin-top: 10vh;
-  margin-bottom: 1rem;
-  /* margin: 10vh 0, 5rem 1rem 0, 5rem; */
   text-align: center;
   border: 1px dotted gray;
   border-radius: 5px;
@@ -45,16 +43,36 @@ const Projects = styled.section`
     flex-direction: row;
   }
 `
-const DeploymentLink = styled.a`
-  padding: 1rem;
-  border: 1px solid gray;
-  border-radius: 5px;
+const ProjectData = styled.section`
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `
-
+const DeploymentLink = styled.a`
+  padding: 0.2rem;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  background: red;
+`
+const GithubLinkProject = styled.a`
+  padding: 0.2rem;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  background: black;
+`
 const ProjectImage = styled(Img)`
   margin: 0 auto;
-  border-radius: 30px 30px 0 0;
+  border-radius: 50px 0 50px 0;
   margin-top: 1rem;
+`
+
+const ReadMore = styled(Link)`
+  font-size: 0.7rem;
+  color: red;
+  text-decoration: none;
 `
 const Work = ({ data }) => {
   return (
@@ -84,27 +102,31 @@ const Work = ({ data }) => {
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
               alt={project.node.frontmatter.postImageAlt}
             ></ProjectImage>
-            <br />
-            {project.node.frontmatter.title}
-            <br />
-            <DeploymentLink
-              href={project.node.frontmatter.deploymentLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Preview
-            </DeploymentLink>
+            <ProjectData>
+              <br />
+              {project.node.frontmatter.title}
+              <br />
+              <DeploymentLink
+                href={project.node.frontmatter.deploymentLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Preview
+              </DeploymentLink>
 
-            <br />
-            <a
-              href={project.node.frontmatter.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GITHUB
-            </a>
-            <br />
-            <Link to={project.node.frontmatter.slug}>READMORE</Link>
+              <br />
+              <GithubLinkProject
+                href={project.node.frontmatter.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GITHUB
+              </GithubLinkProject>
+              <br />
+              <ReadMore to={project.node.frontmatter.slug}>
+                READ MORE...
+              </ReadMore>
+            </ProjectData>
           </ItemContainer>
         ))}
       </Projects>

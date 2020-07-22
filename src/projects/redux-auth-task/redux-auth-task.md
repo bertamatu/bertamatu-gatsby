@@ -1,7 +1,7 @@
 ---
 type: "project"
 slug: "/work/redux-auth-task"
-title: "ReactJs|Redux|Auth"
+title: "LOGIN&DATA | ReactJs | HOOKS | AUTH"
 author: "@berta.codes"
 deploymentLink: "https://my-frontend-party.netlify.app/"
 githubLink: "https://github.com/bertamatu/my-frontend-party"
