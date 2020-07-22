@@ -10,12 +10,22 @@ const WorkPage = styled(Layout)`
   width: 100vw;
   display: flex;
   justify-content: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `
 
 const GithubContainer = styled.section`
+  width: 80vw;
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 1rem;
   text-align: center;
+  border: 1px dotted gray;
+  border-radius: 5px;
+  @media (min-width: 768px) {
+    width: 30vw;
+  }
 `
 const GithubLink = styled.a`
   text-decoration: none;
@@ -30,6 +40,10 @@ const Projects = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    /* margin: 0 1rem 0 1rem; */
+  }
 `
 
 const ProjectItem = styled.section``
@@ -63,7 +77,7 @@ const Work = ({ data }) => {
         {data.allMarkdownRemark.edges.map((project, index) => (
           <ProjectItem key={index}>
             <Img
-              style={{ height: 100, width: 200 }}
+              style={{ height: 350, width: 200 }}
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
               alt={project.node.frontmatter.postImageAlt}
             ></Img>
