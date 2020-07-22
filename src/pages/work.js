@@ -14,18 +14,18 @@ const WorkPage = styled(Layout)`
     flex-direction: row;
   }
 `
-
 const ItemContainer = styled.section`
   width: 80vw;
   height: auto;
-  margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 1rem;
+  /* margin: 10vh 0, 5rem 1rem 0, 5rem; */
   text-align: center;
   border: 1px dotted gray;
   border-radius: 5px;
   @media (min-width: 768px) {
     width: 20vw;
+    margin: 10vh 0.5rem 1rem 0.5rem;
   }
 `
 const GithubLink = styled.a`
@@ -45,14 +45,16 @@ const Projects = styled.section`
     flex-direction: row;
   }
 `
-
-const ProjectItem = styled.section`
-  padding: 1rem;
-`
 const DeploymentLink = styled.a`
   padding: 1rem;
   border: 1px solid gray;
   border-radius: 5px;
+`
+
+const ProjectImage = styled(Img)`
+  margin: 0 auto;
+  border-radius: 30px 30px 0 0;
+  margin-top: 1rem;
 `
 const Work = ({ data }) => {
   return (
@@ -77,11 +79,11 @@ const Work = ({ data }) => {
         </ItemContainer>
         {data.allMarkdownRemark.edges.map((project, index) => (
           <ItemContainer key={index}>
-            <Img
-              style={{ height: 350, width: 200 }}
+            <ProjectImage
+              style={{ height: 242, width: 200 }}
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
               alt={project.node.frontmatter.postImageAlt}
-            ></Img>
+            ></ProjectImage>
             <br />
             {project.node.frontmatter.title}
             <br />
