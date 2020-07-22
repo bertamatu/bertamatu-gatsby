@@ -11,9 +11,10 @@ const WorkPage = styled(Layout)`
   display: flex;
   justify-content: center;
 `
+
 const GithubContainer = styled.section`
   margin: 0 auto;
-  margin-top: 25vh;
+  margin-top: 5vh;
   text-align: center;
 `
 const GithubLink = styled.a`
@@ -22,9 +23,16 @@ const GithubLink = styled.a`
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  /* padding-top: 9rem; */
+`
+const Projects = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `
 
+const ProjectItem = styled.section``
 const DeploymentLink = styled.a`
   padding: 1rem;
   border: 1px solid gray;
@@ -51,9 +59,9 @@ const Work = ({ data }) => {
         </GithubLink>
       </GithubContainer>
 
-      <section>
+      <Projects>
         {data.allMarkdownRemark.edges.map((project, index) => (
-          <section key={index}>
+          <ProjectItem key={index}>
             <Img
               style={{ height: 100, width: 200 }}
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
@@ -65,7 +73,7 @@ const Work = ({ data }) => {
             <DeploymentLink
               href={project.node.frontmatter.deploymentLink}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Live Preview
             </DeploymentLink>
@@ -74,15 +82,15 @@ const Work = ({ data }) => {
             <a
               href={project.node.frontmatter.githubLink}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               GITHUB
             </a>
             <br />
             <Link to={project.node.frontmatter.slug}>READMORE</Link>
-          </section>
+          </ProjectItem>
         ))}
-      </section>
+      </Projects>
     </WorkPage>
   )
 }
