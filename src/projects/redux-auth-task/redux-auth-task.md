@@ -10,12 +10,13 @@ postImage: "redux-task.jpeg"
 postImageAlt: "weather-app-reactjs-redux-hooks"
 ---
 
-<a href="https://github.com/tesonet/frontend-party"><h6>The task:</h6></a>
+<b>username: tesonet // password: partyanimal</b>
 
-<ul>
-    <li>React Js</li>
-    <li>Hooks</li>
-    <li>Auth</li>
-    <li>Redux</li>
-    <li>Styled components</li>
-</ul>
+<a href="https://github.com/tesonet/frontend-party"><h6>THE TASK:</h6></a>
+
+<b>Things I got familiar with:</b>
+
+<div>React Js</div>
+<div>Hooks</div>
+<div>Auth</div>
+<div>Styled components</div>

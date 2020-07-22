@@ -10,11 +10,9 @@ postImage: "weather-app-post.jpeg"
 postImageAlt: "weather-app-reactjs-redux-hooks"
 ---
 
-text
+<b>Things I got familiar with:</b>
 
-<ul>
-    <li>React Js</li>
-    <li>Hooks</li>
-    <li>Redux</li>
-    <li>Styled components</li>
-</ul>
+<div>React Js</div>
+<div>Redux</div>
+<div>Auth</div>
+<div>Styled components</div>

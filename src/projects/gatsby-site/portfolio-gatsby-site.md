@@ -10,10 +10,8 @@ postImage: "portfolio-gatsby-site-post.jpeg"
 postImageAlt: "portfolio-site"
 ---
 
-TEXT IS PROJECT
+<b>Things I got familiar with:</b>
 
-<ul>
-    <li>Gatsby Js</li>
-    <li>Graphql</li>
-    <li>Styled components</li>
-</ul>
+<div>Gatsby Js</div>
+<div>GRAPHQL</div>
+<div>Styled components</div>
