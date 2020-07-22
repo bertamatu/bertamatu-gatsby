@@ -44,7 +44,7 @@ const Projects = styled.section`
   }
 `
 const ProjectData = styled.section`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -55,6 +55,7 @@ const DeploymentLink = styled.a`
   border-radius: 3px;
   color: white;
   background: red;
+  font-size: 0.65rem;
 `
 const GithubLinkProject = styled.a`
   padding: 0.2rem;
@@ -62,6 +63,7 @@ const GithubLinkProject = styled.a`
   border-radius: 3px;
   color: white;
   background: black;
+  font-size: 0.65rem;
 `
 const ProjectImage = styled(Img)`
   margin: 0 auto;
@@ -101,11 +103,18 @@ const Work = ({ data }) => {
         </ItemContainer>
         {data.allMarkdownRemark.edges.map((project, index) => (
           <ItemContainer key={index}>
-            <ProjectImage
-              style={{ height: 242, width: 200 }}
-              fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
-              alt={project.node.frontmatter.postImageAlt}
-            ></ProjectImage>
+            <a
+              href={project.node.frontmatter.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ProjectImage
+                style={{ height: 242, width: 200 }}
+                fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
+                alt={project.node.frontmatter.postImageAlt}
+              ></ProjectImage>
+            </a>
+
             <ProjectData>
               <br />
               {project.node.frontmatter.title}
