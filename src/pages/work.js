@@ -15,8 +15,9 @@ const WorkPage = styled(Layout)`
   }
 `
 
-const GithubContainer = styled.section`
+const ItemContainer = styled.section`
   width: 80vw;
+  height: auto;
   margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 1rem;
@@ -24,7 +25,7 @@ const GithubContainer = styled.section`
   border: 1px dotted gray;
   border-radius: 5px;
   @media (min-width: 768px) {
-    width: 30vw;
+    width: 20vw;
   }
 `
 const GithubLink = styled.a`
@@ -42,11 +43,12 @@ const Projects = styled.section`
   text-align: center;
   @media (min-width: 768px) {
     flex-direction: row;
-    /* margin: 0 1rem 0 1rem; */
   }
 `
 
-const ProjectItem = styled.section``
+const ProjectItem = styled.section`
+  padding: 1rem;
+`
 const DeploymentLink = styled.a`
   padding: 1rem;
   border: 1px solid gray;
@@ -55,27 +57,26 @@ const DeploymentLink = styled.a`
 const Work = ({ data }) => {
   return (
     <WorkPage>
-      <GithubContainer>
-        <GithubLink href="https://github.com/bertamatu" target="_blank">
-          <GoLogoGithub
-            style={{
-              fontSize: 150,
-            }}
-          />
-          <br />
-          <img
-            src={workGIF}
-            alt="work"
-            style={{
-              height: 200,
-            }}
-          />
-        </GithubLink>
-      </GithubContainer>
-
       <Projects>
+        <ItemContainer>
+          <GithubLink href="https://github.com/bertamatu" target="_blank">
+            <GoLogoGithub
+              style={{
+                fontSize: 150,
+              }}
+            />
+            <br />
+            <img
+              src={workGIF}
+              alt="work"
+              style={{
+                height: 200,
+              }}
+            />
+          </GithubLink>
+        </ItemContainer>
         {data.allMarkdownRemark.edges.map((project, index) => (
-          <ProjectItem key={index}>
+          <ItemContainer key={index}>
             <Img
               style={{ height: 350, width: 200 }}
               fluid={project.node.frontmatter.postImage.childImageSharp.fluid}
@@ -102,7 +103,7 @@ const Work = ({ data }) => {
             </a>
             <br />
             <Link to={project.node.frontmatter.slug}>READMORE</Link>
-          </ProjectItem>
+          </ItemContainer>
         ))}
       </Projects>
     </WorkPage>
