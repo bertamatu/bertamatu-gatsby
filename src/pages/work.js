@@ -67,6 +67,10 @@ const ProjectImage = styled(Img)`
   margin: 0 auto;
   border-radius: 50px 0 50px 0;
   margin-top: 1rem;
+  border: 3px white solid;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
 `
 
 const ReadMore = styled(Link)`

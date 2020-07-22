@@ -1,7 +1,7 @@
 ---
 type: "project"
 slug: "/work/weather-app"
-title: "Weather App | React Js | Hooks | Redux"
+title: "Weather App | React Js | Redux"
 author: "@berta.codes"
 deploymentLink: "https://bertamatu.github.io/weather-app-reactjs-hooks-redux/"
 githubLink: "https://github.com/bertamatu/weather-app-reactjs-hooks-redux"
