@@ -31,6 +31,7 @@ const Post = styled.section`
   width: 40vw;
   margin: 7rem 1rem;
   align-self: center;
+  /* cursor: pointer; */
   @media (max-width: 768px) {
     width: 80vw;
     height: 100%;
@@ -107,6 +108,7 @@ const BlogPage = ({ data }) => {
         <Article>
           {data.allMarkdownRemark.edges.map(post => (
             <Post key={post.node.frontmatter.id}>
+              {/* <Link to={post.node.frontmatter.slug}> */}{" "}
               <section>
                 <Image
                   fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
@@ -126,6 +128,7 @@ const BlogPage = ({ data }) => {
                 </ReadMore>
                 <hr />
               </section>
+              {/* </Link> */}
             </Post>
           ))}
         </Article>

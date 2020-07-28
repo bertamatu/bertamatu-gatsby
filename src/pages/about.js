@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 
 import { FaLinkedin } from "react-icons/fa"
-import { GrGatsbyjs, GrMysql } from "react-icons/gr"
-import { IoLogoJavascript } from "react-icons/io"
+// import { GrGatsbyjs, GrMysql } from "react-icons/gr"
+// import { IoLogoJavascript } from "react-icons/io"
 
 const AboutPage = styled.main`
   width: 100vw;
@@ -23,17 +23,17 @@ const AboutText = styled.article`
     width: 55vw;
   }
 `
-const Icons = styled.p`
-  color: black;
-  font-size: 2rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.3);
-  @media (max-width: 768px) {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-`
+// const Icons = styled.p`
+//   color: black;
+//   font-size: 2rem;
+//   text-align: center;
+//   color: rgba(0, 0, 0, 0.3);
+//   @media (max-width: 768px) {
+//     font-size: 2rem;
+//     margin: 0;
+//     padding: 0;
+//   }
+// `
 const Link = styled.a`
   text-decoration: none;
   color: red;
