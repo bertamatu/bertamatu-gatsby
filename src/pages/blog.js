@@ -20,8 +20,7 @@ const Article = styled.article`
   }
 `
 const Image = styled(Img)`
-  filter: grayscale(100%);
-  height: 30vh;
+  height: 50vh;
   @media (max-width: 768px) {
     margin-top: 2rem;
   }
@@ -29,7 +28,7 @@ const Image = styled(Img)`
 const Post = styled.section`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 20vw;
+  width: 40vw;
   margin: 7rem 1rem;
   align-self: center;
   @media (max-width: 768px) {
@@ -131,7 +130,10 @@ const BlogPage = ({ data }) => {
           ))}
         </Article>
         <BlogMenu>
-          <h5>HELLO</h5>
+          <h5>
+            HELLO! <small>/həˈləʊ,hɛˈləʊ/</small>
+          </h5>
+
           <HelloMessage>
             <blockquote>
               “I have not failed. I've just found 10,000 ways that won't work.”

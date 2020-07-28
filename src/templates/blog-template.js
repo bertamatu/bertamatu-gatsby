@@ -30,7 +30,7 @@ const Post = styled.article`
   margin: 0 auto;
   padding-top: 4.5rem;
   @media (min-width: 768px) {
-    width: 40vw;
+    width: 60vw;
   }
 `
 const Title = styled.header`
