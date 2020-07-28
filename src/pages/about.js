@@ -3,8 +3,8 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 
 import { FaLinkedin } from "react-icons/fa"
-// import { GrGatsbyjs, GrMysql } from "react-icons/gr"
-// import { IoLogoJavascript } from "react-icons/io"
+import { GrGatsbyjs, GrMysql } from "react-icons/gr"
+import { IoLogoJavascript } from "react-icons/io"
 
 const AboutPage = styled.main`
   width: 100vw;
@@ -19,21 +19,21 @@ const AboutText = styled.article`
   color: black;
   text-align: justify;
   @media (min-width: 768px) {
-    padding-top: 4rem;
-    width: 40vw;
+    padding-top: 5rem;
+    width: 55vw;
   }
 `
-// const Icons = styled.p`
-//   color: black;
-//   font-size: 2rem;
-//   text-align: center;
-//   color: rgba(0, 0, 0, 0.3);
-//   @media (max-width: 768px) {
-//     font-size: 2rem;
-//     margin: 0;
-//     padding: 0;
-//   }
-// `
+const Icons = styled.p`
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+`
 const Link = styled.a`
   text-decoration: none;
   color: red;
@@ -62,6 +62,14 @@ const About = () => {
             <b>Hello, I'm Berta! Creative front-end developer.</b>
           </header>
           <hr />
+          <p>
+            I am actively looking for a junior developer position. Willing to
+            join a dynamic, innovative, and collaborative team.
+            <br />
+            <i>
+              <b>Offers related to the internship are highly welcome!</b>
+            </i>
+          </p>
           <p>
             Because of unfulfilled potential about myself I decided to make a
             career shift from finance and accounting to front-end development. I
