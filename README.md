@@ -1,3 +1,15 @@
+<h1> PORTFOLIO </h1>
+
+<p>
+● Responsive web design; <br>
+● Graphql queries; <br>
+● Several templates for markdown files for blog posts/projects;<br>
+● Responsive/optimized images using gatsby-image package;<br>
+● Styled-components;
+  </p>
+
+<br><br><br><br><br><br><br><br><br>
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
