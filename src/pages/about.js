@@ -2,17 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaSass,
-  FaReact,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa"
-import { GrGatsbyjs, GrMysql } from "react-icons/gr"
-import { IoLogoJavascript } from "react-icons/io"
+import { FaLinkedin } from "react-icons/fa"
+// import { GrGatsbyjs, GrMysql } from "react-icons/gr"
+// import { IoLogoJavascript } from "react-icons/io"
 
 const AboutPage = styled.main`
   width: 100vw;
@@ -21,27 +13,27 @@ const AboutPage = styled.main`
 const AboutText = styled.article`
   margin: 0 auto;
   font-size: 0.7rem;
-  padding: 6rem 2rem 3rem 2rem;
+  padding: 4rem 2rem 3rem 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
   text-align: justify;
   @media (min-width: 768px) {
-    padding-top: 10rem;
+    padding-top: 4rem;
     width: 40vw;
   }
 `
-const Icons = styled.p`
-  color: black;
-  font-size: 2rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.3);
-  @media (max-width: 768px) {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-`
+// const Icons = styled.p`
+//   color: black;
+//   font-size: 2rem;
+//   text-align: center;
+//   color: rgba(0, 0, 0, 0.3);
+//   @media (max-width: 768px) {
+//     font-size: 2rem;
+//     margin: 0;
+//     padding: 0;
+//   }
+// `
 const Link = styled.a`
   text-decoration: none;
   color: red;
@@ -112,15 +104,7 @@ const About = () => {
             after getting my diploma. I am getting familiar with React Js and
             Gatsby at the moment.
           </p>
-          <p>
-            I am actively looking for a junior developer position. Willing to
-            join a dynamic, innovative, and collaborative team.
-            <br />
-            <i>
-              <b>Offers related to the internship are highly welcome!</b>
-            </i>
-          </p>
-          <Icons>
+          {/* <Icons>
             <FaHtml5 />
             <FaCss3Alt />
             <FaSass />
@@ -130,7 +114,7 @@ const About = () => {
             <GrGatsbyjs />
             <GrMysql />
             <FaGithub />
-          </Icons>
+          </Icons> */}
         </AboutText>
       </Layout>
     </AboutPage>
