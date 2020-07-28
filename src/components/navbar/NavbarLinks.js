@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
@@ -40,7 +40,6 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">HOME</NavItem>
       <NavItem to="/about">ABOUT</NavItem>
       <NavItem to="/work">WORK</NavItem>
       <NavItem to="/blog">BLOG</NavItem>

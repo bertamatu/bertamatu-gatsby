@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const LogoDesign = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 0.7rem;
   font-family: roboto;
   align-self: center;

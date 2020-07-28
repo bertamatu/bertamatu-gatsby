@@ -6,7 +6,8 @@ import styled from "styled-components"
 const Navigation = styled.nav`
   height: 7vh;
   display: flex;
-  background-color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.9);
+
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
