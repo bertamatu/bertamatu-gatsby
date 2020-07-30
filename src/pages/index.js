@@ -106,7 +106,7 @@ const IndexPage = ({ data }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          contact me
+          let's connect
         </Button>
       </Buttons>
     </Layout>

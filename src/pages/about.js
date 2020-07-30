@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 
-import { FaLinkedin } from "react-icons/fa"
+import { FaLinkedin, FaReact } from "react-icons/fa"
 // import { GrGatsbyjs, GrMysql } from "react-icons/gr"
 // import { IoLogoJavascript } from "react-icons/io"
 
@@ -23,17 +23,16 @@ const AboutText = styled.article`
     width: 55vw;
   }
 `
-// const Icons = styled.p`
-//   color: black;
-//   font-size: 2rem;
-//   text-align: center;
-//   color: rgba(0, 0, 0, 0.3);
-//   @media (max-width: 768px) {
-//     font-size: 2rem;
-//     margin: 0;
-//     padding: 0;
-//   }
-// `
+const Icons = styled.p`
+  color: black;
+  color: rgba(0, 0, 0, 0.02);
+  @media (max-width: 768px) {
+    margin-top: -30rem;
+    margin-right: -10rem;
+    font-size: 30rem;
+    text-align: right;
+  }
+`
 const Link = styled.a`
   text-decoration: none;
   color: red;
@@ -112,17 +111,17 @@ const About = () => {
             after getting my diploma. I am getting familiar with React Js and
             Gatsby at the moment.
           </p>
-          {/* <Icons>
-            <FaHtml5 />
+          <Icons>
+            {/* <FaHtml5 />
             <FaCss3Alt />
             <FaSass />
             <FaBootstrap />
-            <IoLogoJavascript />
+            <IoLogoJavascript /> */}
             <FaReact />
-            <GrGatsbyjs />
+            {/* <GrGatsbyjs />
             <GrMysql />
-            <FaGithub />
-          </Icons> */}
+            <FaGithub /> */}
+          </Icons>
         </AboutText>
       </Layout>
     </AboutPage>
