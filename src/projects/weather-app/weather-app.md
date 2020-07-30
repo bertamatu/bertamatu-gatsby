@@ -14,5 +14,4 @@ postImageAlt: "weather-app-reactjs-redux-hooks"
 
 <div>React Js</div>
 <div>Redux</div>
-<div>Auth</div>
 <div>Styled components</div>
