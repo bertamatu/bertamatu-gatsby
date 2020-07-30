@@ -10,6 +10,7 @@ const ContactContainer = styled.section`
   text-align: center;
   overflow-y: hidden;
   overflow-x: hidden;
+  height: 80vh;
 `
 const Icons = styled.a`
   text-decoration: none;
