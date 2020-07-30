@@ -96,7 +96,7 @@ const IndexPage = ({ data }) => (
         <GrGatsbyjs />
       </Icons>
       <Buttons>
-        <Button href="https://github.com/bertamatu" target="_blank">
+        <Button href="/work" target="_blank">
           see my projects
         </Button>{" "}
         {/* <br />
