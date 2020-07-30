@@ -8,6 +8,8 @@ import contactGIF from "../images/gifs/gif_contact.webp"
 const ContactContainer = styled.section`
   margin-top: 18vh;
   text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
 `
 const Icons = styled.a`
   text-decoration: none;
