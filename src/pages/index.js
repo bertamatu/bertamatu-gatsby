@@ -15,6 +15,7 @@ import HomePageLogo from "../components/HomePageLogo"
 
 const HomePage = styled.section`
   height: 100vh;
+  overflow: hidden;
   background: #eb3349; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
@@ -96,7 +97,7 @@ const IndexPage = ({ data }) => (
         <GrGatsbyjs />
       </Icons>
       <Buttons>
-        <Button href="/work" target="_blank">
+        <Button to="/work" target="_blank">
           see my projects
         </Button>{" "}
         {/* <br />
