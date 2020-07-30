@@ -15,7 +15,8 @@ import HomePageLogo from "../components/HomePageLogo"
 
 const HomePage = styled.section`
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: #eb3349; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
