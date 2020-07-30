@@ -98,11 +98,9 @@ const IndexPage = ({ data }) => (
         <GrGatsbyjs />
       </Icons>
       <Buttons>
-        <Button to="/work" target="_blank">
+        <Button href="/work" target="_blank">
           see my projects
         </Button>{" "}
-        {/* <br />
-        <br /> */}
         <Button
           href="https://www.linkedin.com/in/bertam/"
           target="_blank"
