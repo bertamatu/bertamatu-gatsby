@@ -29,6 +29,16 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-161952248-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     {
