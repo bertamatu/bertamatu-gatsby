@@ -117,7 +117,7 @@ const About = () => {
             <FaSass />
             <FaBootstrap />
             <IoLogoJavascript /> */}
-            <FaReact />
+            {/* <FaReact /> */}
             {/* <GrGatsbyjs />
             <GrMysql />
             <FaGithub /> */}

@@ -6,21 +6,19 @@ const LogoDesign = styled(Link)`
   text-decoration: none;
   color: white;
   font-size: 0.7rem;
-  font-family: roboto;
+  letter-spacing: 2px;
   align-self: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   :hover {
-    color: red;
+    color: #e0115f;
     transition-duration: 0.9s;
   }
   @media (max-width: 768px) {
     padding-left: 1.5rem;
     font-size: 1rem;
-    font-weight: 150;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 250;
   }
 `
 
