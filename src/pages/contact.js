@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
 import styled from "styled-components"
-import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from "react-icons/fa"
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa"
 import contactGIF from "../images/gifs/gif_contact.webp"
 
 const ContactContainer = styled.section`
@@ -42,11 +42,12 @@ const Contact = ({ data }) => {
         >
           <FaGithub />
         </Icons>
-        <Icons href="mailto:info.berta@gmail.com">
-          <FaEnvelope />
-        </Icons>
-        <Icons href="tel:+37062612836">
-          <FaPhoneAlt />
+        <Icons
+          href="https://instagram.com/berta.codes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram />
         </Icons>
       </ContactContainer>
       <Footer />
