@@ -89,7 +89,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Baltic Institute of Technolgy
+              Baltic Institute of Technology
             </Link>{" "}
             in 2020 January - was one of the most driven students. I was a
             self-taught front-end enthusiast, so I mentored my classmates and
@@ -112,7 +112,7 @@ const About = () => {
             months working with Vue js and Scss.
             <br />
             In 2021 March I joined another company to get more experience in
-            React js, TypeScript and Angular.
+            React js, TypeScript, and Angular.
             <br />
             <a
               href="https://www.linkedin.com/in/bertam/"
