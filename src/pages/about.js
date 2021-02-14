@@ -9,6 +9,11 @@ import { FaLinkedin, FaReact } from "react-icons/fa"
 const AboutPage = styled.main`
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
 `
 const AboutText = styled.article`
   margin: 0 auto;
@@ -62,18 +67,10 @@ const About = () => {
           </header>
           <hr />
           <p>
-            I am actively looking for a junior developer position. Willing to
-            join a dynamic, innovative, and collaborative team.
-            <br />
-            <i>
-              <b>Offers related to the internship are highly welcome!</b>
-            </i>
-          </p>
-          <p>
-            Because of unfulfilled potential about myself I decided to make a
-            career shift from finance and accounting to front-end development. I
-            didn't choose it because of a decent salary and programming is not
-            my hobby - it's my passion.
+            Because of my unfulfilled potential, I decided to make a career
+            shift from finance and accounting to front-end development. I didn't
+            choose it because of a decent salary and programming is not just one
+            of my hobbies - it's my passion.
           </p>
           <p>
             <b>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</b>
@@ -108,8 +105,22 @@ const About = () => {
             </Link>{" "}
             was a web CRUD app, built with Spring Boot and MySQL. I enjoyed
             working on the front-end part the most, so I decided to focus on it
-            after getting my diploma. I am getting familiar with React Js and
-            Gatsby at the moment.
+            after getting my diploma.
+          </p>
+          <p>
+            I got my first front-end developer job in 2020 August. Spent there 6
+            months working with Vue js and Scss.
+            <br />
+            In 2021 March I joined another company to get more experience in
+            React js, TypeScript and Angular.
+            <br />
+            <a
+              href="https://www.linkedin.com/in/bertam/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              More...
+            </a>
           </p>
           <Icons>
             {/* <FaHtml5 />
