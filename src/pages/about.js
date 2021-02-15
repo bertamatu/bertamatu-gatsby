@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 
-import { FaLinkedin, FaReact } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
 // import { GrGatsbyjs, GrMysql } from "react-icons/gr"
 // import { IoLogoJavascript } from "react-icons/io"
 

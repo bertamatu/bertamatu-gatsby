@@ -74,7 +74,6 @@ const ProjectImage = styled(Img)`
   -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
 `
-
 const ReadMore = styled(Link)`
   font-size: 0.7rem;
   color: red;

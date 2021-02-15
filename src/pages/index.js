@@ -6,9 +6,11 @@ import {
   FaBootstrap,
   FaSass,
   FaReact,
+  FaVuejs,
 } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io"
 import { GrGatsbyjs } from "react-icons/gr"
+// import { SiTypescript } from "react-icons/Si"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomePageLogo from "../components/HomePageLogo"
@@ -87,7 +89,7 @@ const IndexPage = ({ data }) => (
       <SEO title="Home" />
       <HomePageLogo />
       <Name>BERTA MATULIAUSKIENE</Name>
-      <FrontEndDev>FRONT-END DEVELOPER</FrontEndDev>
+      <FrontEndDev>FRONT-END ENGINEER</FrontEndDev>
       <Icons>
         <FaHtml5 />
         <FaCss3Alt />
@@ -96,6 +98,8 @@ const IndexPage = ({ data }) => (
         <IoLogoJavascript />
         <FaReact />
         <GrGatsbyjs />
+        <FaVuejs />
+        {/* <SiTypescript /> */}
       </Icons>
       <Buttons>
         <Button href="/work" target="_blank">
@@ -106,7 +110,7 @@ const IndexPage = ({ data }) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          let's connect 
+          let's connect
         </Button>
       </Buttons>
     </Layout>
