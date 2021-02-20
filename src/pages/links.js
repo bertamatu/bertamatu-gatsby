@@ -41,7 +41,7 @@ const Links = data => (
       </b>
       {personalLinks.map(link => {
         return (
-          <LinkButton href={link.url} target="_blank">
+          <LinkButton href={link.url} target="_blank" key={link.id}>
             {link.title}
           </LinkButton>
         )
@@ -51,7 +51,7 @@ const Links = data => (
       <SectionTitle>Developer roadmaps</SectionTitle>
       {roadmapsLinks.map(link => {
         return (
-          <LinkButton href={link.url} target="_blank">
+          <LinkButton href={link.url} target="_blank" key={link.id}>
             {link.title}
           </LinkButton>
         )
@@ -61,7 +61,7 @@ const Links = data => (
       <SectionTitle>Javascript</SectionTitle>
       {javascriptLinks.map(link => {
         return (
-          <LinkButton href={link.url} target="_blank">
+          <LinkButton href={link.url} target="_blank" key={link.id}>
             {link.title}
           </LinkButton>
         )
@@ -71,7 +71,7 @@ const Links = data => (
       <SectionTitle>must read</SectionTitle>
       {mustReadLinks.map(link => {
         return (
-          <LinkButton href={link.url} target="_blank">
+          <LinkButton href={link.url} target="_blank" key={link.id}>
             {link.title}
           </LinkButton>
         )
