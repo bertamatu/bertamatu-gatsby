@@ -110,10 +110,10 @@ const BlogPage = ({ data }) => {
             <Post key={post.node.frontmatter.id}>
               {/* <Link to={post.node.frontmatter.slug}> */}{" "}
               <section>
-                <Image
+                {/* <Image
                   fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
                   alt="developers-setup"
-                ></Image>
+                ></Image> */}
               </section>
               <section>
                 <Title>{post.node.frontmatter.title}</Title>
