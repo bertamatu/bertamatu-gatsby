@@ -29,8 +29,8 @@
     "react-icons": "^3.10.0",
     "styled-components": "^5.1.0"
   },
-  "resolutions": { 
-    "sharp": "0.24.0" 
+  "resolutions": {
+    "sharp": "0.24.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"

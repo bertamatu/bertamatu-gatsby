@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-// import { graphql } from "gatsby"
+import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 // import Img from "gatsby-image"
 
@@ -173,32 +173,32 @@ const BlogPage = () => {
   )
 }
 
-// export const data = graphql`
-//   query BlogQuery {
-//     allMarkdownRemark(
-//       filter: { frontmatter: { type: { eq: "post" } } }
-//       sort: { order: DESC, fields: [frontmatter___date] }
-//     ) {
-//       edges {
-//         node {
-//           id
-//           frontmatter {
-//             author
-//             date
-//             slug
-//             title
-//             intro
-//             postImage {
-//               childImageSharp {
-//                 fluid {
-//                   ...GatsbyImageSharpFluid
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-// }
-// `
+export const data = graphql`
+  query BlogQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "post" } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            author
+            date
+            slug
+            title
+            intro
+            postImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 export default BlogPage
