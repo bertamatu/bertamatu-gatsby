@@ -148,10 +148,7 @@ const Work = ({ data }) => {
 
 export const data = graphql`
   query ProjectQuery {
-    allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "project" } } }
-      sort: { order: DESC, fields: frontmatter___date }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "project" } } }) {
       edges {
         node {
           id
