@@ -1,15 +1,20 @@
-// import React from "react"
-// import Layout from "../components/layout"
+import React from "react"
+import Layout from "../components/layout"
 // import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 // import Img from "gatsby-image"
 
-// import styled from "styled-components"
+import styled from "styled-components"
 
-// const MainContent = styled.main`
-//   display: flex;
-//   position: absolute;
-// `
+const MainContent = styled.main`
+  display: flex;
+  /* position: absolute; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+`
 // const Article = styled.article`
 //   width: 70vw;
 //   display: flex;
@@ -67,7 +72,6 @@
 //   padding: 1rem;
 //   line-height: 1;
 // `
-
 // const BlogMenu = styled.aside`
 //   position: fixed;
 //   right: 0;
@@ -101,64 +105,73 @@
 //   text-decoration: none;
 // `
 
-// const BlogPage = ({ data }) => {
-//   return (
-//     <Layout>
-//       <MainContent>
-//         <Article>
-//           {data.allMarkdownRemark.edges.map(post => (
-//             <Post key={post.node.frontmatter.id}>
-//               {/* <Link to={post.node.frontmatter.slug}> */}{" "}
-//               <section>
-//                 <Image
-//                   fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
-//                   alt="developers-setup"
-//                 ></Image>
-//               </section>
-//               <section>
-//                 <Title>{post.node.frontmatter.title}</Title>
-//                 <ByDate>
-//                   {post.node.frontmatter.date} <span> Posted by</span>
-//                   {post.node.frontmatter.author}
-//                 </ByDate>
-//                 <Intro>{post.node.frontmatter.intro}</Intro>
-//                 <ReadMore to={post.node.frontmatter.slug}>
-//                   {" "}
-//                   Read more...
-//                 </ReadMore>
-//                 <hr />
-//               </section>
-//               {/* </Link> */}
-//             </Post>
-//           ))}
-//         </Article>
-//         <BlogMenu>
-//           <h5>
-//             HELLO! <small>/həˈləʊ,hɛˈləʊ/</small>
-//           </h5>
+const BlogPage = () => {
+  return (
+    <Layout>
+      <MainContent>
+        <div>Sorry for the dust! My blog is under construction...</div>
+        <div>In the meantime, check out my Instagram.</div>
+        <a
+          href="https://www.instagram.com/berta.codes/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          @berta.codes
+        </a>
+        {/* <Article>
+          {data.allMarkdownRemark.edges.map(post => (
+            <Post key={post.node.frontmatter.id}> */}
+        {/* <Link to={post.node.frontmatter.slug}> */}{" "}
+        {/* <section>
+                <Image
+                  fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
+                  alt="developers-setup"
+                ></Image>
+              </section>
+              <section>
+                <Title>{post.node.frontmatter.title}</Title>
+                <ByDate>
+                  {post.node.frontmatter.date} <span> Posted by</span>
+                  {post.node.frontmatter.author}
+                </ByDate>
+                <Intro>{post.node.frontmatter.intro}</Intro>
+                <ReadMore to={post.node.frontmatter.slug}>
+                  {" "}
+                  Read more...
+                </ReadMore>
+                <hr />
+              </section> */}
+        {/* </Link> */}
+        {/* </Post>
+          ))}
+        </Article>
+        <BlogMenu>
+          <h5>
+            HELLO! <small>/həˈləʊ,hɛˈləʊ/</small>
+          </h5>
 
-//           <HelloMessage>
-//             <blockquote>
-//               “I have not failed. I've just found 10,000 ways that won't work.”
-//               ― Thomas A. Edison
-//             </blockquote>
-//           </HelloMessage>
-//           <PostsList>
-//             {data.allMarkdownRemark.edges.map(posted => (
-//               <li key={posted.node.frontmatter.id}>
-//                 {posted.node.frontmatter.date}
-//                 <br />
-//                 <PostItem to={posted.node.frontmatter.slug}>
-//                   {posted.node.frontmatter.title}
-//                 </PostItem>
-//               </li>
-//             ))}
-//           </PostsList>
-//         </BlogMenu>
-//       </MainContent>
-//     </Layout>
-//   )
-// }
+          <HelloMessage>
+            <blockquote>
+              “I have not failed. I've just found 10,000 ways that won't work.”
+              ― Thomas A. Edison
+            </blockquote>
+          </HelloMessage>
+          <PostsList>
+            {data.allMarkdownRemark.edges.map(posted => (
+              <li key={posted.node.frontmatter.id}>
+                {posted.node.frontmatter.date}
+                <br />
+                <PostItem to={posted.node.frontmatter.slug}>
+                  {posted.node.frontmatter.title}
+                </PostItem>
+              </li>
+            ))}
+          </PostsList>
+        </BlogMenu> */}
+      </MainContent>
+    </Layout>
+  )
+}
 
 // export const data = graphql`
 //   query BlogQuery {
@@ -186,6 +199,6 @@
 //         }
 //       }
 //     }
-//   }
+// }
 // `
-// export default BlogPage
+export default BlogPage
