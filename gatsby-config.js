@@ -1,3 +1,5 @@
+const { icons } = require("react-icons")
+
 module.exports = {
   siteMetadata: {
     title: `BERTA•MATU`,
@@ -21,6 +23,10 @@ module.exports = {
       {
         name: "BLOG",
         link: "/blog",
+      },
+      {
+        name: "LINKS",
+        link: "/links",
       },
       {
         name: "CONTACT",
@@ -67,11 +73,11 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-      },
+      // options: {
+      //   name: `gatsby-starter-default`,
+      //   short_name: `starter`,
+      //   start_url: `/`,
+      // },
     },
     {
       resolve: `gatsby-plugin-styled-components`,

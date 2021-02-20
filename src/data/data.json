@@ -1,0 +1,130 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "url": "http://www.bertamatu.com/",
+      "title": "Portfolio | About me",
+      "type": "personal"
+    },
+    {
+      "id": 2,
+      "url": "https://www.linkedin.com/in/bertam/",
+      "title": "LinkedIn",
+      "type": "personal"
+    },
+    {
+      "id": 3,
+      "url": "https://github.com/bertamatu/",
+      "title": "GitHub",
+      "type": "personal"
+    },
+    {
+      "id": 4,
+      "url": "https://miro.medium.com/max/2434/1*qan3U0peL-CSdtKaCwKohA.png",
+      "title": "Front-end developer",
+      "type": "roadmap"
+    },
+    {
+      "id": 5,
+      "url": "https://hackernoon.com/images/MQzhgEvAeOXyPo3IjFRz4IZU3K83-3k123yxw.jpg",
+      "title": "React Js developer",
+      "type": "roadmap"
+    },
+    {
+      "id": 6,
+      "url": "https://flaviocopes.com/vue-developer-roadmap/roadmap.svg",
+      "title": "Vue Js developer",
+      "type": "roadmap"
+    },
+    {
+      "id": 7,
+      "url": "https://res.cloudinary.com/practicaldev/image/fetch/s--4RIwaNsa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/am1x3w193daubmywq13d.jpg",
+      "title": "Full-stack developer",
+      "type": "roadmap"
+    },
+    {
+      "id": 8,
+      "url": "https://trends.google.com/trends/explore?cat=31&q=Vue%20jobs,React%20jobs,Angular%20jobs",
+      "title": "Google trends for JavaScript frameworks",
+      "type": "javascript"
+    },
+    {
+      "id": 6,
+      "url": "https://github.com/trekhleb/javascript-algorithms",
+      "title": "JS algorithms and data structures",
+      "type": "javascript"
+    },
+    {
+      "id": 7,
+      "url": "https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/amp/",
+      "title": "The Self-Taught Developer's Guide",
+      "type": "mustread"
+    },
+    {
+      "id": 8,
+      "url": "ttps://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site",
+      "title": "Publish your website on GITHUB",
+      "type": "mustread"
+    },
+    {
+      "id": 9,
+      "url": "https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/how-to-kickstart-a-career-in-tech/amp/",
+      "title": "TECH Career – A Step-by-Step Guide",
+      "type": "mustread"
+    },
+    {
+      "id": 10,
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "title": "Coding interview questions",
+      "type": "mustread"
+    },
+    {
+      "id": 11,
+      "url": "https://github.com/jlevy/the-art-of-command-line",
+      "title": "The art of the command line",
+      "type": "mustread"
+    },
+    {
+      "id": 12,
+      "url": "https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/amp/",
+      "title": "Learn web development in 2021!",
+      "type": "roadmaps"
+    },
+    {
+      "id": 13,
+      "url": "https://github.com/public-apis/public-apis",
+      "title": "FREE PUBLIC APIS",
+      "type": "mustread"
+    },
+    {
+      "id": 14,
+      "url": "https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/how-to-put-a-website-online-guide-to-website-creation-custom-domain-and-hosting/amp/",
+      "title": "How to Put a Website Online?",
+      "type": "mustread"
+    },
+    {
+      "id": 15,
+      "url": "https://www.freecodecamp.org/news/free-online-programming-cs-courses/",
+      "title": "700 Free Online Programming Courses",
+      "type": "mustread"
+    },
+    {
+      "id": 16,
+      "url": "https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/",
+      "title": "Wireframe: UX DESIGN tips.",
+      "type": "mustread"
+    },
+    {
+      "id": 17,
+      "url": "https://github.com/sindresorhus/awesome",
+      "title": "AWESOME github repo",
+      "type": "mustread"
+    },
+    {
+      "id": 18,
+      "url": "https://support.google.com/websearch/answer/134479?hl=en",
+      "title": "How to use GOOGLE?",
+      "type": "mustread"
+    }
+  ]
+}
