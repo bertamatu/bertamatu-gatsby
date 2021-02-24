@@ -125,6 +125,12 @@
       "url": "https://support.google.com/websearch/answer/134479?hl=en",
       "title": "How to use GOOGLE?",
       "type": "mustread"
+    },
+    {
+      "id": 19,
+      "url": "https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf",
+      "title": "Javascript Cheat Sheet - PDF",
+      "type": "javascript"
     }
   ]
 }
