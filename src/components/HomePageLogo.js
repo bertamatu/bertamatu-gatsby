@@ -12,7 +12,8 @@ const HomeLogo = styled.div`
 `
 
 const LogoText = styled.div`
-  background-image: url(https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif);
+  /* background-image: url(https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif); */
+  background-image: url(https://media.giphy.com/media/QTgb28iM3s9AFljDuz/giphy.gif);
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -27,7 +28,8 @@ const LogoText = styled.div`
   margin-top: 30vh;
   width: 100vw;
   align-items: center;
-
+  text-shadow: -6px 4px 6px rgb(0 0 0 / 64%),
+    4px -5px 10px rgb(255 255 255 / 8%);
   @media (max-width: 768px) {
     letter-spacing: -10px;
     font-size: 4rem;
