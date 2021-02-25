@@ -20,11 +20,11 @@ const LogoText = styled.div`
   background-clip: border-box;
   -moz-background-clip: text;
   -webkit-background-clip: text;
-  font-size: 10vw;
+  font-size: 11vw;
   line-height: 1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  letter-spacing: -25px;
+  /* letter-spacing: -25px; */
   margin-top: 30vh;
   width: 100vw;
   align-items: center;

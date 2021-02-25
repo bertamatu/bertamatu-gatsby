@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io"
 import { GrGatsbyjs } from "react-icons/gr"
-// import { SiTypescript } from "react-icons/Si"
+import { SiTypescript } from "react-icons/si"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomePageLogo from "../components/HomePageLogo"
@@ -91,7 +91,7 @@ const IndexPage = ({ data }) => (
         <FaReact />
         <GrGatsbyjs />
         <FaVuejs />
-        {/* <SiTypescript /> */}
+        <SiTypescript />
       </Icons>
       <Buttons>
         <Button href="/work" target="_blank">
