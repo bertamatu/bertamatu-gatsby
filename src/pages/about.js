@@ -70,7 +70,7 @@ const About = () => {
             choose it because of a decent salary and programming is not just one
             of my hobbies - it's my passion.
           </p>
-          <p>
+          <div>
             <b>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</b>
             <ul>
               <li>
@@ -79,7 +79,7 @@ const About = () => {
               <li>Eager to learn and open to new challenges;</li>
               <li>Having the potential to motivate and support others;</li>
             </ul>
-          </p>
+          </div>
           <p>
             I finished full-stack studies in a{" "}
             <Link
