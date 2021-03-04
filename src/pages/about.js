@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
-
 import { FaLinkedin } from "react-icons/fa"
 // import { GrGatsbyjs, GrMysql } from "react-icons/gr"
 // import { IoLogoJavascript } from "react-icons/io"
@@ -10,7 +9,6 @@ const AboutPage = styled.main`
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
-
   &:last-child {
     margin-bottom: 30px;
   }
@@ -24,7 +22,7 @@ const AboutText = styled.article`
   color: black;
   text-align: justify;
   @media (min-width: 768px) {
-    padding-top: 5rem;
+    padding-top: 15%;
     width: 55vw;
   }
 `
@@ -109,10 +107,10 @@ const About = () => {
           </p>
           <p>
             I got my first front-end developer job in 2020 August. Spent there 6
-            months working with Vue js and Scss.
+            months working with Vue Js.
             <br />
             In 2021 March I joined another company to get more experience in
-            React js, TypeScript, and Angular.
+            React Js and TypeScript.
             <br />
             <a
               href="https://www.linkedin.com/in/bertam/"
@@ -127,9 +125,9 @@ const About = () => {
             <FaCss3Alt />
             <FaSass />
             <FaBootstrap />
-            <IoLogoJavascript /> */}
-            {/* <FaReact /> */}
-            {/* <GrGatsbyjs />
+            <IoLogoJavascript />
+            <FaReact />
+            <GrGatsbyjs />
             <GrMysql />
             <FaGithub /> */}
           </Icons>
