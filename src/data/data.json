@@ -131,6 +131,12 @@
       "url": "https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf",
       "title": "Javascript Cheat Sheet - PDF",
       "type": "javascript"
+    },
+    {
+      "id": 20,
+      "url": "https://github.com/LeCoupa/awesome-cheatsheets",
+      "title": "Awesome cheatsheets (various)",
+      "type": "mustread"
     }
   ]
 }
