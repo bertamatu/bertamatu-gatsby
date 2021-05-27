@@ -61,6 +61,25 @@ const About = () => {
               <LinkedIn />
             </Link>
 
+            <div
+              class="LI-profile-badge"
+              data-version="v1"
+              data-size="medium"
+              data-locale="en_US"
+              data-type="horizontal"
+              data-theme="dark"
+              data-vanity="bertam"
+            >
+              <a
+                class="LI-simple-link"
+                href="https://lt.linkedin.com/in/bertam?trk=profile-badge"
+              >
+                Berta Matuliauskienė
+              </a>
+            </div>
+
+            
+
             <b>Hello, I'm Berta! Creative front-end developer.</b>
           </header>
           <hr />
@@ -120,6 +139,11 @@ const About = () => {
               More...
             </a>
           </p>
+          <img
+            src="https://www.codewars.com/users/emberta/badges/large"
+            alt="@berta.codes codewars"
+          />
+
           <Icons>
             {/* <FaHtml5 />
             <FaCss3Alt />

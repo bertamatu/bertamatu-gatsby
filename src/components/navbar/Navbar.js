@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "./Logo"
 import styled from "styled-components"
+import { FaInstagram } from "react-icons/fa"
 
 const Navigation = styled.nav`
   height: 7vh;
@@ -96,12 +97,31 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
+const Icons = styled.a`
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1rem;
+  position: absolute;
+  left: 10px;
+  top: 4px;
+`
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <Navigation>
       <Logo />
+      <Icons
+        href="https://instagram.com/berta.codes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagram />
+      </Icons>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
