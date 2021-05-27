@@ -10,7 +10,7 @@ const AboutPage = styled.main`
   height: 100vh;
   overflow-y: auto;
   &:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 `
 const AboutText = styled.article`
@@ -22,7 +22,6 @@ const AboutText = styled.article`
   color: black;
   text-align: justify;
   @media (min-width: 768px) {
-    padding-top: 15%;
     width: 55vw;
   }
 `
