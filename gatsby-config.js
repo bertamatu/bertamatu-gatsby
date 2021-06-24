@@ -2,8 +2,8 @@ const { icons } = require("react-icons")
 
 module.exports = {
   siteMetadata: {
-    title: `BERTA•MATU`,
-    titleTemplate: "%s · BERTA•MATU",
+    title: `BERTA.codes`,
+    titleTemplate: "BERTA.codes",
     description: `PORTFOLIO. Junior front-end developer.`,
     author: `@berta.codes`,
     url: "https://www.bertamatu.com",

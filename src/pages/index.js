@@ -81,7 +81,7 @@ const IndexPage = ({ data }) => (
       <Seo title="Home" />
       <HomePageLogo />
       <Name>BERTA MATULIAUSKIENE</Name>
-      <FrontEndDev>FRONT-END ENGINEER</FrontEndDev>
+      <FrontEndDev>FRONT-END SOFTWARE ENGINEER</FrontEndDev>
       <Icons>
         <FaHtml5 />
         <FaCss3Alt />

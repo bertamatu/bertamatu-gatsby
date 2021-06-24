@@ -23,7 +23,7 @@ const LogoDesign = styled(Link)`
 `
 
 const Logo = () => {
-  const newLocal = <LogoDesign to="/">BERTAMATU</LogoDesign>
+  const newLocal = <LogoDesign to="/">BERTA.codes</LogoDesign>
   return newLocal
 }
 
