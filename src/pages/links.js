@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import data from "../data/data.json"
+import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa"
 
 const links = data.links
 
@@ -33,12 +34,35 @@ const Links = data => (
   <Layout>
     <LinksContainer>
       <Picture
-        src="https://instagram.fkun1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/105393475_602659287047547_518076014624486901_n.jpg?_nc_ht=instagram.fkun1-1.fna.fbcdn.net&_nc_ohc=Kdc2Y_PKaF4AX-4cMvx&tp=1&oh=6e68416e93a2329d3f259082b0624ecc&oe=605BB32C"
-        alt="@berta.codes"
-      ></Picture>
-      <b>
-        <p>@berta.codes</p>
-      </b>
+        src="https://media-exp3.licdn.com/dms/image/C4D03AQFUOqhYxknbKg/profile-displayphoto-shrink_200_200/0/1614450288427?e=1629936000&v=beta&t=Xd1lT_VFD6aRiZPm-4i_olap-UEeSpVpS8pmKnro9XU"
+        alt=""
+      />
+      <span style={{ display: "flex" }}>
+        <Icon
+          href="https://instagram.com/berta.codes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagramSquare />
+        </Icon>
+
+        <Icon
+          href="https://www.linkedin.com/in/bertam/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </Icon>
+
+        <Icon
+          href="https://github.com/bertamatu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithubSquare />
+        </Icon>
+      </span>
+
       {personalLinks.map(link => {
         return (
           <LinkButton href={link.url} target="_blank" key={link.id}>
@@ -47,7 +71,7 @@ const Links = data => (
         )
       })}
 
-      <br></br>
+      <br />
       <SectionTitle>Developer roadmaps</SectionTitle>
       {roadmapsLinks.map(link => {
         return (
@@ -57,7 +81,7 @@ const Links = data => (
         )
       })}
 
-      <br></br>
+      <br />
       <SectionTitle>Javascript</SectionTitle>
       {javascriptLinks.map(link => {
         return (
@@ -67,7 +91,7 @@ const Links = data => (
         )
       })}
 
-      <br></br>
+      <br />
       <SectionTitle>must read</SectionTitle>
       {mustReadLinks.map(link => {
         return (
@@ -99,10 +123,21 @@ const LinksContainer = styled.section`
 const Picture = styled.img`
   border-radius: 50%;
   height: 120px;
+  margin-bottom: 10px;
 `
+
+const Icon = styled.a`
+  font-size: 30px;
+  margin-bottom: 14px;
+  font-weight: 900;
+  color: rgb(32 31 31 / 90%);
+  padding: 0 4px;
+`
+
 const SectionTitle = styled.b`
-  color: #000;
+  color: #ff2249;
   text-transform: uppercase;
+  font-size: 14px;
 `
 const LinkButton = styled.a`
   max-width: 400px;
@@ -120,6 +155,7 @@ const LinkButton = styled.a`
   transition: all 300ms ease-in-out;
 
   &:hover {
-    background: rgb(32 31 31 / 80%);
+    background: rgb(32 31 31 / 20%);
+    color: black;
   }
 `
