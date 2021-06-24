@@ -35,7 +35,10 @@
     "prettier": "^2.3.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "bertamatu",
+    "berta codes",
+    "berta.codes"
   ],
   "license": "MIT",
   "scripts": {
