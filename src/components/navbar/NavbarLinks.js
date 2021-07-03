@@ -2,6 +2,18 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+const NavbarLinks = () => {
+  return (
+    <>
+      <NavItem to="/about">ABOUT</NavItem>
+      <NavItem to="/work">WORK</NavItem>
+      <NavItem to="/blog">BLOG</NavItem>
+      <NavItem to="/links">LINKS</NavItem>
+      <NavItem to="/contact">CONTACT</NavItem>
+    </>
+  )
+}
+
 const NavItem = styled(Link)`
   text-decoration: none;
   color: white;
@@ -37,15 +49,5 @@ const NavItem = styled(Link)`
     z-index: 6;
   }
 `
-const NavbarLinks = () => {
-  return (
-    <>
-      <NavItem to="/about">ABOUT</NavItem>
-      <NavItem to="/work">WORK</NavItem>
-      <NavItem to="/blog">BLOG</NavItem>
-      <NavItem to="/links">LINKS</NavItem>
-      <NavItem to="/contact">CONTACT</NavItem>
-    </>
-  )
-}
+
 export default NavbarLinks

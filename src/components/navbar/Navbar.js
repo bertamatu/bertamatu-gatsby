@@ -2,7 +2,31 @@ import React, { useState } from "react"
 import NavbarLinks from "./NavbarLinks"
 import Logo from "./Logo"
 import styled from "styled-components"
-// import { FaInstagram } from "react-icons/fa"
+
+const Navbar = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+  return (
+    <Navigation>
+      <Logo />
+      <Toggle
+        navbarOpen={navbarOpen}
+        onClick={() => setNavbarOpen(!navbarOpen)}
+      >
+        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+      </Toggle>
+      {navbarOpen ? (
+        <Navbox>
+          <NavbarLinks />
+        </Navbox>
+      ) : (
+        <Navbox open>
+          <NavbarLinks />
+        </Navbox>
+      )}
+    </Navigation>
+  )
+}
 
 const Navigation = styled.nav`
   height: 7vh;
@@ -50,28 +74,20 @@ const Navbox = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 15vh;
-    background: #eb3349; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to left,
-      #f45c43,
-      #ea2e44
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to left,
-      #f45c43,
-      #ea2e44
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #eb3349;
+    background: -webkit-linear-gradient(to left, #f45c43, #ea2e44);
+    background: linear-gradient(to left, #f45c43, #ea2e44);
     transition: all 0.35s ease-in;
     top: 6vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
 const Hamburger = styled.div`
-  background-color: black;
+  background-color: red;
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
-  /* align-self: center; */
+  align-self: center;
   position: relative;
   align-self: center;
   margin-right: -3rem;
@@ -81,7 +97,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: red;
+    background-color: white;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -97,48 +113,5 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-// const Icons = styled.a`
-//   text-decoration: none;
-//   color: white;
-//   font-family: Verdana, Geneva, Tahoma, sans-serif;
-//   text-transform: uppercase;
-//   font-size: 1.2rem;
-//   padding: 1rem;
-//   position: absolute;
-//   left: 10px;
-//   top: 4px;
-// `
-
-const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false)
-
-  return (
-    <Navigation>
-      <Logo />
-      {/* <Icons
-        href="https://instagram.com/berta.codes"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaInstagram />
-      </Icons> */}
-      <Toggle
-        navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
-      >
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
-      </Toggle>
-      {navbarOpen ? (
-        <Navbox>
-          <NavbarLinks />
-        </Navbox>
-      ) : (
-        <Navbox open>
-          <NavbarLinks />
-        </Navbox>
-      )}
-    </Navigation>
-  )
-}
 
 export default Navbar

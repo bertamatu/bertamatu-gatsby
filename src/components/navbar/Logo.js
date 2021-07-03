@@ -2,29 +2,27 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+const Logo = () => {
+  return <LogoDesign to="/">BERTA.codes</LogoDesign>
+}
+
 const LogoDesign = styled(Link)`
   text-decoration: none;
   color: white;
-  font-size: 0.7rem;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 2px;
   align-self: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
+  font-family: -apple-system, Ubuntu, Cantarell, "Open Sans", sans-serif;
   :hover {
     color: #e0115f;
-    transition-duration: 0.9s;
+    transition-duration: 0.3s;
   }
   @media (max-width: 768px) {
     padding-left: 1.5rem;
-    font-size: 1rem;
-    font-weight: 250;
+    font-size: 12px;
+    font-weight: 400;
   }
 `
-
-const Logo = () => {
-  const newLocal = <LogoDesign to="/">BERTA.codes</LogoDesign>
-  return newLocal
-}
 
 export default Logo

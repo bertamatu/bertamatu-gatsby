@@ -2,49 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import { FaLinkedin } from "react-icons/fa"
-// import { GrGatsbyjs, GrMysql } from "react-icons/gr"
-// import { IoLogoJavascript } from "react-icons/io"
 
-const AboutPage = styled.main`
-  width: 100vw;
-  height: 100vh;
-  overflow-y: auto;
-  &:last-child {
-    margin-bottom: 10px;
-  }
-`
-const AboutText = styled.article`
-  margin: 0 auto;
-  font-size: 0.7rem;
-  padding: 4rem 2rem 3rem 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: black;
-  text-align: justify;
-  @media (min-width: 768px) {
-    width: 55vw;
-  }
-`
-const Icons = styled.p`
-  color: black;
-  color: rgba(0, 0, 0, 0.02);
-  @media (max-width: 768px) {
-    margin-top: -30rem;
-    margin-right: -10rem;
-    font-size: 30rem;
-    text-align: right;
-  }
-`
-const Link = styled.a`
-  text-decoration: none;
-  color: red;
-`
-const LinkedIn = styled(FaLinkedin)`
-  font-size: 3rem;
-  margin-bottom: -0.2rem;
-  margin-right: 1rem;
-  color: #0e76a8;
-`
 const About = () => {
   return (
     <AboutPage>
@@ -56,29 +14,8 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               <LinkedIn />
             </Link>
-
-            <div
-              class="LI-profile-badge"
-              data-version="v1"
-              data-size="medium"
-              data-locale="en_US"
-              data-type="horizontal"
-              data-theme="dark"
-              data-vanity="bertam"
-            >
-              <a
-                class="LI-simple-link"
-                href="https://lt.linkedin.com/in/bertam?trk=profile-badge"
-              >
-                Berta Matuliauskienė
-              </a>
-            </div>
-
-            
-
             <b>Hello, I'm Berta! Creative front-end developer.</b>
           </header>
           <hr />
@@ -138,26 +75,41 @@ const About = () => {
               More...
             </a>
           </p>
-          <img
-            src="https://www.codewars.com/users/emberta/badges/large"
-            alt="@berta.codes codewars"
-          />
-
-          <Icons>
-            {/* <FaHtml5 />
-            <FaCss3Alt />
-            <FaSass />
-            <FaBootstrap />
-            <IoLogoJavascript />
-            <FaReact />
-            <GrGatsbyjs />
-            <GrMysql />
-            <FaGithub /> */}
-          </Icons>
         </AboutText>
       </Layout>
     </AboutPage>
   )
 }
+
+const AboutPage = styled.main`
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  margin-top: 5%;
+  &:last-child {
+    margin-bottom: 10px;
+  }
+`
+const AboutText = styled.article`
+  margin: 80px auto;
+  font-size: 0.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  text-align: justify;
+  @media (min-width: 768px) {
+    width: 50vw;
+  }
+`
+const Link = styled.a`
+  text-decoration: none;
+  color: red;
+`
+const LinkedIn = styled(FaLinkedin)`
+  font-size: 3rem;
+  margin-bottom: -0.2rem;
+  margin-right: 1rem;
+  color: #0e76a8;
+`
 
 export default About

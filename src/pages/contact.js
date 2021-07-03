@@ -5,26 +5,15 @@ import styled from "styled-components"
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa"
 import contactGIF from "../images/gifs/gif_contact.webp"
 
-const ContactContainer = styled.section`
-  margin-top: 5%;
-  text-align: center;
-  overflow-y: hidden;
-  overflow-x: hidden;
-`
-const Icons = styled.a`
-  text-decoration: none;
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: uppercase;
-  font-size: 3rem;
-  padding: 1rem;
-`
-
 const Contact = ({ data }) => {
   return (
     <Layout>
       <ContactContainer>
-        <img src={contactGIF} alt="plain" style={{ height: 300 }} />
+        <img
+          src={contactGIF}
+          alt="plain"
+          style={{ height: 300, marginTop: 50 }}
+        />
         <h6>
           <code>Let's talk!</code>
         </h6>
@@ -54,5 +43,20 @@ const Contact = ({ data }) => {
     </Layout>
   )
 }
+
+const ContactContainer = styled.section`
+  margin-top: 5%;
+  text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+`
+const Icons = styled.a`
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 1rem;
+`
 
 export default Contact

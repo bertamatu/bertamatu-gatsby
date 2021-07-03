@@ -1,6 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
+const footer = () => {
+  return (
+    <Footer>
+      <FooterText>LESS IS MORE</FooterText>
+      <FooterDate>© {new Date().getFullYear()}</FooterDate>
+    </Footer>
+  )
+}
+
 const Footer = styled.footer`
   height: 4vh;
   color: white;
@@ -22,14 +31,5 @@ const FooterDate = styled.section`
   right: 3vw;
   color: black;
 `
-
-const footer = () => {
-  return (
-    <Footer>
-      <FooterText>LESS IS MORE</FooterText>
-      <FooterDate>© {new Date().getFullYear()}</FooterDate>
-    </Footer>
-  )
-}
 
 export default footer

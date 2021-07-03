@@ -7,13 +7,51 @@ import {
   FaSass,
   FaReact,
   FaVuejs,
+  FaDocker,
 } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io"
-import { GrGatsbyjs } from "react-icons/gr"
-import { SiTypescript, SiJest } from "react-icons/si"
+import { GrGatsbyjs, GrMysql } from "react-icons/gr"
+import { SiTypescript, SiJest, SiPostman } from "react-icons/si"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomePageLogo from "../components/HomePageLogo"
+
+const IndexPage = ({ data }) => (
+  <HomePage>
+    <Layout>
+      <Seo title="Home" />
+      <HomePageLogo />
+      <FrontEndDev>FRONT-END SOFTWARE ENGINEER</FrontEndDev>
+      <Icons>
+        <FaHtml5 />
+        <FaCss3Alt />
+        <FaSass />
+        <FaBootstrap />
+        <IoLogoJavascript />
+        <FaReact />
+        <GrGatsbyjs />
+        <FaVuejs />
+        <SiTypescript />
+        <SiJest />
+        <FaDocker />
+        <GrMysql />
+        <SiPostman />
+      </Icons>
+      <Buttons>
+        <Button href="/work" target="_blank">
+          see my projects
+        </Button>{" "}
+        <Button
+          href="https://www.linkedin.com/in/bertam/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          let's connect
+        </Button>
+      </Buttons>
+    </Layout>
+  </HomePage>
+)
 
 const HomePage = styled.section`
   height: 100vh;
@@ -33,15 +71,17 @@ const FrontEndDev = styled.p`
   text-align: center;
   margin: 0;
   padding-bottom: 1rem;
+  color: white;
 `
 const Icons = styled.p`
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
   margin: 0;
   margin-top: -0.5rem;
-  padding-bottom: 0.5rem;
   text-align: center;
-  /* color: rgba(0, 0, 0, 1); */
+  @media (max-width: 768px) {
+    font-size: 22px;
+    margin-top: -16px;
+  }
 `
 const Buttons = styled.div`
   text-align: center;
@@ -49,6 +89,7 @@ const Buttons = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 `
 const Button = styled.a`
   text-decoration: none;
@@ -63,50 +104,4 @@ const Button = styled.a`
   border: 0.2px dotted white;
   margin-bottom: 0.5rem;
 `
-const Name = styled.p`
-  font-weight: 400;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8rem;
-  /* letter-spacing: 0.5rem; */
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-`
-
-const IndexPage = ({ data }) => (
-  <HomePage>
-    <Layout>
-      <Seo title="Home" />
-      <HomePageLogo />
-      <Name>BERTA MATULIAUSKIENE</Name>
-      <FrontEndDev>FRONT-END SOFTWARE ENGINEER</FrontEndDev>
-      <Icons>
-        <FaHtml5 />
-        <FaCss3Alt />
-        <FaSass />
-        <FaBootstrap />
-        <IoLogoJavascript />
-        <FaReact />
-        <GrGatsbyjs />
-        <FaVuejs />
-        <SiTypescript />
-        <SiJest />
-      </Icons>
-      <Buttons>
-        <Button href="/work" target="_blank">
-          see my projects
-        </Button>{" "}
-        <Button
-          href="https://www.linkedin.com/in/bertam/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          let's connect
-        </Button>
-      </Buttons>
-    </Layout>
-  </HomePage>
-)
 export default IndexPage

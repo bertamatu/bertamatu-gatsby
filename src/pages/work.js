@@ -6,79 +6,6 @@ import { GoLogoGithub } from "react-icons/go"
 import workGIF from "../images/gifs/giphy_work.gif"
 import Img from "gatsby-image"
 
-const WorkPage = styled(Layout)`
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`
-const ItemContainer = styled.section`
-  width: 80vw;
-  height: auto;
-  margin-top: 10vh;
-  text-align: center;
-  border: 1px dotted gray;
-  border-radius: 5px;
-  @media (min-width: 768px) {
-    width: 20vw;
-    margin: 10vh 0.5rem 1rem 0.5rem;
-  }
-`
-const GithubLink = styled.a`
-  text-decoration: none;
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: uppercase;
-  cursor: pointer;
-`
-const Projects = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`
-const ProjectData = styled.section`
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-`
-const DeploymentLink = styled.a`
-  padding: 0.2rem;
-  text-decoration: none;
-  border-radius: 3px;
-  color: white;
-  background: red;
-  font-size: 0.65rem;
-`
-const GithubLinkProject = styled.a`
-  padding: 0.2rem;
-  text-decoration: none;
-  border-radius: 3px;
-  color: white;
-  background: black;
-  font-size: 0.65rem;
-`
-const ProjectImage = styled(Img)`
-  margin: 0 auto;
-  border-radius: 50px 0 50px 0;
-  margin-top: 1rem;
-  border: 3px white solid;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
-`
-const ReadMore = styled(Link)`
-  font-size: 0.7rem;
-  color: red;
-  text-decoration: none;
-`
 const Work = ({ data }) => {
   return (
     <WorkPage>
@@ -172,4 +99,79 @@ export const data = graphql`
     }
   }
 `
+
+const WorkPage = styled(Layout)`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`
+const ItemContainer = styled.section`
+  width: 80vw;
+  height: auto;
+  margin-top: 10vh;
+  text-align: center;
+  border: 1px dotted gray;
+  border-radius: 5px;
+  @media (min-width: 768px) {
+    width: 20vw;
+    margin: 10vh 0.5rem 1rem 0.5rem;
+  }
+`
+const GithubLink = styled.a`
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+`
+const Projects = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+`
+const ProjectData = styled.section`
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+`
+const DeploymentLink = styled.a`
+  padding: 0.2rem;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  background: red;
+  font-size: 0.65rem;
+`
+const GithubLinkProject = styled.a`
+  padding: 0.2rem;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  background: black;
+  font-size: 0.65rem;
+`
+const ProjectImage = styled(Img)`
+  margin: 0 auto;
+  border-radius: 50px 0 50px 0;
+  margin-top: 1rem;
+  border: 3px white solid;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
+`
+const ReadMore = styled(Link)`
+  font-size: 0.7rem;
+  color: red;
+  text-decoration: none;
+`
+
 export default Work

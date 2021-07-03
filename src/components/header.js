@@ -1,4 +1,3 @@
-// import { Link } from "gatsby"
 import React from "react"
 import Navbar from "../components/navbar/Navbar"
 import styled from "styled-components"
