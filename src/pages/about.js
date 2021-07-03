@@ -97,8 +97,9 @@ const AboutText = styled.article`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
   text-align: justify;
+  padding: 0 50px;
   @media (min-width: 768px) {
-    width: 50vw;
+    width: 55vw;
   }
 `
 const Link = styled.a`
