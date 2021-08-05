@@ -34,7 +34,7 @@ const Links = data => (
   <Layout>
     <LinksContainer>
       <Picture
-        src="https://media-exp3.licdn.com/dms/image/C4D03AQFUOqhYxknbKg/profile-displayphoto-shrink_200_200/0/1614450288427?e=1629936000&v=beta&t=Xd1lT_VFD6aRiZPm-4i_olap-UEeSpVpS8pmKnro9XU"
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQEmsTvDwR8KkQ/profile-displayphoto-shrink_200_200/0/1627401103521?e=1633564800&v=beta&t=4uc6ez06ORJ7zp3uiRNA9JAHmsnk4ymk_TXV2gL3FZI"
         alt=""
       />
       <span style={{ display: "flex" }}>

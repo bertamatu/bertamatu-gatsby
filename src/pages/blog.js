@@ -3,17 +3,110 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 // import Img from "gatsby-image"
+import Posts from "react-ig-feed"
+import "react-ig-feed/dist/index.css"
 
 import styled from "styled-components"
 
+const BlogPage = () => {
+  return (
+    <Layout>
+      <MainContent>
+        <Posts token={process.env.GATSBY_POSTS} counter="24" />
+        {/* <Article>
+          {data.allMarkdownRemark.edges.map(post => (
+            <Post key={post.node.frontmatter.id}> */}
+        {/* <Link to={post.node.frontmatter.slug}> */}{" "}
+        {/* <section>
+                <Image
+                  fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
+                  alt="developers-setup"
+                ></Image>
+              </section>
+              <section>
+                <Title>{post.node.frontmatter.title}</Title>
+                <ByDate>
+                  {post.node.frontmatter.date} <span> Posted by</span>
+                  {post.node.frontmatter.author}
+                </ByDate>
+                <Intro>{post.node.frontmatter.intro}</Intro>
+                <ReadMore to={post.node.frontmatter.slug}>
+                  {" "}
+                  Read more...
+                </ReadMore>
+                <hr />
+              </section> */}
+        {/* </Link> */}
+        {/* </Post>
+          ))}
+        </Article>
+        <BlogMenu>
+          <h5>
+            HELLO! <small>/həˈləʊ,hɛˈləʊ/</small>
+          </h5>
+
+          <HelloMessage>
+            <blockquote>
+              “I have not failed. I've just found 10,000 ways that won't work.”
+              ― Thomas A. Edison
+            </blockquote>
+          </HelloMessage>
+          <PostsList>
+            {data.allMarkdownRemark.edges.map(posted => (
+              <li key={posted.node.frontmatter.id}>
+                {posted.node.frontmatter.date}
+                <br />
+                <PostItem to={posted.node.frontmatter.slug}>
+                  {posted.node.frontmatter.title}
+                </PostItem>
+              </li>
+            ))}
+          </PostsList>
+        </BlogMenu> */}
+      </MainContent>
+    </Layout>
+  )
+}
+
+export const data = graphql`
+  query BlogQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "post" } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            author
+            date
+            slug
+            title
+            intro
+            postImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+export default BlogPage
+
 const MainContent = styled.main`
-  display: flex;
-  /* position: absolute; */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
   height: 100vh;
   width: 100vw;
+  position: absolute;
+  top: 7vh;
 `
 // const Article = styled.article`
 //   width: 70vw;
@@ -104,101 +197,3 @@ const MainContent = styled.main`
 //   color: black;
 //   text-decoration: none;
 // `
-
-const BlogPage = () => {
-  return (
-    <Layout>
-      <MainContent>
-        <div>Sorry for the dust! My blog is under construction...</div>
-        <div>In the meantime, check out my Instagram.</div>
-        <a
-          href="https://www.instagram.com/berta.codes/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          @berta.codes
-        </a>
-        {/* <Article>
-          {data.allMarkdownRemark.edges.map(post => (
-            <Post key={post.node.frontmatter.id}> */}
-        {/* <Link to={post.node.frontmatter.slug}> */}{" "}
-        {/* <section>
-                <Image
-                  fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
-                  alt="developers-setup"
-                ></Image>
-              </section>
-              <section>
-                <Title>{post.node.frontmatter.title}</Title>
-                <ByDate>
-                  {post.node.frontmatter.date} <span> Posted by</span>
-                  {post.node.frontmatter.author}
-                </ByDate>
-                <Intro>{post.node.frontmatter.intro}</Intro>
-                <ReadMore to={post.node.frontmatter.slug}>
-                  {" "}
-                  Read more...
-                </ReadMore>
-                <hr />
-              </section> */}
-        {/* </Link> */}
-        {/* </Post>
-          ))}
-        </Article>
-        <BlogMenu>
-          <h5>
-            HELLO! <small>/həˈləʊ,hɛˈləʊ/</small>
-          </h5>
-
-          <HelloMessage>
-            <blockquote>
-              “I have not failed. I've just found 10,000 ways that won't work.”
-              ― Thomas A. Edison
-            </blockquote>
-          </HelloMessage>
-          <PostsList>
-            {data.allMarkdownRemark.edges.map(posted => (
-              <li key={posted.node.frontmatter.id}>
-                {posted.node.frontmatter.date}
-                <br />
-                <PostItem to={posted.node.frontmatter.slug}>
-                  {posted.node.frontmatter.title}
-                </PostItem>
-              </li>
-            ))}
-          </PostsList>
-        </BlogMenu> */}
-      </MainContent>
-    </Layout>
-  )
-}
-
-export const data = graphql`
-  query BlogQuery {
-    allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            author
-            date
-            slug
-            title
-            intro
-            postImage {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
-export default BlogPage

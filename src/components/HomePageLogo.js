@@ -39,7 +39,7 @@ const LogoText = styled.div`
     4px -5px 10px rgb(255 255 255 / 8%);
   @media (max-width: 768px) {
     letter-spacing: -10px;
-    font-size: 8rem;
+    font-size: 6rem;
     background-size: 90%;
   }
 `
