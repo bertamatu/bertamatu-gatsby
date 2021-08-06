@@ -21,26 +21,28 @@ const IndexPage = ({ data }) => (
     <Layout>
       <Seo title="Home" />
       <HomePageLogo />
-      <FrontEndDev>FRONT-END SOFTWARE ENGINEER</FrontEndDev>
-      <Icons>
-        <FaHtml5 />
-        <FaCss3Alt />
-        <FaSass />
-        <FaBootstrap />
-        <IoLogoJavascript />
-        <FaReact />
-        <GrGatsbyjs />
-        <FaVuejs />
-        <SiTypescript />
-        <SiJest />
-        <FaDocker />
-        <GrMysql />
-        <SiPostman />
-      </Icons>
+      <FrontEndDev>
+        self-taught front-end software engineer
+        <br />
+        <Icons>
+          <FaHtml5 />
+          <FaCss3Alt />
+          <FaSass />
+          <FaBootstrap />
+          <IoLogoJavascript />
+          <FaReact />
+          <GrGatsbyjs />
+          <FaVuejs />
+          <SiTypescript />
+          <SiJest />
+          <FaDocker />
+          <GrMysql />
+          <SiPostman />
+        </Icons>
+        <br />
+        <strong>zero to mastery</strong>
+      </FrontEndDev>
       <Buttons>
-        <Button href="/work" target="_blank">
-          see my projects
-        </Button>{" "}
         <Button
           href="https://www.linkedin.com/in/bertam/"
           target="_blank"
@@ -65,7 +67,7 @@ const FrontEndDev = styled.p`
   font-weight: 300;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -74,13 +76,13 @@ const FrontEndDev = styled.p`
   color: white;
 `
 const Icons = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
-  margin-top: -0.5rem;
+  margin-top: 0.5rem;
   text-align: center;
   @media (max-width: 768px) {
     font-size: 22px;
-    margin-top: -16px;
+    margin-top: 16px;
   }
 `
 const Buttons = styled.div`
@@ -89,7 +91,6 @@ const Buttons = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 `
 const Button = styled.a`
   text-decoration: none;
