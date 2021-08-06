@@ -6,7 +6,7 @@ const NavbarLinks = () => {
   return (
     <>
       <NavItem to="/about">ABOUT</NavItem>
-      <NavItem to="/work">WORK</NavItem>
+      <NavItem to="/projects">PROJECTS</NavItem>
       <NavItem to="/blog">BLOG</NavItem>
       <NavItem to="/links">LINKS</NavItem>
       <NavItem to="/contact">CONTACT</NavItem>
