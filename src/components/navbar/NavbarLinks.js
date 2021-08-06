@@ -7,6 +7,7 @@ const NavbarLinks = () => {
     <>
       <NavItem to="/about">ABOUT</NavItem>
       <NavItem to="/projects">PROJECTS</NavItem>
+      <NavItem to="/gallery">GALLERY</NavItem>
       <NavItem to="/blog">BLOG</NavItem>
       <NavItem to="/links">LINKS</NavItem>
       <NavItem to="/contact">CONTACT</NavItem>

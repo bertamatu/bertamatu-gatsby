@@ -3,16 +3,18 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 // import Img from "gatsby-image"
-import Posts from "react-ig-feed"
-import "react-ig-feed/dist/index.css"
-
 import styled from "styled-components"
 
 const BlogPage = () => {
   return (
     <Layout>
       <MainContent>
-        <Posts token={process.env.GATSBY_POSTS} counter="24" />
+        <h4>UNDER CONSTRUCTION</h4>
+        <img
+          src={"https://media.giphy.com/media/5xtDarBFszThqQF1o6A/giphy.gif"}
+          alt="work"
+          style={{ borderRadius: "50%" }}
+        />
         {/* <Article>
           {data.allMarkdownRemark.edges.map(post => (
             <Post key={post.node.frontmatter.id}> */}
@@ -99,15 +101,14 @@ export const data = graphql`
 export default BlogPage
 
 const MainContent = styled.main`
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 7vh;
-  z-index: -1;
 `
 // const Article = styled.article`
 //   width: 70vw;
