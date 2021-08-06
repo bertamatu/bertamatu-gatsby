@@ -107,6 +107,7 @@ const MainContent = styled.main`
   width: 100vw;
   position: absolute;
   top: 7vh;
+  z-index: -1;
 `
 // const Article = styled.article`
 //   width: 70vw;

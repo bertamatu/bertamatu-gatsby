@@ -1,5 +1,9 @@
 const { icons } = require("react-icons")
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `BERTA.codes`,
@@ -38,7 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-161952248-1",
+        trackingId: process.env.GATSBY_G_A,
         head: true,
         anonymize: true,
         respectDNT: true,

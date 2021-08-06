@@ -16,7 +16,7 @@ const About = () => {
             >
               <LinkedIn />
             </Link>
-            <b>Hello, I'm Berta! Creative front-end developer.</b>
+            <b>Hello, I'm Berta! Creative front-end engineer.</b>
           </header>
           <hr />
           <p>
@@ -65,7 +65,7 @@ const About = () => {
             months working with Vue Js.
             <br />
             In 2021 March I joined another company to get more experience in
-            React Js and TypeScript.
+            React Js, TypeScript and front-end testing.
             <br />
             <a
               href="https://www.linkedin.com/in/bertam/"
