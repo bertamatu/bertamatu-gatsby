@@ -8,13 +8,13 @@
     "@types/node": "^16.4.13",
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
-    "acorn": "^8.4.0",
-    "babel-plugin-styled-components": "^1.10.7",
-    "core-js": "^3.15.1",
+    "acorn": "^8.4.1",
+    "babel-plugin-styled-components": "^1.13.2",
+    "core-js": "^3.16.0",
     "gatsby": "^3.11.0",
     "gatsby-background-image": "^1.5.3",
-    "gatsby-image": "^3.8.0",
-    "gatsby-plugin-catch-links": "^3.8.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-catch-links": "^3.11.0",
     "gatsby-plugin-google-analytics": "^3.8.0",
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-offline": "^4.8.0",
@@ -38,7 +38,7 @@
     "sharp": "0.24.0"
   },
   "devDependencies": {
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.2"
   },
   "keywords": [
     "gatsby",
