@@ -1,4 +1,4 @@
-const { icons } = require("react-icons")
+require("react-icons")
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -79,14 +79,18 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-default`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `berta.codes`,
+        short_name: `berta.codes`,
+        description: `berta.codes portfolio website does cool things and makes your life better.`,
+        lang: `en`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: `src/images/gifs/giphy_work.gif`,
+      },
+    },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
