@@ -1,25 +1,27 @@
-import React from "react"
-import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import React from 'react';
+import Layout from '../components/layout';
+import { graphql } from 'gatsby';
 // import { Link } from "gatsby"
 // import Img from "gatsby-image"
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const BlogPage = () => {
-  return (
-    <Layout>
-      <MainContent>
-        <h4>UNDER CONSTRUCTION</h4>
-        <img
-          src={"https://media.giphy.com/media/5xtDarBgiWHop6BYK1q/giphy.gif"}
-          alt="work"
-          style={{ borderRadius: "50%" }}
-        />
-        {/* <Article>
+    return (
+        <Layout>
+            <MainContent>
+                <h4>UNDER CONSTRUCTION</h4>
+                <img
+                    src={
+                        'https://media.giphy.com/media/5xtDarBgiWHop6BYK1q/giphy.gif'
+                    }
+                    alt="work"
+                    style={{ borderRadius: '50%' }}
+                />
+                {/* <Article>
           {data.allMarkdownRemark.edges.map(post => (
             <Post key={post.node.frontmatter.id}> */}
-        {/* <Link to={post.node.frontmatter.slug}> */}{" "}
-        {/* <section>
+                {/* <Link to={post.node.frontmatter.slug}> */}{' '}
+                {/* <section>
                 <Image
                   fluid={post.node.frontmatter.postImage.childImageSharp.fluid}
                   alt="developers-setup"
@@ -38,8 +40,8 @@ const BlogPage = () => {
                 </ReadMore>
                 <hr />
               </section> */}
-        {/* </Link> */}
-        {/* </Post>
+                {/* </Link> */}
+                {/* </Post>
           ))}
         </Article>
         <BlogMenu>
@@ -65,51 +67,51 @@ const BlogPage = () => {
             ))}
           </PostsList>
         </BlogMenu> */}
-      </MainContent>
-    </Layout>
-  )
-}
+            </MainContent>
+        </Layout>
+    );
+};
 
 export const data = graphql`
-  query BlogQuery {
-    allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            author
-            date
-            slug
-            title
-            intro
-            postImage {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
+    query BlogQuery {
+        allMarkdownRemark(
+            filter: { frontmatter: { type: { eq: "post" } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+        ) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        author
+                        date
+                        slug
+                        title
+                        intro
+                        postImage {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
     }
-  }
-`
-export default BlogPage
+`;
+export default BlogPage;
 
 const MainContent = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 7vh;
-`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 7vh;
+`;
 // const Article = styled.article`
 //   width: 70vw;
 //   display: flex;
