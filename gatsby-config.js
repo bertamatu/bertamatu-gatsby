@@ -21,8 +21,12 @@ module.exports = {
         link: "/about",
       },
       {
-        name: "WORK",
-        link: "/work",
+        name: "PROJECTS",
+        link: "/projects",
+      },
+      {
+        name: "GALLERY",
+        link: "/gallery",
       },
       {
         name: "BLOG",
@@ -85,8 +89,14 @@ module.exports = {
     // },
     {
       resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-plugin-typescript`,
       options: {
-        // Add any options here
+        isTSX: true,
+        jsxPragma: `jsx`,
+        allExtensions: true,
       },
     },
   ],
