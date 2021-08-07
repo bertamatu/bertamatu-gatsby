@@ -59,9 +59,6 @@ const HomePage = styled.section`
   height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
-  background: #eb3349;
-  background: -webkit-linear-gradient(to left, #f45c43, #ea2e44);
-  background: linear-gradient(to left, #f45c43, #ea2e44);
 `
 const FrontEndDev = styled.p`
   font-weight: 300;
@@ -73,7 +70,7 @@ const FrontEndDev = styled.p`
   text-align: center;
   margin: 0;
   padding-bottom: 1rem;
-  color: white;
+  color: black;
 `
 const Icons = styled.p`
   font-size: 20px;

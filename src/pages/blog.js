@@ -11,7 +11,7 @@ const BlogPage = () => {
       <MainContent>
         <h4>UNDER CONSTRUCTION</h4>
         <img
-          src={"https://media.giphy.com/media/5xtDarBFszThqQF1o6A/giphy.gif"}
+          src={"https://media.giphy.com/media/5xtDarBgiWHop6BYK1q/giphy.gif"}
           alt="work"
           style={{ borderRadius: "50%" }}
         />
