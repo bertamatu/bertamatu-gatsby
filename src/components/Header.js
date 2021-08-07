@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/navbar/Navbar';
+import Navbar from './navbar/Navbar';
 import styled from 'styled-components';
 
 const HeaderStyle = styled.header`

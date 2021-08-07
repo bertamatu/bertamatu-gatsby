@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Footer from '../components/footer';
+import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import contactGIF from '../images/gifs/gif_contact.webp';
+import contactGIF from '../data/images/gifs/gif_contact.webp';
 
 const Contact = ({ data }) => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { TiArrowBack } from 'react-icons/ti';
 // import { GoPerson, GoCalendar } from "react-icons/go"

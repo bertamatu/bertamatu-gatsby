@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Posts from 'react-ig-feed';
 import 'react-ig-feed/dist/index.css';
 import styled from 'styled-components';

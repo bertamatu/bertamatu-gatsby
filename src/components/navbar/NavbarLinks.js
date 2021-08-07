@@ -5,12 +5,12 @@ import styled from 'styled-components';
 const NavbarLinks = () => {
     return (
         <>
-            <NavItem to="/about">ABOUT</NavItem>
-            <NavItem to="/projects">PROJECTS</NavItem>
-            <NavItem to="/gallery">GALLERY</NavItem>
-            <NavItem to="/blog">BLOG</NavItem>
-            <NavItem to="/links">LINKS</NavItem>
-            <NavItem to="/contact">CONTACT</NavItem>
+            <NavItem to="/About">ABOUT</NavItem>
+            <NavItem to="/Projects">PROJECTS</NavItem>
+            <NavItem to="/Gallery">GALLERY</NavItem>
+            <NavItem to="/Blog">BLOG</NavItem>
+            <NavItem to="/Links">LINKS</NavItem>
+            <NavItem to="/Contact">CONTACT</NavItem>
         </>
     );
 };

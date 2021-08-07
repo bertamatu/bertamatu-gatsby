@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { GoLogoGithub } from 'react-icons/go';
-import workGIF from '../images/gifs/giphy_work.gif';
+import workGIF from '../data/images/gifs/giphy_work.gif';
 import Img from 'gatsby-image';
 
 const Work = ({ data }) => {

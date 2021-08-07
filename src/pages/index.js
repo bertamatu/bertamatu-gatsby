@@ -12,8 +12,8 @@ import {
 import { IoLogoJavascript } from 'react-icons/io';
 import { GrGatsbyjs, GrMysql } from 'react-icons/gr';
 import { SiTypescript, SiJest, SiPostman } from 'react-icons/si';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
 import HomePageLogo from '../components/HomePageLogo';
 
 const IndexPage = ({ data }) => (

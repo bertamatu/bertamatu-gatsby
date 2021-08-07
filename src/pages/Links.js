@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import styled from 'styled-components';
 import data from '../data/data.json';
 import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
