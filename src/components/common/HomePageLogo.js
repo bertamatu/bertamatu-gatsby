@@ -20,18 +20,18 @@ const HomeLogo = styled.div`
 `;
 
 const LogoText = styled.div`
-    background-image: url(https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif);
+    /* background-image: url('https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif'); */
+    background-image: url('https://media.giphy.com/media/l0MYtKkFdVsaRN4J2/giphy.gif');
     background-size: 33%;
     background-position: center;
     color: transparent;
     background-clip: border-box;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Yeseva One';
     font-size: 182px;
     line-height: 1;
-    font-weight: 900;
-    font-family: sans-serif;
-    letter-spacing: -16px;
+    letter-spacing: -10px;
     margin-top: 10vh;
     width: 100vw;
     align-items: center;

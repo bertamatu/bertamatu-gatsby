@@ -40,14 +40,6 @@ const BlogPage = ({ data }) => {
     return (
         <Layout>
             <MainContent>
-                {/* <h4>UNDER CONSTRUCTION</h4>
-                <img
-                    src={
-                        'https://media.giphy.com/media/5xtDarBgiWHop6BYK1q/giphy.gif'
-                    }
-                    alt="work"
-                    style={{ borderRadius: '50%' }}
-                /> */}
                 <Article>
                     {data.allMarkdownRemark.edges.map(post => (
                         <Post key={post.node.frontmatter.id}>

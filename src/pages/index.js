@@ -41,6 +41,18 @@ const IndexPage = ({ data }) => (
                 <strong>zero to mastery</strong>
             </FrontEndDev>
         </Layout>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img
+                src={
+                    'https://media.giphy.com/media/5xtDarBgiWHop6BYK1q/giphy.gif'
+                }
+                alt="work"
+                style={{
+                    borderRadius: '50%',
+                    height: '80px',
+                }}
+            />
+        </div>
     </HomePage>
 );
 
