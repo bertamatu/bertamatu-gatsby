@@ -2,12 +2,13 @@ import React from 'react';
 import Navbar from './navbar/Navbar';
 import styled from 'styled-components';
 import ConnectButton from './buttons/Connect';
-// import Logo from './navbar/Logo';
+import SocialIcons from './buttons/SocialIcons';
+import Logo from './common/Logo';
 
 const HeaderStyle = styled.header`
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     height: 200px;
     position: fixed;
@@ -16,19 +17,22 @@ const HeaderStyle = styled.header`
 
 const HeaderItems = styled.section`
     display: flex;
+    flex-direction: row;
+    justify-content: space-space-around;
     position: absolute;
-    top: 35%;
-    width: 100%;
-    margin: 0 20px;
+    top: 2.5vh;
+    width: calc(100% - 30px);
+    padding: 30px;
 `;
 
 const Header = () => (
     <HeaderStyle>
-        <Navbar />
         <HeaderItems>
             <ConnectButton />
-            {/* <Logo /> */}
+            <Logo />
+            <SocialIcons />
         </HeaderItems>
+        <Navbar />
     </HeaderStyle>
 );
 

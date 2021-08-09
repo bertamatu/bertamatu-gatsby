@@ -9,6 +9,7 @@ const Logo = () => {
 const LogoDesign = styled(Link)`
     text-decoration: none;
     color: #000;
+    margin: 0 auto;
     font-size: 16px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -18,7 +19,6 @@ const LogoDesign = styled(Link)`
         transition: 0.3s ease-in-out;
     }
     @media (max-width: 768px) {
-        padding-left: 1.5rem;
         font-size: 12px;
         font-weight: 400;
     }
