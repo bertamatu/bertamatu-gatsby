@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const NavbarLinks = () => {
     return (
         <>
+            <NavItem to="/">HOME</NavItem>
             <NavItem to="/About">ABOUT</NavItem>
             <NavItem to="/Projects">PROJECTS</NavItem>
             <NavItem to="/Gallery">GALLERY</NavItem>
@@ -17,16 +18,15 @@ const NavbarLinks = () => {
 
 const NavItem = styled(Link)`
     text-decoration: none;
-    color: white;
+    color: #fff;
     display: inline-block;
     white-space: nowrap;
-    margin: 0 1vw;
+    margin: 1vw 1vw;
     transition: all 200ms ease-in;
     position: relative;
     font-size: 0.7rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     :after {
         position: absolute;
         bottom: 0;
@@ -48,6 +48,7 @@ const NavItem = styled(Link)`
         padding: 20px 0;
         font-size: 4rem;
         z-index: 6;
+        color: #000;
     }
 `;
 

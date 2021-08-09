@@ -32,7 +32,7 @@ const LogoText = styled.div`
     font-weight: 900;
     font-family: sans-serif;
     letter-spacing: -16px;
-    margin-top: 30vh;
+    margin-top: 10vh;
     width: 100vw;
     align-items: center;
     text-shadow: -6px 4px 6px rgb(0 0 0 / 64%),

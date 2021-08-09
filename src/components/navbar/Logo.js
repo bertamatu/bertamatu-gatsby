@@ -3,20 +3,23 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Logo = () => {
-    return <LogoDesign to="/">BERTA.codes</LogoDesign>;
+    return <LogoDesign to="/">@berta.codes</LogoDesign>;
 };
 
 const LogoDesign = styled(Link)`
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    left: 45%;
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 2px;
-    align-self: center;
     font-family: -apple-system, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     :hover {
-        color: #e0115f;
-        transition-duration: 0.3s;
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
     }
     @media (max-width: 768px) {
         padding-left: 1.5rem;

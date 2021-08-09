@@ -56,7 +56,6 @@ const IndexPage = ({ data }) => (
 );
 
 const HomePage = styled.section`
-    height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
 `;

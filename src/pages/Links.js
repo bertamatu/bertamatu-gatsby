@@ -107,10 +107,9 @@ const Links = data => (
 export default Links;
 
 const LinksContainer = styled.section`
-    height: 100vh;
     max-width: 400px;
     width: 100%;
-    padding-top: 76px;
+    padding-top: 88px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,7 +121,7 @@ const LinksContainer = styled.section`
 `;
 const Picture = styled.img`
     border-radius: 50%;
-    height: 120px;
+    height: 160px;
     margin-bottom: 10px;
 `;
 

@@ -5,10 +5,10 @@ import 'react-ig-feed/dist/index.css';
 import styled from 'styled-components';
 
 const MainContent = styled.main`
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     position: absolute;
-    top: 7vh;
+    top: 29%;
     z-index: -1;
 `;
 

@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { TiArrowBack } from 'react-icons/ti';
-// import { GoPerson, GoCalendar } from "react-icons/go"
+import { GoPerson, GoCalendar } from 'react-icons/go';
 import Img from 'gatsby-image';
 
 export default function BlogTemplate({ data }) {
@@ -24,8 +24,9 @@ export default function BlogTemplate({ data }) {
                 <Title>{frontmatter.title}</Title>
                 <section>
                     <DateBy>
-                        {/* <GoCalendar /> */}-{frontmatter.date}-
-                        {/* <GoPerson />  */}
+                        <GoCalendar />-{frontmatter.date}
+                        <br />
+                        <GoPerson />
                         <a
                             href="https://www.instagram.com/berta.codes/"
                             rel="noopener noreferrer"
@@ -55,6 +56,7 @@ export const pageQuery = graphql`
                 author
                 slug
                 title
+                date
                 postImage {
                     childImageSharp {
                         fluid {

@@ -90,12 +90,8 @@ const About = () => {
 
 const AboutPage = styled.main`
     width: 100vw;
-    height: 100vh;
     overflow-y: auto;
-    margin-top: 5%;
-    &:last-child {
-        margin-bottom: 10px;
-    }
+    margin-top: 6%;
 `;
 const AboutText = styled.article`
     margin: 80px auto;
