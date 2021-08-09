@@ -5,6 +5,49 @@ import styled from 'styled-components';
 import { TiArrowBack } from 'react-icons/ti';
 import Img from 'gatsby-image';
 
+export const query = graphql`
+    query ($slug: String!) {
+        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+            html
+            frontmatter {
+                slug
+                title
+                author
+                deploymentLink
+                githubLink
+                postImage {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;
+
+export default function ProjectTemplate({ data }) {
+    const { markdownRemark } = data;
+    const { frontmatter, html } = markdownRemark;
+    return (
+        <Container>
+            <Image
+                fluid={frontmatter.postImage.childImageSharp.fluid}
+                alt={frontmatter.postImageAlt}
+            ></Image>
+            <br />
+            <h5>{frontmatter.title}</h5>
+            <p>{frontmatter.author}</p>
+            <p dangerouslySetInnerHTML={{ __html: html }}></p>
+            <LinkBack to="/Projects">
+                <TiArrowBack />
+                Go back to work page
+            </LinkBack>
+        </Container>
+    );
+}
+
 const Container = styled.section`
     width: 80vw;
     margin: 0 auto;
@@ -41,53 +84,4 @@ const Image = styled(Img)`
 const LinkBack = styled(Link)`
     text-decoration: none;
     color: red;
-`;
-
-export default function ProjectTemplate({ data }) {
-    const { markdownRemark } = data;
-    const { frontmatter, html } = markdownRemark;
-    return (
-        <Container>
-            <LinkBack to="/work">
-                <TiArrowBack />
-                Go back to work page
-            </LinkBack>
-            <br />
-
-            <Image
-                fluid={frontmatter.postImage.childImageSharp.fluid}
-                alt={frontmatter.postImageAlt}
-            ></Image>
-            <br />
-            <h5>{frontmatter.title}</h5>
-            {/* <p>{frontmatter.author}</p> */}
-            <p dangerouslySetInnerHTML={{ __html: html }}></p>
-            {/* <LinkBack to="/work">
-        <TiArrowBack />
-        Go back to work page
-      </LinkBack> */}
-        </Container>
-    );
-}
-
-export const query = graphql`
-    query ($slug: String!) {
-        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-                slug
-                title
-                author
-                deploymentLink
-                githubLink
-                postImage {
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
-        }
-    }
 `;

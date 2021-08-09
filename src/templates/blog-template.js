@@ -6,6 +6,67 @@ import { TiArrowBack } from 'react-icons/ti';
 // import { GoPerson, GoCalendar } from "react-icons/go"
 import Img from 'gatsby-image';
 
+export default function BlogTemplate({ data }) {
+    const { markdownRemark } = data;
+    const { frontmatter, html } = markdownRemark;
+    return (
+        <Container>
+            <Post>
+                <LinkBack to="/Blog">
+                    <TiArrowBack />
+                    <br />
+                    Go back to blog page
+                </LinkBack>
+                <Image
+                    fluid={frontmatter.postImage.childImageSharp.fluid}
+                    alt="developers-setup"
+                ></Image>
+                <Title>{frontmatter.title}</Title>
+                <section>
+                    <DateBy>
+                        {/* <GoCalendar /> */}-{frontmatter.date}-
+                        {/* <GoPerson />  */}
+                        <a
+                            href="https://www.instagram.com/berta.codes/"
+                            rel="noopener noreferrer"
+                        >
+                            {frontmatter.author}
+                        </a>
+                    </DateBy>
+                </section>
+                <hr />
+                <Text dangerouslySetInnerHTML={{ __html: html }} />
+                <hr />
+                <LinkBack to="/Blog">
+                    <TiArrowBack />
+                    <br />
+                    Go back to blog page
+                </LinkBack>
+            </Post>
+        </Container>
+    );
+}
+
+export const pageQuery = graphql`
+    query ($slug: String!) {
+        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+            html
+            frontmatter {
+                author
+                slug
+                title
+                postImage {
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;
+
 const Container = styled(Layout)`
     border: 1px solid black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -57,64 +118,4 @@ const LinkBack = styled(Link)`
     text-decoration: none;
     font-size: 0.9rem;
     color: salmon;
-`;
-export default function BlogTemplate({ data }) {
-    const { markdownRemark } = data;
-    const { frontmatter, html } = markdownRemark;
-    return (
-        <Container>
-            <Post>
-                <LinkBack to="/blog">
-                    <TiArrowBack />
-                    <br />
-                    Go back to blog page
-                </LinkBack>
-                <Image
-                    fluid={frontmatter.postImage.childImageSharp.fluid}
-                    alt="developers-setup"
-                ></Image>
-                <Title>{frontmatter.title}</Title>
-                <section>
-                    <DateBy>
-                        {/* <GoCalendar /> */}-{frontmatter.date}-
-                        {/* <GoPerson />  */}
-                        <a
-                            href="https://www.instagram.com/berta.codes/"
-                            rel="noopener noreferrer"
-                        >
-                            {frontmatter.author}
-                        </a>
-                    </DateBy>
-                </section>
-                <hr />
-                <Text dangerouslySetInnerHTML={{ __html: html }} />
-                <hr />
-                <LinkBack to="/blog">
-                    <TiArrowBack />
-                    <br />
-                    Go back to blog page
-                </LinkBack>
-            </Post>
-        </Container>
-    );
-}
-
-export const pageQuery = graphql`
-    query ($slug: String!) {
-        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-                author
-                slug
-                title
-                postImage {
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
-        }
-    }
 `;

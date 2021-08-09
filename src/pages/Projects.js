@@ -32,6 +32,8 @@ const Work = ({ data }) => {
                 </ItemContainer>
                 {data.allMarkdownRemark.edges.map((project, index) => (
                     <ItemContainer key={index}>
+                        {console.table([project.node.frontmatter])}
+
                         <a
                             href={project.node.frontmatter.githubLink}
                             target="_blank"
