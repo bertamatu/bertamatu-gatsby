@@ -1,37 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { IoLogoYoutube } from 'react-icons/io';
+import { RiInstagramFill } from 'react-icons/ri';
 
 const SocialIcons = () => {
     return (
         <section>
             <Icons
+                href="https://instagram.com/berta.codes"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <RiInstagramFill />
+            </Icons>
+            <Icons
                 href="https://www.linkedin.com/in/bertam/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <FaLinkedinIn />
+                <FaLinkedin />
             </Icons>
             <Icons
                 href="https://github.com/bertamatu"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <FaGithub />
+                <FaGithubSquare />
             </Icons>
-            <Icons
-                href="https://instagram.com/berta.codes"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <FaInstagram />
-            </Icons>
+
             <Icons
                 href="https://www.youtube.com/channel/UCMqzzvA2OCepIrnvkK1sMEQ"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ fontSize: '27px' }}
             >
-                <FaYoutube />
+                <IoLogoYoutube />
             </Icons>
         </section>
     );
@@ -42,8 +46,11 @@ export default SocialIcons;
 const Icons = styled.a`
     text-decoration: none;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
     font-size: 26px;
-    padding-left: 0.5rem;
+    padding-left: 6px;
+    align-content: center;
+    :hover {
+        color: #fc6c85;
+        transition: 0.3s ease-in-out;
+    }
 `;

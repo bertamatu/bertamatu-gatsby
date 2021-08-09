@@ -22,8 +22,6 @@ const IndexPage = ({ data }) => (
             <Seo title="Home" />
             <HomePageLogo />
             <FrontEndDev>
-                self-taught front-end software engineer
-                <br />
                 <Icons>
                     <FaHtml5 />
                     <FaCss3Alt />

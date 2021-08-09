@@ -26,8 +26,11 @@ const Button = styled.a`
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
     font-size: 0.7rem;
-    position: absolute;
-    top: 3vh;
     width: 140px;
+    height: 34px;
     text-align: center;
+    :hover {
+        background-color: #fc6c85;
+        transition: 0.3s ease-in-out;
+    }
 `;

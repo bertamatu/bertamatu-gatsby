@@ -103,5 +103,22 @@ module.exports = {
                 allExtensions: true,
             },
         },
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    'Fuggles',
+                    'Roboto',
+                    'Special Elite',
+                    'Abril Fatface',
+                    'Libre Barcode 39 Text',
+                    'Chonburi',
+                    'Yeseva One',
+                    'Vidaloka',
+                    'DM Serif Display',
+                ],
+                display: 'swap',
+            },
+        },
     ],
 };

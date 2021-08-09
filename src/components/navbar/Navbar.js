@@ -29,7 +29,7 @@ const Navbar = () => {
 };
 
 const Navigation = styled.nav`
-    height: 7vh;
+    height: 5vh;
     display: flex;
     background: rgba(0, 0, 0, 0.9);
     position: relative;

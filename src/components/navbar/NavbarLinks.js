@@ -25,17 +25,16 @@ const NavItem = styled(Link)`
     transition: all 200ms ease-in;
     position: relative;
     font-size: 0.7rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     :after {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         width: 0%;
-        content: '.';
+        content: '';
         color: transparent;
-        background: black;
+        background: #fc6c85;
         height: 1px;
         transition: all 0.4s ease-in;
     }

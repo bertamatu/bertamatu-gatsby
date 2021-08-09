@@ -11,18 +11,15 @@ const HeaderStyle = styled.header`
     width: 100vw;
     z-index: 1;
     height: 200px;
-    position: fixed;
     background-color: #fff;
 `;
 
 const HeaderItems = styled.section`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-space-around;
     position: absolute;
-    top: 2.5vh;
+    top: 8vh;
+    display: flex;
+    justify-content: space-around;
     width: calc(100% - 30px);
-    padding: 30px;
 `;
 
 const Header = () => (
