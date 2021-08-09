@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar/Navbar';
 import styled from 'styled-components';
+import ConnectButton from './buttons/Connect';
 // import Logo from './navbar/Logo';
 
 const HeaderStyle = styled.header`
@@ -13,10 +14,21 @@ const HeaderStyle = styled.header`
     background-color: #fff;
 `;
 
+const HeaderItems = styled.section`
+    display: flex;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    margin: 0 20px;
+`;
+
 const Header = () => (
     <HeaderStyle>
         <Navbar />
-        {/* <Logo /> */}
+        <HeaderItems>
+            <ConnectButton />
+            {/* <Logo /> */}
+        </HeaderItems>
     </HeaderStyle>
 );
 

@@ -7,10 +7,6 @@ const Logo = () => {
 };
 
 const LogoDesign = styled(Link)`
-    position: absolute;
-    top: 45%;
-    right: 45%;
-    left: 45%;
     text-decoration: none;
     color: #000;
     font-size: 16px;

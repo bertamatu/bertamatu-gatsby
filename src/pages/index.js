@@ -14,7 +14,7 @@ import { GrGatsbyjs, GrMysql } from 'react-icons/gr';
 import { SiTypescript, SiJest, SiPostman } from 'react-icons/si';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import HomePageLogo from '../components/HomePageLogo';
+import HomePageLogo from '../components/common/HomePageLogo';
 
 const IndexPage = ({ data }) => (
     <HomePage>
@@ -42,15 +42,6 @@ const IndexPage = ({ data }) => (
                 <br />
                 <strong>zero to mastery</strong>
             </FrontEndDev>
-            <Buttons>
-                <Button
-                    href="https://www.linkedin.com/in/bertam/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    let's connect
-                </Button>
-            </Buttons>
         </Layout>
     </HomePage>
 );
@@ -80,25 +71,5 @@ const Icons = styled.p`
         font-size: 22px;
         margin-top: 16px;
     }
-`;
-const Buttons = styled.div`
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
-const Button = styled.a`
-    text-decoration: none;
-    background-color: black;
-    padding: 0.5rem;
-    border-radius: 5px;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    border: 0.2px dotted white;
-    margin-bottom: 0.5rem;
 `;
 export default IndexPage;
