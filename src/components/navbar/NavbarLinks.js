@@ -11,6 +11,7 @@ const NavbarLinks = () => {
             <NavItem to="/Gallery">GALLERY</NavItem>
             <NavItem to="/Blog">BLOG</NavItem>
             <NavItem to="/Links">LINKS</NavItem>
+            <NavItem to="/Setup">SETUP</NavItem>
             <NavItem to="/Contact">CONTACT</NavItem>
         </>
     );

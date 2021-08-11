@@ -16,7 +16,7 @@ const HeaderStyle = styled.header`
 
 const HeaderItems = styled.section`
     position: absolute;
-    top: 10vh;
+    top: 8.5vh;
     display: flex;
     justify-content: space-around;
     width: calc(100% - 30px);
