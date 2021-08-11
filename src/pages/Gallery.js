@@ -8,7 +8,7 @@ const MainContent = styled.main`
     /* height: 100vh; */
     width: 100vw;
     position: absolute;
-    top: 29%;
+    top: 35%;
     z-index: -1;
 `;
 

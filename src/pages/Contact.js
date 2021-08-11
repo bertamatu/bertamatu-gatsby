@@ -12,7 +12,7 @@ const Contact = ({ data }) => {
                 <img
                     src={contactGIF}
                     alt="plain"
-                    style={{ height: 300, marginTop: 50 }}
+                    style={{ height: 300, marginTop: 20 }}
                 />
                 <h6>
                     <code>Let's talk!</code>

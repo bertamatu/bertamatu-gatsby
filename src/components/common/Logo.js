@@ -20,7 +20,7 @@ const LogoContainer = styled.div`
 const LogoDesign = styled(Link)`
     text-decoration: none;
     color: #000;
-    font-size: 3.1rem;
+    font-size: 3.2rem;
     letter-spacing: 2px;
     font-family: 'Yeseva One';
     text-transform: uppercase;
