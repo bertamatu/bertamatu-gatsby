@@ -20,6 +20,10 @@ const HeaderItems = styled.section`
     display: flex;
     justify-content: space-around;
     width: calc(100% - 30px);
+    @media (max-width: 768px) {
+        position: absolute;
+        top: 5vh;
+    }
 `;
 
 const Header = () => (

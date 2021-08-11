@@ -29,7 +29,11 @@ const LogoDesign = styled(Link)`
         transition: 0.5s ease;
     }
     @media (max-width: 768px) {
-        display: none;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        right: -5vw;
+        font-size: 46px;
     }
 `;
 
@@ -45,7 +49,11 @@ const DescriptionText = styled.p`
     padding-bottom: 1rem;
     color: black;
     @media (max-width: 768px) {
-        display: none;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        right: -5vw;
+        font-size: 0.6rem;
     }
 `;
 
