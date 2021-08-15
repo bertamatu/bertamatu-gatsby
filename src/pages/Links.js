@@ -62,7 +62,6 @@ const Links = data => (
                     <FaGithubSquare />
                 </Icon>
             </span>
-
             {personalLinks.map(link => {
                 return (
                     <LinkButton href={link.url} target="_blank" key={link.id}>
@@ -70,6 +69,39 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
+
+            <section
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    textAlign: 'center',
+                    width: '80%',
+                }}
+            >
+                <br />
+                <SectionTitle>MY SETUP</SectionTitle>
+                <LinkButton
+                    href="https://nexstand.eu?aff=39"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Laptop stand
+                </LinkButton>
+                <LinkButton
+                    href="https://www.ofiyaa.net/?rfsn=5740762.08ced7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    TRIPPLE SCREEN
+                </LinkButton>
+                <LinkButton
+                    href="https://vissles.com/?ref=jkty8so55j"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Mechanical RGB Keyboard
+                </LinkButton>
+            </section>
 
             <br />
             <SectionTitle>Developer roadmaps</SectionTitle>
@@ -145,11 +177,11 @@ const LinkButton = styled.a`
     border-radius: 32px;
     text-align: center;
     cursor: pointer;
-    background: rgb(32 31 31 / 90%);
+    background: rgb(32 31 31 / 98%);
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px;
+    padding: 13px;
     margin-bottom: 5px;
     transition: all 300ms ease-in-out;
 

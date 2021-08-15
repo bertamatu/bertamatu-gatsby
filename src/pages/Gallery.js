@@ -5,7 +5,6 @@ import 'react-ig-feed/dist/index.css';
 import styled from 'styled-components';
 
 const MainContent = styled.main`
-    /* height: 100vh; */
     width: 100vw;
     position: absolute;
     top: 35%;
