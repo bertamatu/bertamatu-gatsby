@@ -33,9 +33,29 @@ const mustReadLinks = links
 const Links = data => (
     <Layout>
         <LinksContainer>
+            <a
+                href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
+                target="_top"
+                id="1081324"
+            >
+                <img
+                    src="//a.impactradius-go.com/display-ad/12120-1081324"
+                    border="0"
+                    alt="glasses"
+                />
+            </a>
+            <img
+                height="0"
+                width="0"
+                src="https://imp.pxf.io/i/2964139/1081324/12120?partnerpropertyid=2812707"
+                style={{ position: 'absolute', visibility: 'hidden' }}
+                border="0"
+                alt="glasses"
+            />
+
             <Picture
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQEmsTvDwR8KkQ/profile-displayphoto-shrink_200_200/0/1627401103521?e=1633564800&v=beta&t=4uc6ez06ORJ7zp3uiRNA9JAHmsnk4ymk_TXV2gL3FZI"
-                alt=""
+                alt="bertacodes"
             />
             <span style={{ display: 'flex' }}>
                 <Icon
@@ -101,6 +121,13 @@ const Links = data => (
                 >
                     Mechanical RGB Keyboard
                 </LinkButton>
+                <LinkButton
+                    href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Blue Light glasses | Black Noir
+                </LinkButton>
             </section>
 
             <br />
@@ -153,7 +180,7 @@ const LinksContainer = styled.section`
 `;
 const Picture = styled.img`
     border-radius: 50%;
-    height: 160px;
+    height: 100px;
     margin-bottom: 10px;
 `;
 
