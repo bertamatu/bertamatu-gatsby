@@ -33,26 +33,6 @@ const mustReadLinks = links
 const Links = data => (
     <Layout>
         <LinksContainer>
-            <a
-                href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
-                target="_top"
-                id="1081324"
-            >
-                <img
-                    src="//a.impactradius-go.com/display-ad/12120-1081324"
-                    border="0"
-                    alt="glasses"
-                />
-            </a>
-            <img
-                height="0"
-                width="0"
-                src="https://imp.pxf.io/i/2964139/1081324/12120?partnerpropertyid=2812707"
-                style={{ position: 'absolute', visibility: 'hidden' }}
-                border="0"
-                alt="glasses"
-            />
-
             <Picture
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQEmsTvDwR8KkQ/profile-displayphoto-shrink_200_200/0/1627401103521?e=1633564800&v=beta&t=4uc6ez06ORJ7zp3uiRNA9JAHmsnk4ymk_TXV2gL3FZI"
                 alt="bertacodes"
@@ -89,47 +69,36 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-
-            <section
-                style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    textAlign: 'center',
-                    width: '80%',
-                }}
+            <br />
+            <SectionTitle>MY SETUP</SectionTitle>
+            <LinkButton
+                href="https://nexstand.eu?aff=39"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                <br />
-                <SectionTitle>MY SETUP</SectionTitle>
-                <LinkButton
-                    href="https://nexstand.eu?aff=39"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Laptop stand
-                </LinkButton>
-                <LinkButton
-                    href="https://www.ofiyaa.net/?rfsn=5740762.08ced7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    TRIPPLE SCREEN
-                </LinkButton>
-                <LinkButton
-                    href="https://vissles.com/?ref=jkty8so55j"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Mechanical RGB Keyboard
-                </LinkButton>
-                <LinkButton
-                    href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Blue Light glasses | Black Noir
-                </LinkButton>
-            </section>
-
+                Laptop stand
+            </LinkButton>
+            <LinkButton
+                href="https://www.ofiyaa.net/?rfsn=5740762.08ced7"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                TRIPPLE SCREEN
+            </LinkButton>
+            <LinkButton
+                href="https://vissles.com/?ref=jkty8so55j"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Mechanical RGB Keyboard
+            </LinkButton>
+            <LinkButton
+                href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Blue Light glasses | Black Noir
+            </LinkButton>
             <br />
             <SectionTitle>Developer roadmaps</SectionTitle>
             {roadmapsLinks.map(link => {
@@ -168,7 +137,7 @@ export default Links;
 const LinksContainer = styled.section`
     max-width: 400px;
     width: 100%;
-    padding-top: 88px;
+    padding-top: 68px;
     display: flex;
     flex-direction: column;
     align-items: center;
