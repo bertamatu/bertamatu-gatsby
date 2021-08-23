@@ -20,8 +20,13 @@ const IndexPage = ({ data }) => (
     <HomePage>
         <Layout>
             <Seo title="Home" />
-            <HomePageLogo />
+            {/* <HomePageLogo /> */}
             <FrontEndDev>
+                <img
+                    src="https://media.giphy.com/media/7BcL8GvcMgTyE/giphy.gif?cid=ecf05e477ngp52f81zm1x5y8tz4txcanu38e549jj98gybsg&rid=giphy.gif&ct=g"
+                    alt="bertacodes"
+                    style={{ borderRadius: '50%' }}
+                />
                 <Icons>
                     <FaHtml5 />
                     <FaCss3Alt />
@@ -41,18 +46,6 @@ const IndexPage = ({ data }) => (
                 <strong>zero to mastery</strong>
             </FrontEndDev>
         </Layout>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img
-                src={
-                    'https://media.giphy.com/media/5xtDarBgiWHop6BYK1q/giphy.gif'
-                }
-                alt="work"
-                style={{
-                    borderRadius: '50%',
-                    height: '80px',
-                }}
-            />
-        </div>
     </HomePage>
 );
 
@@ -75,11 +68,11 @@ const FrontEndDev = styled.p`
 const Icons = styled.p`
     font-size: 20px;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: -3.5rem;
     text-align: center;
     @media (max-width: 768px) {
         font-size: 22px;
-        margin-top: 16px;
+        margin-top: -80px;
     }
 `;
 export default IndexPage;

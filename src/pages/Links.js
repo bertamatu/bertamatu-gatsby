@@ -38,31 +38,6 @@ const Links = data => (
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQEmsTvDwR8KkQ/profile-displayphoto-shrink_200_200/0/1627401103521?e=1633564800&v=beta&t=4uc6ez06ORJ7zp3uiRNA9JAHmsnk4ymk_TXV2gL3FZI"
                 alt="bertacodes"
             />
-            {/* <span style={{ display: 'flex' }}>
-                <Icon
-                    href="https://instagram.com/berta.codes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FaInstagramSquare />
-                </Icon>
-
-                <Icon
-                    href="https://www.linkedin.com/in/bertam/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FaLinkedin />
-                </Icon>
-
-                <Icon
-                    href="https://github.com/bertamatu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FaGithubSquare />
-                </Icon>
-            </span> */}
             <SocialIcons />
             {personalLinks.map(link => {
                 return (
