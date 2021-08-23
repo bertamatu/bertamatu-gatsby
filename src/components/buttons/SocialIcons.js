@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import { IoLogoYoutube } from 'react-icons/io';
 import { RiInstagramFill } from 'react-icons/ri';
 
@@ -36,6 +36,14 @@ const SocialIcons = () => {
                 style={{ fontSize: '27px' }}
             >
                 <IoLogoYoutube />
+            </Icons>
+            <Icons
+                href="https://twitter.com/bertacodes"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: '27px' }}
+            >
+                <FaTwitterSquare />
             </Icons>
         </section>
     );

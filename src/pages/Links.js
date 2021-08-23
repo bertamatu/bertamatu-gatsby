@@ -2,7 +2,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import data from '../data/data.json';
-import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+// import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import SocialIcons from '../components/buttons/SocialIcons';
 
 const links = data.links;
 
@@ -37,7 +38,7 @@ const Links = data => (
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQEmsTvDwR8KkQ/profile-displayphoto-shrink_200_200/0/1627401103521?e=1633564800&v=beta&t=4uc6ez06ORJ7zp3uiRNA9JAHmsnk4ymk_TXV2gL3FZI"
                 alt="bertacodes"
             />
-            <span style={{ display: 'flex' }}>
+            {/* <span style={{ display: 'flex' }}>
                 <Icon
                     href="https://instagram.com/berta.codes"
                     target="_blank"
@@ -61,7 +62,8 @@ const Links = data => (
                 >
                     <FaGithubSquare />
                 </Icon>
-            </span>
+            </span> */}
+            <SocialIcons />
             {personalLinks.map(link => {
                 return (
                     <LinkButton href={link.url} target="_blank" key={link.id}>
