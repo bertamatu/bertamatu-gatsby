@@ -14,7 +14,7 @@ import { GrGatsbyjs, GrMysql } from 'react-icons/gr';
 import { SiTypescript, SiJest, SiPostman } from 'react-icons/si';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import HomePageLogo from '../components/common/HomePageLogo';
+// import HomePageLogo from '../components/common/HomePageLogo';
 
 const IndexPage = ({ data }) => (
     <HomePage>

@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import data from '../data/data.json';
-// import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import SocialIcons from '../components/buttons/SocialIcons';
 
 const links = data.links;
@@ -46,7 +45,18 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
+            <LinkButton
+                href="https://www.buymeacoffee.com/Bertacodes"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                    backgroundColor: '#fc6c85',
+                }}
+            >
+                Buy me a book!
+            </LinkButton>
             <br />
+
             <SectionTitle>MY SETUP</SectionTitle>
             <LinkButton
                 href="https://nexstand.eu?aff=39"
@@ -85,7 +95,6 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-
             <br />
             <SectionTitle>Javascript</SectionTitle>
             {javascriptLinks.map(link => {
@@ -95,7 +104,6 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-
             <br />
             <SectionTitle>must read</SectionTitle>
             {mustReadLinks.map(link => {
@@ -130,16 +138,8 @@ const Picture = styled.img`
     margin-bottom: 10px;
 `;
 
-const Icon = styled.a`
-    font-size: 30px;
-    margin-bottom: 14px;
-    font-weight: 900;
-    color: rgb(32 31 31 / 90%);
-    padding: 0 4px;
-`;
-
 const SectionTitle = styled.b`
-    color: #ff2249;
+    color: #fc6c85;
     text-transform: uppercase;
     font-size: 14px;
 `;
