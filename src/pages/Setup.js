@@ -7,7 +7,7 @@ const Setup = () => {
             <div
                 style={{
                     width: '100vw',
-                    fontSize: '24px',
+                    fontSize: '14px',
                     position: 'absolute',
                     top: '20vh',
                     color: 'black',
@@ -15,25 +15,22 @@ const Setup = () => {
                     justifyContent: 'center',
                     verticalAlign: 'center',
                     flexDirection: 'column',
-                    fontWeight: '900',
+                    fontWeight: '600',
                     paddingTop: '140px',
                     fontFamily: 'Roboto',
+                    textTransform: 'uppercase',
                 }}
             >
                 <p
                     style={{
                         margin: '0 auto',
-                        color: 'salmon',
+                        color: '#fc6c85',
                         textAlign: 'center',
                     }}
                 >
                     Sorry for the dust!
                     <br />
                     The setup section is COMMING SOON!
-                    <h6>
-                        ... in the meantime, you could share your favorite music
-                        with me by adding songs to this playlist :)
-                    </h6>
                 </p>
                 <br />
 
@@ -47,17 +44,6 @@ const Setup = () => {
                     title="bertacodes"
                     style={{ filter: 'grayscale(100%)', margin: '0 auto' }}
                 />
-
-                {/* <iframe
-                    src="https://open.spotify.com/embed/playlist/2ZiQSPtyue1RmH6mjXLnWj"
-                    width="300"
-                    height="380"
-                    frameborder="0"
-                    allowtransparency="true"
-                    allow="encrypted-media"
-                    title="bertacodes"
-                    style={{ filter: 'grayscale(100%)', margin: '0 auto' }}
-                ></iframe> */}
             </div>
         </Layout>
     );

@@ -107,14 +107,16 @@ const MainContent = styled.main`
     align-items: left;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    /* position: absolute; */
     /* top: 7vh; */
 `;
 const Article = styled.article`
     width: 50vw;
     display: flex;
     @media (max-width: 768px) {
-        margin-top: 3rem;
+        /* margin-top: 3rem; */
+        margin-top: 78vh;
+
         display: flex;
         flex-direction: column;
     }
