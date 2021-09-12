@@ -40,6 +40,16 @@ const BlogPage = ({ data }) => {
     return (
         <Layout>
             <MainContent>
+                <div
+                    style={{
+                        marginTop: '100px',
+                        textAlign: 'center',
+                        color: 'red',
+                        fontSize: '600',
+                    }}
+                >
+                    BLOG IS UNDER CONSTRUCTION...
+                </div>
                 <Article>
                     {data.allMarkdownRemark.edges.map(post => (
                         <Post key={post.node.frontmatter.id}>
