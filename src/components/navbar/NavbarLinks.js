@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import SocialIcons from '../buttons/SocialIcons';
 
 const NavbarLinks = () => {
     return (
@@ -13,6 +14,9 @@ const NavbarLinks = () => {
             <NavItem to="/Links">LINKS</NavItem>
             <NavItem to="/Setup">SETUP</NavItem>
             <NavItem to="/Contact">CONTACT</NavItem>
+
+            <br />
+            <SocialIcons />
         </>
     );
 };
@@ -27,6 +31,7 @@ const NavItem = styled(Link)`
     position: relative;
     font-size: 0.7rem;
     font-family: Roboto;
+    align-self: baseline;
     :after {
         position: absolute;
         bottom: 0;
@@ -45,8 +50,8 @@ const NavItem = styled(Link)`
         }
     }
     @media (max-width: 768px) {
-        padding: 10px 0;
-        font-size: 3rem;
+        padding: 10px 20px;
+        font-size: 2.7rem;
         z-index: 6;
         color: #000;
     }
