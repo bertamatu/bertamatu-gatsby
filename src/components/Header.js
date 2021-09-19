@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './navbar/Navbar';
 import styled from 'styled-components';
-import ConnectButton from './buttons/Connect';
-import SocialIcons from './buttons/SocialIcons';
-import Logo from './common/Logo';
+// import ConnectButton from './buttons/Connect';
+// import SocialIcons from './buttons/SocialIcons';
+// import Logo from './common/Logo';
 
 const HeaderStyle = styled.header`
     position: fixed;
@@ -14,25 +14,25 @@ const HeaderStyle = styled.header`
     background-color: #fff;
 `;
 
-const HeaderItems = styled.section`
-    position: absolute;
-    top: 8.5vh;
-    display: flex;
-    justify-content: space-around;
-    width: calc(100% - 30px);
-    @media (max-width: 768px) {
-        position: absolute;
-        top: 5vh;
-    }
-`;
+// const HeaderItems = styled.section`
+//     position: absolute;
+//     top: 8.5vh;
+//     display: flex;
+//     justify-content: space-around;
+//     width: calc(100% - 30px);
+//     @media (max-width: 768px) {
+//         position: absolute;
+//         top: 5vh;
+//     }
+// `;
 
 const Header = () => (
     <HeaderStyle>
-        <HeaderItems>
+        {/* <HeaderItems>
             <ConnectButton />
             <Logo />
             <SocialIcons />
-        </HeaderItems>
+        </HeaderItems> */}
         <Navbar />
     </HeaderStyle>
 );

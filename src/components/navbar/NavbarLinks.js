@@ -19,14 +19,16 @@ const NavbarLinks = () => {
 
 const NavItem = styled(Link)`
     text-decoration: none;
-    color: #fff;
     display: inline-block;
     white-space: nowrap;
     margin: 1vw 1vw;
     transition: all 200ms ease-in;
     position: relative;
     font-size: 0.7rem;
-    font-family: Roboto;
+    font-weight: 600;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     :after {
         position: absolute;
         bottom: 0;
@@ -45,11 +47,12 @@ const NavItem = styled(Link)`
         }
     }
     @media (max-width: 768px) {
-        padding: 10px 0;
-        font-size: 2.7rem;
+        padding: 8px 30px;
+        margin-left: 25px;
+        font-size: 30px;
         z-index: 6;
-        color: #000;
         align-self: baseline;
+        font-weight: 900;
     }
 `;
 

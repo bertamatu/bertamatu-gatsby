@@ -31,13 +31,10 @@ const Navbar = () => {
 const Navigation = styled.nav`
     height: 5vh;
     display: flex;
-    background: rgba(0, 0, 0, 0.9);
     position: relative;
     justify-content: center;
     text-transform: uppercase;
-    border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
-    margin: 200px auto;
-    padding: 0 3vw;
+    padding: 5vh 3vw;
     z-index: 2;
     align-self: center;
     @media (max-width: 768px) {
@@ -75,7 +72,7 @@ const Navbox = styled.div`
     }
 `;
 const Hamburger = styled.div`
-    background-color: #fff;
+    background-color: #000;
     width: 30px;
     height: 3px;
     transition: all 0.2s linear;
@@ -86,9 +83,9 @@ const Hamburger = styled.div`
     transform: ${props => (props.open ? 'rotate(-45deg)' : 'inherit')};
     ::before,
     ::after {
-        width: 30px;
+        width: 18px;
         height: 3px;
-        background-color: #fff;
+        background-color: red;
         content: '';
         position: absolute;
         transition: all 0.3s linear;
