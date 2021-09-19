@@ -27,8 +27,7 @@ const NavItem = styled(Link)`
     font-size: 0.7rem;
     font-weight: 600;
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, sans-serif;
     :after {
         position: absolute;
         bottom: 0;
@@ -53,6 +52,7 @@ const NavItem = styled(Link)`
         z-index: 6;
         align-self: baseline;
         font-weight: 900;
+        font-family: Arial, sans-serif;
     }
 `;
 
