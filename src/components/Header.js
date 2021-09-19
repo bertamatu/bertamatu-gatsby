@@ -10,7 +10,6 @@ const HeaderStyle = styled.header`
     top: 0;
     width: 100vw;
     z-index: 1;
-    height: 200px;
     background-color: #fff;
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import data from '../data/data.json';
-// import SocialIcons from '../components/buttons/SocialIcons';
+import SocialIcons from '../components/buttons/SocialIcons';
 
 const links = data.links;
 
@@ -37,7 +37,7 @@ const Links = data => (
                 alt="bertacodes"
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_200_200/0/1630502878061?e=1636588800&v=beta&t=VuB_Izb3lblE9djluWl4KGJKbUF_27vpK_XT_VOrJZ0"
             />
-            {/* <SocialIcons /> */}
+            <SocialIcons />
             {personalLinks.map(link => {
                 return (
                     <LinkButton href={link.url} target="_blank" key={link.id}>
@@ -45,7 +45,7 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-            <LinkButton
+            {/* <LinkButton
                 href="https://www.buymeacoffee.com/Bertacodes"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const Links = data => (
                 }}
             >
                 Buy me a book!
-            </LinkButton>
+            </LinkButton> */}
             <br />
 
             <SectionTitle>MY SETUP</SectionTitle>

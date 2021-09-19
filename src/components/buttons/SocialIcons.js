@@ -53,12 +53,12 @@ export default SocialIcons;
 
 const Icons = styled.a`
     text-decoration: none;
-    color: black;
+    color: #fc6c85;
     font-size: 26px;
-    padding-left: 6px;
+    padding-right: 6px;
     align-content: center;
     :hover {
-        color: #fc6c85;
+        color: #d4023d;
         transition: 0.3s ease-in-out;
     }
 `;
