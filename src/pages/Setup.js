@@ -8,8 +8,6 @@ const Setup = () => {
                 style={{
                     width: '100vw',
                     fontSize: '14px',
-                    position: 'absolute',
-                    top: '20vh',
                     color: 'black',
                     display: 'flex',
                     justifyContent: 'center',

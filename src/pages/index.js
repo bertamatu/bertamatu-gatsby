@@ -21,49 +21,42 @@ const IndexPage = ({ data }) => (
     <HomePage>
         <Layout>
             <Seo title="Home" />
-            <div
-            // style={{
-            //     transform: 'rotate(30deg)',
-            //     backgroundColor: '#fc6c85',
-            // }}
-            >
-                <FrontEndDev>
-                    <Image
-                        src="https://media.giphy.com/media/7BcL8GvcMgTyE/giphy.gif?cid=ecf05e477ngp52f81zm1x5y8tz4txcanu38e549jj98gybsg&rid=giphy.gif&ct=g"
-                        alt="bertacodes. Learning to code."
-                    />
-                    {/* <HomePageLogo /> */}
-                    <div
-                        style={{
-                            fontSize: '40px',
-                            marginBottom: '10px',
-                            color: '#fff',
-                            fontWeight: '900',
-                        }}
-                    >
-                        BERTA.codes
-                    </div>
-                    <Icons>
-                        <FaHtml5 />
-                        <FaCss3Alt />
-                        <FaSass />
-                        <FaBootstrap />
-                        <IoLogoJavascript />
-                        <FaReact />
-                        <GrGatsbyjs />
-                        <FaVuejs />
-                        <SiTypescript />
-                        <SiJest />
-                        <FaDocker />
-                        <GrMysql />
-                        <SiPostman />
-                    </Icons>
-                    <div style={{ color: '#fff', fontSize: '16px' }}>
-                        zero to mastery
-                    </div>
-                    <SocialIcons />
-                </FrontEndDev>
-            </div>
+            <FrontEndDev>
+                <Image
+                    src="https://media.giphy.com/media/7BcL8GvcMgTyE/giphy.gif?cid=ecf05e477ngp52f81zm1x5y8tz4txcanu38e549jj98gybsg&rid=giphy.gif&ct=g"
+                    alt="bertacodes. Learning to code."
+                />
+                {/* <HomePageLogo /> */}
+                <div
+                    style={{
+                        fontSize: '40px',
+                        marginBottom: '10px',
+                        color: '#fff',
+                        fontWeight: '900',
+                    }}
+                >
+                    BERTA.codes
+                </div>
+                <Icons>
+                    <FaHtml5 />
+                    <FaCss3Alt />
+                    <FaSass />
+                    <FaBootstrap />
+                    <IoLogoJavascript />
+                    <FaReact />
+                    <GrGatsbyjs />
+                    <FaVuejs />
+                    <SiTypescript />
+                    <SiJest />
+                    <FaDocker />
+                    <GrMysql />
+                    <SiPostman />
+                </Icons>
+                <div style={{ color: '#fff', fontSize: '16px' }}>
+                    zero to mastery
+                </div>
+                <SocialIcons />
+            </FrontEndDev>
         </Layout>
     </HomePage>
 );
@@ -82,12 +75,14 @@ const FrontEndDev = styled.p`
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
-    /* transform: rotate(-30deg); */
 `;
 const Image = styled.img`
     border-radius: 50%;
     height: 400px;
     transform: rotate(47deg);
+    @media (max-width: 768px) {
+        margin-top: 1vh;
+    }
 `;
 const Icons = styled.p`
     font-size: 20px;
