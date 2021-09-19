@@ -81,7 +81,7 @@ const Image = styled.img`
     height: 400px;
     transform: rotate(47deg);
     @media (max-width: 768px) {
-        margin-top: 1vh;
+        margin-top: 5vh;
     }
 `;
 const Icons = styled.p`
