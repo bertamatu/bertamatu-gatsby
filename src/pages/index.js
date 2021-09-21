@@ -79,9 +79,10 @@ const FrontEndDev = styled.p`
 const Image = styled.img`
     border-radius: 50%;
     height: 400px;
+    margin-top: 5vh;
     transform: rotate(47deg);
     @media (max-width: 768px) {
-        margin-top: 5vh;
+        margin-top: 6vh;
     }
 `;
 const Icons = styled.p`
