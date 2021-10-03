@@ -8,8 +8,8 @@ const NavbarLinks = () => {
             <NavItem to="/">HOME</NavItem>
             <NavItem to="/About">ABOUT</NavItem>
             <NavItem to="/Projects">PROJECTS</NavItem>
-            <NavItem to="/Gallery">GALLERY</NavItem>
-            <NavItem to="/Blog">BLOG</NavItem>
+            {/* <NavItem to="/Gallery">GALLERY</NavItem> */}
+            {/* <NavItem to="/Blog">BLOG</NavItem> */}
             <NavItem to="/Links">LINKS</NavItem>
             <NavItem to="/Setup">SETUP</NavItem>
             <NavItem to="/Contact">CONTACT</NavItem>

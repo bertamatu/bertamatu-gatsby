@@ -15,7 +15,7 @@ const GalleryPage = () => {
     return (
         <Layout>
             <MainContent>
-                <Posts token={process.env.GATSBY_POSTS} counter="24" />
+                <Posts token={process.env.GATSBY_POSTS} counter="12" />
             </MainContent>
         </Layout>
     );

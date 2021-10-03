@@ -28,14 +28,28 @@ const IndexPage = ({ data }) => (
                 />
                 <div
                     style={{
-                        fontSize: '80px',
+                        fontSize: '82px',
                         marginBottom: '30px',
                         color: 'black',
                         fontWeight: '900',
                         fontFamily: 'Roboto',
+                        color: 'lightgrey',
                     }}
                 >
                     BERTA
+                    <span
+                        style={{
+                            writingMode: 'vertical-rl',
+                            textOrientation: 'upright',
+                            fontSize: '9px',
+                            fontWeight: '900',
+                            position: 'relative',
+                            bottom: '-5px',
+                            color: 'black',
+                        }}
+                    >
+                        codes
+                    </span>
                 </div>
                 <Icons>
                     <FaHtml5 />
