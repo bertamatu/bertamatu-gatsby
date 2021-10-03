@@ -23,19 +23,19 @@ const IndexPage = ({ data }) => (
             <Seo title="Home" />
             <FrontEndDev>
                 <Image
-                    src="https://media.giphy.com/media/7BcL8GvcMgTyE/giphy.gif?cid=ecf05e477ngp52f81zm1x5y8tz4txcanu38e549jj98gybsg&rid=giphy.gif&ct=g"
+                    src="https://media.giphy.com/media/uUIwmTkTtkHN4sSVPx/giphy.gif"
                     alt="bertacodes. Learning to code."
                 />
-                {/* <HomePageLogo /> */}
                 <div
                     style={{
-                        fontSize: '40px',
-                        marginBottom: '10px',
-                        color: '#fff',
+                        fontSize: '80px',
+                        marginBottom: '30px',
+                        color: 'black',
                         fontWeight: '900',
+                        fontFamily: 'Roboto',
                     }}
                 >
-                    BERTA.codes
+                    BERTA
                 </div>
                 <Icons>
                     <FaHtml5 />
@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => (
                     <GrMysql />
                     <SiPostman />
                 </Icons>
-                <div style={{ color: '#fff', fontSize: '16px' }}>
+                <div style={{ color: 'black', fontSize: '16px' }}>
                     zero to mastery
                 </div>
                 <SocialIcons />
@@ -68,7 +68,7 @@ const HomePage = styled.section`
     width: 100vw;
     position: absolute;
     bottom: 0;
-    background-color: black;
+    background-color: white;
 `;
 const FrontEndDev = styled.p`
     font-family: Roboto;
@@ -79,15 +79,16 @@ const FrontEndDev = styled.p`
 const Image = styled.img`
     border-radius: 50%;
     height: 400px;
-    margin-top: 5vh;
-    transform: rotate(47deg);
+    margin-top: 7vh;
+    filter: invert(100);
+    transform: rotate(72deg);
     @media (max-width: 768px) {
-        margin-top: 6vh;
+        margin-top: 8vh;
     }
 `;
 const Icons = styled.p`
     font-size: 20px;
-    color: #fff;
+    color: black;
     padding: 0;
     margin: 0;
     @media (max-width: 768px) {
