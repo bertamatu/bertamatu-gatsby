@@ -45,18 +45,7 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-            {/* <LinkButton
-                href="https://www.buymeacoffee.com/Bertacodes"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                    backgroundColor: '#fc6c85',
-                }}
-            >
-                Buy me a book!
-            </LinkButton> */}
             <br />
-
             <SectionTitle>MY SETUP</SectionTitle>
             <LinkButton
                 href="https://nexstand.eu?aff=39"
@@ -64,13 +53,6 @@ const Links = data => (
                 rel="noopener noreferrer"
             >
                 Laptop stand
-            </LinkButton>
-            <LinkButton
-                href="https://www.ofiyaa.net/?rfsn=5740762.08ced7"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                TRIPPLE SCREEN
             </LinkButton>
             <LinkButton
                 href="https://vissles.com/?ref=jkty8so55j"
