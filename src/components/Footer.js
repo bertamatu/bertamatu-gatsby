@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const footer = () => {
     return (
         <Footer>
-            <FooterText>LESS IS MORE</FooterText>
-            <FooterDate>© {new Date().getFullYear()}</FooterDate>
+            <FooterText>STAY CURIOUS</FooterText>
+            <FooterDate>© {new Date().getFullYear()} BERTA CODES</FooterDate>
         </Footer>
     );
 };
@@ -23,7 +23,7 @@ const Footer = styled.footer`
 const FooterText = styled.footer`
     position: absolute;
     left: 2rem;
-    letter-spacing: 18px;
+    letter-spacing: 12px;
     color: black;
 `;
 const FooterDate = styled.section`

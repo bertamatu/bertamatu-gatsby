@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import NavbarLinks from './NavbarLinks';
 import styled from 'styled-components';
+// import SocialIcons from './../buttons/SocialIcons';
+// import Footer from './../Footer';
+
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
@@ -23,6 +26,20 @@ const Navbar = () => {
                         <NavbarLinks />
                     </Navbox>
                 )}
+
+
+                {/* TODO add this later */}
+                {/* <Picture
+                    alt="bertacodes"
+                    src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_200_200/0/1630502878061?e=1636588800&v=beta&t=VuB_Izb3lblE9djluWl4KGJKbUF_27vpK_XT_VOrJZ0"
+                />
+                <br/>
+                <NavbarLinks />
+                <div style={{marginTop: '10vh', width: '100vw', textAlign: 'center'}}>
+                    <SocialIcons />
+                    <Footer />
+                </div> */}
+
             </Navigation>
         </>
     );
@@ -37,6 +54,7 @@ const Navigation = styled.nav`
     padding: 5vh 3vw;
     z-index: 2;
     align-self: center;
+
     @media (max-width: 768px) {
         position: sticky;
         height: 7vh;
@@ -51,6 +69,7 @@ const Toggle = styled.div`
     height: 100%;
     cursor: pointer;
     padding: 0 7vw;
+
     @media (max-width: 768px) {
         display: flex;
     }
@@ -59,6 +78,7 @@ const Navbox = styled.div`
     display: flex;
     height: 100%;
     align-items: center;
+
     @media (max-width: 768px) {
         flex-direction: column;
         position: fixed;
@@ -81,6 +101,7 @@ const Hamburger = styled.div`
     align-self: center;
     margin-right: 80vw;
     transform: ${props => (props.open ? 'rotate(-45deg)' : 'inherit')};
+
     ::before,
     ::after {
         width: 18px;
@@ -90,6 +111,7 @@ const Hamburger = styled.div`
         position: absolute;
         transition: all 0.3s linear;
     }
+
     ::before {
         transform: ${props =>
             props.open
@@ -97,11 +119,18 @@ const Hamburger = styled.div`
                 : 'rotate(0deg)'};
         top: -10px;
     }
+    
     ::after {
         opacity: ${props => (props.open ? '0' : '1')};
         transform: ${props => (props.open ? 'rotate(90deg) ' : 'rotate(0deg)')};
         top: 10px;
     }
 `;
+
+// const Picture = styled.img`
+//     border-radius: 50%;
+//     height: 100px;
+//     margin-bottom: 10px;
+// `;
 
 export default Navbar;

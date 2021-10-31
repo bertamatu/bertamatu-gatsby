@@ -114,6 +114,7 @@ const LinksContainer = styled.section`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
+
 const Picture = styled.img`
     border-radius: 50%;
     height: 100px;
@@ -125,6 +126,7 @@ const SectionTitle = styled.b`
     text-transform: uppercase;
     font-size: 14px;
 `;
+
 const LinkButton = styled.a`
     max-width: 400px;
     width: 95%;

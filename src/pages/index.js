@@ -78,7 +78,7 @@ const HomePage = styled.section`
     overflow-y: hidden;
     overflow-x: hidden;
     height: 98vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     bottom: 0;
     background-color: white;

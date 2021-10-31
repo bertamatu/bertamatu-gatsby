@@ -25,9 +25,10 @@ const NavItem = styled(Link)`
     transition: all 200ms ease-in;
     position: relative;
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     font-family: Roboto, sans-serif;
+
     :after {
         position: absolute;
         bottom: 0;
@@ -40,19 +41,29 @@ const NavItem = styled(Link)`
         height: 1px;
         transition: all 0.4s ease-in;
     }
+
     :hover {
+        font-weight: 900;
+        transition: all 0.2s ease-in;
+
         ::after {
             width: 100%;
         }
     }
+    
     @media (max-width: 768px) {
-        padding: 8px 30px;
+        padding: 8px 40px;
         margin-left: 25px;
         font-size: 30px;
         z-index: 6;
         align-self: baseline;
+        font-weight: 400;
+        font-family: -apple-system, Roboto, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+
+        :hover {
         font-weight: 900;
-        font-family: Arial, sans-serif;
+        transition: all 0.3s ease-in-out;
+        }
     }
 `;
 

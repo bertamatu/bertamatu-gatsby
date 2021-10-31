@@ -89,7 +89,7 @@ const About = () => {
 };
 
 const AboutPage = styled.main`
-    width: 100vw;
+    width: 100%;
     overflow-y: auto;
     margin-top: 8vh;
 `;

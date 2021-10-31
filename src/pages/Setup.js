@@ -6,7 +6,7 @@ const Setup = () => {
         <Layout>
             <div
                 style={{
-                    width: '100vw',
+                    width: '100%',
                     fontSize: '14px',
                     color: 'black',
                     display: 'flex',
