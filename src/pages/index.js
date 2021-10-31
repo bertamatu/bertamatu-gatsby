@@ -30,7 +30,6 @@ const IndexPage = ({ data }) => (
                     style={{
                         fontSize: '82px',
                         marginBottom: '30px',
-                        color: 'black',
                         fontWeight: '900',
                         fontFamily: 'Roboto',
                         color: 'lightgrey',

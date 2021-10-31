@@ -19,13 +19,13 @@ const About = () => {
                         <b>Hello, I'm Berta! Creative front-end engineer.</b>
                     </header>
                     <hr />
-                    <p>
+                    <div>
                         Because of my unfulfilled potential, I decided to make a
                         career shift from finance and accounting to front-end
                         development. I didn't choose it because of a decent
                         salary and programming is not just one of my hobbies -
                         it's my passion.
-                    </p>
+                    </div>
                     <div>
                         <b>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</b>
                         <ul>
@@ -40,7 +40,7 @@ const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <p>
+                    <div>
                         I finished full-stack studies in a{' '}
                         <Link
                             href="https://bit.lt"
@@ -65,8 +65,8 @@ const About = () => {
                         was a web CRUD app, built with Spring Boot and MySQL. I
                         enjoyed working on the front-end part the most, so I
                         decided to focus on it after getting my diploma.
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         I got my first front-end developer job in 2020 August.
                         Spent there 6 months working with Vue Js.
                         <br />
@@ -81,7 +81,7 @@ const About = () => {
                         >
                             More...
                         </a>
-                    </p>
+                    </div>
                 </AboutText>
             </Layout>
         </AboutPage>
