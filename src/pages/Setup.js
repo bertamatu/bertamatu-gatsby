@@ -36,7 +36,7 @@ const Setup = () => {
                     src="https://open.spotify.com/embed/playlist/7pDnkIkcMzSU6r3Op51qeH"
                     width="300"
                     height="380"
-                    frameborder="0"
+                    frameBorder="0"
                     allowtransparency="true"
                     allow="encrypted-media"
                     title="bertacodes"

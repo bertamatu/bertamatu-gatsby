@@ -83,7 +83,7 @@ const HomePage = styled.section`
     bottom: 0;
     background-color: white;
 `;
-const FrontEndDev = styled.p`
+const FrontEndDev = styled.div`
     font-family: Roboto;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -99,7 +99,7 @@ const Image = styled.img`
         margin-top: 8vh;
     }
 `;
-const Icons = styled.p`
+const Icons = styled.div`
     font-size: 20px;
     color: black;
     padding: 0;
