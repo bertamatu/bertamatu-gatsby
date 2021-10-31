@@ -11,7 +11,7 @@ const NavbarLinks = () => {
             {/* <NavItem to="/Gallery">GALLERY</NavItem> */}
             {/* <NavItem to="/Blog">BLOG</NavItem> */}
             <NavItem to="/Links">LINKS</NavItem>
-            <NavItem to="/Setup">SETUP</NavItem>
+            {/* <NavItem to="/Setup">SETUP</NavItem> */}
             <NavItem to="/Contact">CONTACT</NavItem>
         </>
     );
@@ -50,7 +50,7 @@ const NavItem = styled(Link)`
             width: 100%;
         }
     }
-    
+
     @media (max-width: 768px) {
         padding: 8px 40px;
         margin-left: 25px;
