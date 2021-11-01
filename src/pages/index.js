@@ -15,41 +15,14 @@ import { SiTypescript, SiJest, SiPostman } from 'react-icons/si';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import SocialIcons from '../components/buttons/SocialIcons';
-// import HomePageLogo from '../components/common/HomePageLogo';
+import HomePageLogo from '../components/common/HomePageLogo';
 
 const IndexPage = ({ data }) => (
     <HomePage>
         <Layout>
             <Seo title="Home" />
             <FrontEndDev>
-                <Image
-                    src="https://media.giphy.com/media/uUIwmTkTtkHN4sSVPx/giphy.gif"
-                    alt="bertacodes. Learning to code."
-                />
-                <div
-                    style={{
-                        fontSize: '82px',
-                        marginBottom: '30px',
-                        fontWeight: '900',
-                        fontFamily: 'Roboto',
-                        color: 'lightgrey',
-                    }}
-                >
-                    BERTA
-                    <span
-                        style={{
-                            writingMode: 'vertical-rl',
-                            textOrientation: 'upright',
-                            fontSize: '9px',
-                            fontWeight: '900',
-                            position: 'relative',
-                            bottom: '-5px',
-                            color: 'black',
-                        }}
-                    >
-                        codes
-                    </span>
-                </div>
+                <HomePageLogo/>
                 <Icons>
                     <FaHtml5 />
                     <FaCss3Alt />
@@ -65,10 +38,12 @@ const IndexPage = ({ data }) => (
                     <GrMysql />
                     <SiPostman />
                 </Icons>
-                <div style={{ color: 'black', fontSize: '16px' }}>
-                    zero to mastery
-                </div>
+                <Image
+                    src='https://media.giphy.com/media/3oeXavC4abOohpScXJ/giphy.gif'
+                    alt="bertacodes. Learning to code."
+                />
                 <SocialIcons />
+                <AdditionalText> zerotomastery </AdditionalText>
             </FrontEndDev>
         </Layout>
     </HomePage>
@@ -77,35 +52,43 @@ const IndexPage = ({ data }) => (
 const HomePage = styled.section`
     overflow-y: hidden;
     overflow-x: hidden;
-    height: 98vh;
+    height: 90vh;
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: white;
 `;
+
 const FrontEndDev = styled.div`
     font-family: Roboto;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
 `;
+
 const Image = styled.img`
-    border-radius: 50%;
-    height: 400px;
-    margin-top: 7vh;
-    filter: invert(100);
-    transform: rotate(72deg);
-    @media (max-width: 768px) {
-        margin-top: 8vh;
-    }
+    height: 50vh;
 `;
+
 const Icons = styled.div`
-    font-size: 20px;
+    font-size: 32px;
     color: black;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     @media (max-width: 768px) {
         font-size: 22px;
     }
 `;
+
+const AdditionalText = styled.div`
+   color: black,;
+   font-size: 16px; 
+   letter-spacing: 60px;
+   text-align: center;
+   margin-top: 10px;
+   @media (max-width: 768px) {
+        font-size: 12px;
+        letter-spacing: 10px;
+    }
+`;
+
 export default IndexPage;

@@ -119,7 +119,7 @@ module.exports = {
                     'Chonburi',
                     'Yeseva One',
                     'Vidaloka',
-                    'DM Serif Display',
+                    'Major Mono Display'
                 ],
                 display: 'swap',
             },

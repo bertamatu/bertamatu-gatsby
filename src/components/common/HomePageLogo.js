@@ -4,39 +4,42 @@ import styled from 'styled-components';
 const HomePageLogo = () => {
     return (
         <HomeLogo>
-            <LogoText>BERTA.CODES</LogoText>
+            <LogoText>
+                {`<BERTA/>`}
+            </LogoText>
         </HomeLogo>
     );
 };
 
 const HomeLogo = styled.div`
     z-index: 999;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 `;
 
 const LogoText = styled.div`
-    background-image: url('https://media.giphy.com/media/l0MYwXxKiwW39Dwcw/giphy.gif?cid=ecf05e475aqktp84hju69ldezdfpo6zmuknp8fq33qjqk7si&rid=giphy.gif&ct=g');
-    background-size: 40%;
+    /* background-image: url('https://media.giphy.com/media/1Aeg7GZ6tIor81AAIH/giphy.gif'); */
+    /* background-image: url('https://media.giphy.com/media/NmZiWc4qnUDeDyswsN/giphy-downsized-large.gif'); */
+    background-size: 25%;
     background-repeat: no-repeat;
     background-position: center;
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    font-family: Roboto;
+    font-family: Ubuntu;
     font-weight: 900;
-    font-size: 70px;
+    font-size: 90px;
     line-height: 1;
     letter-spacing: -2px;
-    width: 100vw;
-    align-items: center;
-    text-shadow: -5px 2px 4px rgb(0 0 0 / 40%),
-        2px -5px 6px rgb(255 255 255 / 18%);
+    text-align: center;
+    width: 100%;
+    color: black;
+
+    /* text-shadow: -5px 2px 4px rgb(0 0 0 / 40%),
+        2px -5px 6px rgb(255 255 255 / 18%); */
     @media (max-width: 768px) {
         background-size: 90%;
+        font-size: 60px;
     }
 `;
 

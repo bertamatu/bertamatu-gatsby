@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
-import { IoLogoYoutube } from 'react-icons/io';
-import { RiInstagramFill } from 'react-icons/ri';
+import { FaGithubSquare, FaLinkedin, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare } from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io';
 
 const SocialIcons = () => {
     return (
-        <section>
+        <section style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Icons
                 href="https://instagram.com/berta.codes"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <RiInstagramFill />
+                <FaInstagramSquare />
             </Icons>
             <Icons
                 href="https://www.linkedin.com/in/bertam/"
@@ -33,17 +32,23 @@ const SocialIcons = () => {
                 href="https://www.youtube.com/channel/UCMqzzvA2OCepIrnvkK1sMEQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ fontSize: '27px' }}
             >
-                <IoLogoYoutube />
+                <FaYoutubeSquare />
             </Icons>
             <Icons
                 href="https://twitter.com/bertacodes"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ fontSize: '27px' }}
             >
                 <FaTwitterSquare />
+            </Icons>
+            <Icons
+                href="mailto:berta.codes.info@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{fontSize: '56px'}}
+            >
+                <IoIosMail />
             </Icons>
         </section>
     );
@@ -53,9 +58,9 @@ export default SocialIcons;
 
 const Icons = styled.a`
     text-decoration: none;
-    color: #fc6c85;
-    font-size: 26px;
-    padding-right: 6px;
+    color: #000;
+    font-size: 38px;
+    padding: 0 6px;
     align-content: center;
     :hover {
         color: #d4023d;
