@@ -81,6 +81,21 @@ const About = () => {
                         >
                             More...
                         </a>
+                        <div style={{display: 'flex'}}>
+                            <img 
+                            src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&count_private=true" 
+                            width="500" 
+                            height="auto"
+                            alt='berta matuliauskiene github'
+                            style={{marginRight: '2px'}}
+                            />
+                            <img 
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&layout=compact/" 
+                            width="206" 
+                            height="auto"
+                            alt='berta matuliauskiene github'
+                            />
+                        </div>
                     </div>
                 </AboutText>
             </Layout>
