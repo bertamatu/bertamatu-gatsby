@@ -33,7 +33,7 @@ const Button = styled.a`
     justify-content: center;
     align-items: center;
     :hover {
-        background-color: #fc6c85;
+        background-color: #FA1E3F;
         transition: 0.3s ease-in-out;
     }
 `;

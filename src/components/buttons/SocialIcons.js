@@ -63,7 +63,7 @@ const Icons = styled.a`
     padding: 0 6px;
     align-content: center;
     :hover {
-        color: #d4023d;
+        color: #FA1E3F;
         transition: 0.3s ease-in-out;
     }
 `;

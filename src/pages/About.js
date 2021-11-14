@@ -129,7 +129,7 @@ const AboutText = styled.article`
 `;
 const Link = styled.a`
     text-decoration: none;
-    color: #C51958;
+    color: #FA1E3F;
 `;
 const LinkedIn = styled(FaLinkedin)`
     font-size: 3rem;

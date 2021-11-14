@@ -129,9 +129,9 @@ const Picture = styled.img`
 `;
 
 const SectionTitle = styled.b`
-    color: #fc6c85;
+    color: #FA1E3F;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
 `;
 
 const LinkButton = styled.a`
@@ -141,11 +141,13 @@ const LinkButton = styled.a`
     border-radius: 32px;
     text-align: center;
     cursor: pointer;
-    background: rgb(32 31 31 / 98%);
+    background: #000;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5px;
     transition: all 300ms ease-in-out;
 

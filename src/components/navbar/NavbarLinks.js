@@ -38,7 +38,7 @@ const NavItem = styled(Link)`
         width: 0%;
         content: '';
         color: transparent;
-        background: #fc6c85;
+        background: #FA1E3F;
         height: 1px;
         transition: all 0.4s ease-in;
     }
