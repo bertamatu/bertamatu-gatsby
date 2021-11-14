@@ -62,6 +62,13 @@ const Links = data => (
                 Mechanical RGB Keyboard
             </LinkButton>
             <LinkButton
+                href="https://www.autonomous.ai/office-chairs/ergonomic-chair?utm_source=Influencer_Affiliate&utm_medium=Instagram&utm_campaign=Growth&utm_content=BERTA04"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ErgoChair Pro Autonomous
+            </LinkButton>
+            <LinkButton
                 href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
                 target="_blank"
                 rel="noopener noreferrer"
