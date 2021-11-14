@@ -1,49 +1,32 @@
 import React, { useState } from 'react';
 import NavbarLinks from './NavbarLinks';
 import styled from 'styled-components';
-// import SocialIcons from './../buttons/SocialIcons';
-// import Footer from './../Footer';
-
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
-        <>
-            <Navigation>
-                <Toggle
-                    navbarOpen={navbarOpen}
-                    onClick={() => setNavbarOpen(!navbarOpen)}
-                >
-                    {navbarOpen ? <Hamburger open /> : <Hamburger />}
-                </Toggle>
-                {navbarOpen ? (
-                    <Navbox>
-                        <NavbarLinks />
-                    </Navbox>
-                ) : (
-                    <Navbox open>
-                        <NavbarLinks />
-                    </Navbox>
-                )}
-
-
-                {/* TODO add this later */}
-                {/* <Picture
-                    alt="bertacodes"
-                    src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_200_200/0/1630502878061?e=1636588800&v=beta&t=VuB_Izb3lblE9djluWl4KGJKbUF_27vpK_XT_VOrJZ0"
-                />
-                <br/>
-                <NavbarLinks />
-                <div style={{marginTop: '10vh', width: '100vw', textAlign: 'center'}}>
-                    <SocialIcons />
-                    <Footer />
-                </div> */}
-
-            </Navigation>
-        </>
+        <Navigation>
+            <Toggle
+                navbarOpen={navbarOpen}
+                onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+                {navbarOpen ? <Hamburger open /> : <Hamburger />}
+            </Toggle>
+            {navbarOpen ? (
+                <Navbox>
+                    <NavbarLinks />
+                </Navbox>
+            ) : (
+                <Navbox open>
+                    <NavbarLinks />
+                </Navbox>
+            )}
+        </Navigation>
     );
 };
+
+export default Navbar;
 
 const Navigation = styled.nav`
     height: 5vh;
@@ -53,8 +36,7 @@ const Navigation = styled.nav`
     text-transform: uppercase;
     padding: 5vh 3vw;
     z-index: 2;
-    align-self: center;
-
+    background-color: black;
     @media (max-width: 768px) {
         position: sticky;
         height: 7vh;
@@ -64,6 +46,7 @@ const Navigation = styled.nav`
         left: 0;
     }
 `;
+
 const Toggle = styled.div`
     display: none;
     height: 100%;
@@ -74,6 +57,7 @@ const Toggle = styled.div`
         display: flex;
     }
 `;
+
 const Navbox = styled.div`
     display: flex;
     height: 100%;
@@ -85,17 +69,18 @@ const Navbox = styled.div`
         width: 100%;
         justify-content: flex-start;
         padding-top: 15vh;
-        background: #fff;
-        transition: all 0.4s ease-in;
+        background: #000;
+        transition: all 0.3s ease-in;
         top: 0;
         left: ${props => (props.open ? '-100%' : '0')};
     }
 `;
+
 const Hamburger = styled.div`
-    background-color: #000;
+    background-color: #fff;
     width: 30px;
-    height: 3px;
-    transition: all 0.2s linear;
+    height: 4px;
+    transition: all 0.3s linear;
     align-self: center;
     position: relative;
     align-self: center;
@@ -104,9 +89,9 @@ const Hamburger = styled.div`
 
     ::before,
     ::after {
-        width: 18px;
-        height: 3px;
-        background-color: #000;
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
         content: '';
         position: absolute;
         transition: all 0.3s linear;
@@ -126,11 +111,3 @@ const Hamburger = styled.div`
         top: 10px;
     }
 `;
-
-// const Picture = styled.img`
-//     border-radius: 50%;
-//     height: 100px;
-//     margin-bottom: 10px;
-// `;
-
-export default Navbar;

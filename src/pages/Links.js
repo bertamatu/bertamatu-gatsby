@@ -35,7 +35,7 @@ const Links = data => (
         <LinksContainer>
             <Picture
                 alt="bertacodes"
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_200_200/0/1630502878061?e=1636588800&v=beta&t=VuB_Izb3lblE9djluWl4KGJKbUF_27vpK_XT_VOrJZ0"
+                src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_200_200/0/1630502878061?e=1642636800&v=beta&t=gYfP5phLVl7xTpRPeFJPJQrB3cVrBPw3Jl7xuFnGhWk"
             />
             <SocialIcons />
             {personalLinks.map(link => {

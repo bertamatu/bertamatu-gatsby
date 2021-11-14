@@ -17,6 +17,8 @@ const NavbarLinks = () => {
     );
 };
 
+export default NavbarLinks;
+
 const NavItem = styled(Link)`
     text-decoration: none;
     display: inline-block;
@@ -24,11 +26,10 @@ const NavItem = styled(Link)`
     margin: 1vw 1vw;
     transition: all 200ms ease-in;
     position: relative;
-    font-size: 0.7rem;
+    font-size: 14px;
     font-weight: 400;
-    color: black;
-    font-family: Roboto, sans-serif;
-
+    color: white;
+    font-family: Ubuntu;
     :after {
         position: absolute;
         bottom: 0;
@@ -41,16 +42,12 @@ const NavItem = styled(Link)`
         height: 1px;
         transition: all 0.4s ease-in;
     }
-
     :hover {
-        font-weight: 900;
         transition: all 0.2s ease-in;
-
         ::after {
             width: 100%;
         }
     }
-
     @media (max-width: 768px) {
         padding: 8px 40px;
         margin-left: 25px;
@@ -66,5 +63,3 @@ const NavItem = styled(Link)`
         }
     }
 `;
-
-export default NavbarLinks;

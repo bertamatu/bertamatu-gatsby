@@ -46,7 +46,7 @@ const SocialIcons = () => {
                 href="mailto:berta.codes.info@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{fontSize: '56px'}}
+                style={{fontSize: '55px'}}
             >
                 <IoIosMail />
             </Icons>

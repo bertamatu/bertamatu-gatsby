@@ -1,50 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-    FaHtml5,
-    FaCss3Alt,
-    FaBootstrap,
-    FaSass,
-    FaReact,
-    FaVuejs,
-    FaDocker,
-} from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io';
-import { GrGatsbyjs, GrMysql } from 'react-icons/gr';
-import { SiTypescript, SiJest, SiPostman } from 'react-icons/si';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import SocialIcons from '../components/buttons/SocialIcons';
 import HomePageLogo from '../components/common/HomePageLogo';
+import TechIcons from '../components/common/TechIcons';
+import ConnectButton from '../components/buttons/Connect';
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
     <HomePage>
         <Layout>
             <Seo title="Home" />
-            <FrontEndDev>
-                <HomePageLogo/>
-                <Icons>
-                    <FaHtml5 />
-                    <FaCss3Alt />
-                    <FaSass />
-                    <FaBootstrap />
-                    <IoLogoJavascript />
-                    <FaReact />
-                    <GrGatsbyjs />
-                    <FaVuejs />
-                    <SiTypescript />
-                    <SiJest />
-                    <FaDocker />
-                    <GrMysql />
-                    <SiPostman />
-                </Icons>
-                <Image
-                    src='https://media.giphy.com/media/3oeXavC4abOohpScXJ/giphy.gif'
-                    alt="bertacodes. Learning to code."
-                />
-                <SocialIcons />
-                <AdditionalText> zerotomastery </AdditionalText>
-            </FrontEndDev>
+            <HomePageLogo/>
+            <TechIcons />
+            <Image
+                src='https://media.giphy.com/media/5UutpfMIjPbZGI4van/source.gif'
+                alt="bertacodes"
+            />
+            <ConnectButton />
+            <SocialIcons />
+            <AdditionalText> zerotomastery </AdditionalText>
         </Layout>
     </HomePage>
 );
@@ -52,39 +27,30 @@ const IndexPage = ({ data }) => (
 const HomePage = styled.section`
     overflow-y: hidden;
     overflow-x: hidden;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     position: absolute;
     bottom: 0;
-`;
-
-const FrontEndDev = styled.div`
-    font-family: Roboto;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 const Image = styled.img`
     height: 50vh;
-`;
-
-const Icons = styled.div`
-    font-size: 32px;
-    color: black;
-    padding: 0;
-    margin: 10px;
-    @media (max-width: 768px) {
-        font-size: 22px;
-    }
+    display: block;
+    margin: 0 auto;
 `;
 
 const AdditionalText = styled.div`
    color: black,;
    font-size: 16px; 
-   letter-spacing: 60px;
+   letter-spacing: 30px;
    text-align: center;
    margin-top: 10px;
+   margin-left: 30px;
+   text-transform: uppercase;
+   font-family: Ubuntu;
    @media (max-width: 768px) {
         font-size: 12px;
         letter-spacing: 10px;

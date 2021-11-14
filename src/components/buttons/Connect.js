@@ -9,7 +9,7 @@ const ConnectButton = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                let's connect
+                let's connect and talk
             </Button>
         </>
     );
@@ -18,17 +18,20 @@ const ConnectButton = () => {
 export default ConnectButton;
 
 const Button = styled.a`
+    width: 302px;
+    padding: 10px;
     text-decoration: none;
     background-color: black;
-    padding: 4px;
     color: #fff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Ubuntu, Roboto;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    width: 140px;
-    height: 34px;
+    font-size: 16px;
+    font-weight: 600;
     text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     :hover {
         background-color: #fc6c85;
         transition: 0.3s ease-in-out;
