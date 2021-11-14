@@ -27,7 +27,7 @@ const IndexPage = () => (
 const HomePage = styled.section`
     overflow-y: hidden;
     overflow-x: hidden;
-    height: 100%;
+    height: 90%;
     width: 100%;
     position: absolute;
     bottom: 0;

@@ -44,6 +44,6 @@ const Icons = styled.div`
     margin: 10px;
     text-align: center;
     @media (max-width: 768px) {
-        font-size: 24px;
+        font-size: 14px;
     }
 `;
