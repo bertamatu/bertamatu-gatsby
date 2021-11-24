@@ -64,6 +64,8 @@ const About = () => {
                         {' '}
                         , built with Spring Boot and MySQL. 
                         I enjoyed working on the front-end part the most, so I decided to focus on it after getting my diploma.
+
+                        Today I'm sharpening my Javascript skills and willing to become a full-stack developer.
                     </div>
                     <br/>
                     <div>
