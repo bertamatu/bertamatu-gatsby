@@ -55,6 +55,13 @@ const Links = data => (
                 Laptop stand
             </LinkButton>
             <LinkButton
+                href="https://shareasale.com/u.cfm?d=606672&m=90872&u=2945599&afftrack="
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Leather desk mat
+            </LinkButton>
+            <LinkButton
                 href="https://vissles.com/?ref=jkty8so55j"
                 target="_blank"
                 rel="noopener noreferrer"
