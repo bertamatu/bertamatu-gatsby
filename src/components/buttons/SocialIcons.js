@@ -43,7 +43,7 @@ const SocialIcons = () => {
                 <FaTwitterSquare />
             </Icons>
             <Icons
-                href="mailto:berta.codes.info@gmail.com"
+                href="mailto:berta.codes@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{fontSize: '55px'}}

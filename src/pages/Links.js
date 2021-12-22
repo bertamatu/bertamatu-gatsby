@@ -74,7 +74,7 @@ const Links = data => (
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Mechanical RGB Keyboard
+                Vissles-V1 Wireless Mechanical Keyboard
             </LinkButton>
             <LinkButton
                 href="https://www.autonomous.ai/office-chairs/ergonomic-chair?utm_source=Influencer_Affiliate&utm_medium=Instagram&utm_campaign=Growth&utm_content=BERTA04"

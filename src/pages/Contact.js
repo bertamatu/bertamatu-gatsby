@@ -16,7 +16,7 @@ const Contact = ({ data }) => {
                     style={{ height: 300, marginTop: 20, marginBottom: 0}}
                 />
                 <Icons
-                    href="mailto:berta.codes.info@gmail.com"
+                    href="mailto:berta.codes@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: 120, margin: '0 auto' }}

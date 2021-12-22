@@ -37,7 +37,7 @@ const HomePage = styled.section`
 `;
 
 const Image = styled.img`
-    height: 50vh;
+    height: 40vh;
     display: block;
     margin: 0 auto;
 `;

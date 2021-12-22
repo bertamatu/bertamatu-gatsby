@@ -7,13 +7,27 @@ const HomePageLogo = () => {
             <LogoText>
                 {`<BERTA/>`}
             </LogoText>
+            <Description>Front-end Software Engineer</Description>
         </HomeLogo>
     );
 };
 
+const Description = styled.div`
+    margin: 0 auto;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 6px;
+    @media (max-width: 768px) {
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    ` 
+
 const HomeLogo = styled.div`
     z-index: 999;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100vw;
 `;
