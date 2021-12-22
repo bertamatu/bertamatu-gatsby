@@ -61,6 +61,14 @@ const Links = data => (
             >
                 Leather desk mat
             </LinkButton>
+            
+            <LinkButton
+                href="https://nuphy.com?sca_ref=1339255.wL8DXT1nWb"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Air75 Wireless Mechanical Keyboard
+            </LinkButton>
             <LinkButton
                 href="https://vissles.com/?ref=jkty8so55j"
                 target="_blank"
