@@ -22,15 +22,14 @@ const Setup = () => {
 export default Setup;
 
 const Container = styled('div')`
-margin-top: 5vh;
+margin-top: 11vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        padding-top: 4vw;
     }
 `

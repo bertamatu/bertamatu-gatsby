@@ -22,7 +22,7 @@ const SetupItem = (item: Props): ReactElement => {
                             target="_blank"
                             rel="noopener noreferrer"        
                             >
-                            <div style={{margin: '0 auto', padding: '20px'}}>
+                            <div style={{margin: '0 auto', padding: '20px'}} key={index}>
                                 <SetupImage src={property.image as string}/>
                             </div>
                             <Title>
@@ -45,7 +45,6 @@ justify-content: center;
 text-decoration: none;
 color: #000;
 margin: 20px;
-width: fit-content;
 font-family: Ubuntu;
 box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 `
@@ -64,5 +63,4 @@ const SetupImage = styled('img')`
 margin-bottom: 0;
 max-height: 300px;
 max-width: auto;
-
 `
