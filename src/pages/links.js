@@ -46,51 +46,6 @@ const Links = data => (
                 );
             })}
             <br />
-            {/* <SectionTitle>MY SETUP</SectionTitle>
-            <LinkButton
-                href="https://nexstand.eu?aff=39"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Laptop stand
-            </LinkButton>
-            <LinkButton
-                href="https://shareasale.com/u.cfm?d=606672&m=90872&u=2945599&afftrack="
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Leather desk mat
-            </LinkButton>
-            
-            <LinkButton
-                href="https://nuphy.com?sca_ref=1339255.wL8DXT1nWb"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Air75 Wireless Mechanical Keyboard
-            </LinkButton>
-            <LinkButton
-                href="https://vissles.com/?ref=jkty8so55j"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Vissles-V1 Wireless Mechanical Keyboard
-            </LinkButton>
-            <LinkButton
-                href="https://www.autonomous.ai/office-chairs/ergonomic-chair?utm_source=Influencer_Affiliate&utm_medium=Instagram&utm_campaign=Growth&utm_content=BERTA04"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                ErgoChair Pro Autonomous
-            </LinkButton>
-            <LinkButton
-                href="https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Blue Light glasses | Black Noir
-            </LinkButton> */}
-            {/* <br /> */}
             <SectionTitle>Developer roadmaps</SectionTitle>
             {roadmapsLinks.map(link => {
                 return (

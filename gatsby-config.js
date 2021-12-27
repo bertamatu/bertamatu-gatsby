@@ -18,31 +18,31 @@ module.exports = {
             },
             {
                 name: 'ABOUT',
-                link: '/About',
+                link: '/about',
             },
             {
                 name: 'PROJECTS',
-                link: '/Projects',
+                link: '/projects',
             },
             {
                 name: 'GALLERY',
-                link: '/Gallery',
+                link: '/gallery',
             },
             {
                 name: 'BLOG',
-                link: '/Blog',
+                link: '/blog',
             },
             {
                 name: 'LINKS',
-                link: '/Links',
+                link: '/links',
             },
             {
                 name: 'SETUP',
-                link: '/Setup',
+                link: '/setup',
             },
             {
                 name: 'CONTACT',
-                link: '/Contact',
+                link: '/contact',
             },
         ],
     },

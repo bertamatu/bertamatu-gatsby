@@ -12,7 +12,7 @@ export default function BlogTemplate({ data }) {
     return (
         <Container>
             <Post>
-                <LinkBack to="/Blog">
+                <LinkBack to="/blog">
                     <TiArrowBack />
                     <br />
                     Go back to blog page
@@ -38,7 +38,7 @@ export default function BlogTemplate({ data }) {
                 <hr />
                 <Text dangerouslySetInnerHTML={{ __html: html }} />
                 <hr />
-                <LinkBack to="/Blog">
+                <LinkBack to="/blog">
                     <TiArrowBack />
                     <br />
                     Go back to blog page

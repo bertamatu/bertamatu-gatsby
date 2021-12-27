@@ -6,13 +6,13 @@ const NavbarLinks = () => {
     return (
         <>
             <NavItem to="/">HOME</NavItem>
-            <NavItem to="/About">ABOUT</NavItem>
-            <NavItem to="/Projects">PROJECTS</NavItem>
-            {/* <NavItem to="/Gallery">GALLERY</NavItem> */}
-            {/* <NavItem to="/Blog">BLOG</NavItem> */}
-            <NavItem to="/Links">LINKS</NavItem>
-            <NavItem to="/Setup">SETUP</NavItem>
-            <NavItem to="/Contact">CONTACT</NavItem>
+            <NavItem to="/about">ABOUT</NavItem>
+            <NavItem to="/projects">PROJECTS</NavItem>
+            {/* <NavItem to="/gallery">GALLERY</NavItem> */}
+            {/* <NavItem to="/blog">BLOG</NavItem> */}
+            <NavItem to="/links">LINKS</NavItem>
+            <NavItem to="/setup">SETUP</NavItem>
+            <NavItem to="/contact">CONTACT</NavItem>
         </>
     );
 };

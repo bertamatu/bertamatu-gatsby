@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import { StringObject } from '../types/types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 const defaultProps = {
     item: {} as StringObject
