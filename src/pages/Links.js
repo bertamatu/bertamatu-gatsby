@@ -46,7 +46,7 @@ const Links = data => (
                 );
             })}
             <br />
-            <SectionTitle>MY SETUP</SectionTitle>
+            {/* <SectionTitle>MY SETUP</SectionTitle>
             <LinkButton
                 href="https://nexstand.eu?aff=39"
                 target="_blank"
@@ -89,8 +89,8 @@ const Links = data => (
                 rel="noopener noreferrer"
             >
                 Blue Light glasses | Black Noir
-            </LinkButton>
-            <br />
+            </LinkButton> */}
+            {/* <br /> */}
             <SectionTitle>Developer roadmaps</SectionTitle>
             {roadmapsLinks.map(link => {
                 return (

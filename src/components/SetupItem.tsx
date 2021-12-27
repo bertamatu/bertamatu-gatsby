@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 import { StringObject } from '../types/types';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const defaultProps = {
     item: {} as StringObject
@@ -15,10 +16,19 @@ const SetupItem = (item: Props): ReactElement => {
               Object.values(item)
                 .map( (property, index: number) => {
                     return ( 
-                    <Container key={index}>
-                        {property.title}
-                        <img src={(property.image as string)}/>
-                    </Container>
+                        <Url 
+                            href={property.url as string} 
+                            key={index}
+                            target="_blank"
+                            rel="noopener noreferrer"        
+                            >
+                            <div style={{margin: '0 auto', padding: '20px'}}>
+                                <SetupImage src={property.image as string}/>
+                            </div>
+                            <Title>
+                                {property.title}
+                            </Title>
+                        </Url>
                     )
                 })
             }
@@ -28,10 +38,31 @@ const SetupItem = (item: Props): ReactElement => {
 
 export default SetupItem;
 
-const Container = styled('div')`
-margin: 0 auto;
-height: 100px;
-width: 40vw;
+const Url = styled('a')`
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-decoration: none;
+color: #000;
+margin: 20px;
+width: fit-content;
+font-family: Ubuntu;
+box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 `
 
+const Title = styled('div')`
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 600;
+text-align: center;
+margin-top: -10px;
+padding-bottom: 10px;
 
+`
+
+const SetupImage = styled('img')`
+margin-bottom: 0;
+max-height: 300px;
+max-width: auto;
+
+`
