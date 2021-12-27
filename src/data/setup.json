@@ -1,0 +1,44 @@
+ [
+    {
+        "id": 1,
+        "url": "https://nexstand.eu/?aff=39",
+        "image": "https://cdn.shopify.com/s/files/1/2321/5813/products/Laptop-stand-with-surface-angled-picture.-1024x759.jpg?v=1627273739",
+        "title": "LAPTOP STAND",
+        "type": "affiliate"
+    },
+    {
+        "id": 2,
+        "url": "https://shareasale.com/u.cfm?d=606672&m=90872&u=2945599&afftrack=",
+        "image": "https://cdn.shopify.com/s/files/1/0653/3919/products/Leather-Desk-Mat-MF-Black-3_1ad46efe-08eb-4b82-a9ab-d3c00975b0c6_800x.jpg?v=1633253723",
+        "title": "LEATHER DESK MAT",
+        "type": "affiliate"
+    }, 
+    {
+        "id": 3,
+        "url": "https://nuphy.com/?sca_ref=1339255.wL8DXT1nWb",
+        "image": "https://cdn.shopify.com/s/files/1/0268/7297/1373/products/air75_007_1800x1800.jpg?v=1630555634",
+        "title": "AIR75 WIRELESS MECHANICAL KEYBOARD",
+        "type": "affiliate"
+    },
+    {
+        "id": 4,
+        "url": "https://vissles.com/?ref=jkty8so55j",
+        "image": "https://cdn.shopify.com/s/files/1/0282/4382/0643/products/VisslesV1WirelessMechanicalKeyboardBulchBlackside_1024x1024.png?v=1621590415&ref=jkty8so55j",
+        "title": "VISSLES-V1 WIRELESS MECHANICAL KEYBOARD",
+        "type": "affiliate"
+    },
+    {
+        "id": 5,
+        "url": "https://www.autonomous.ai/office-chairs/ergonomic-chair?utm_source=Influencer_Affiliate&utm_medium=Instagram&utm_campaign=Growth&utm_content=BERTA04",
+        "image": "https://thumbor.autonomous.ai/EWjoFe1c63fg88uknrRn3UF7fo4=/0x900/filters:quality(100)/https://cdn.autonomous.ai/static/upload/images/product/image/ergonomic-chair-20.54-1631067685578.jpeg",
+        "title": "ERGOCHAIR PRO AUTONOMOUS",
+        "type": "affiliate"
+    },
+    {
+        "id": 6,
+        "url": "https://barner.pxf.io/c/2964139/1081324/12120?partnerpropertyid=2812707",
+        "image": "https://cdn.shopify.com/s/files/1/0015/5110/6106/products/packaging_marais_black_63f58909-8cce-4605-bf22-045ae87f9f6c_800x.jpg?v=1636456409",
+        "title": "BLUE LIGHT GLASSES | BLACK NOIR",
+        "type": "affiliate"
+    }
+]
