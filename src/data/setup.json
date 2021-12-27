@@ -8,34 +8,41 @@
     },
     {
         "id": 2,
+        "url": "https://dygma.com/?sca_ref=1476327.wNzfXnsknU",
+        "image": "https://cdn.shopify.com/s/files/1/0374/9448/9228/files/travel-case-dygma-raise_510x.jpg?v=1637910691",
+        "title": "split ergonomic keyboard",
+        "type": "affiliate"
+    }, 
+    {
+        "id": 3,
         "url": "https://shareasale.com/u.cfm?d=606672&m=90872&u=2945599&afftrack=",
         "image": "https://cdn.shopify.com/s/files/1/0653/3919/products/Leather-Desk-Mat-MF-Black-3_1ad46efe-08eb-4b82-a9ab-d3c00975b0c6_800x.jpg?v=1633253723",
         "title": "LEATHER DESK MAT",
         "type": "affiliate"
     }, 
     {
-        "id": 3,
+        "id": 4,
         "url": "https://nuphy.com/?sca_ref=1339255.wL8DXT1nWb",
         "image": "https://cdn.shopify.com/s/files/1/0268/7297/1373/products/air75_001_5f608bc9-0626-404e-aba5-c8d31d2cc164_1800x1800.jpg?v=1630647188",
         "title": "MECHANICAL KEYBOARD",
         "type": "affiliate"
     },
     {
-        "id": 4,
+        "id": 5,
         "url": "https://www.autonomous.ai/office-chairs/ergonomic-chair?utm_source=Influencer_Affiliate&utm_medium=Instagram&utm_campaign=Growth&utm_content=BERTA04",
         "image": "https://thumbor.autonomous.ai/voUE-O0lTAZcy1SSqYKnr36GkFU=/0x900/filters:quality(100)/https://cdn.autonomous.ai/static/upload/images/product/galleries/20.54--1585042370940.jpg",
         "title": "ERGOCHAIR PRO",
         "type": "affiliate"
     },
     {
-        "id": 5,
+        "id": 6,
         "url": "https://vissles.com/?ref=jkty8so55j",
         "image": "https://cdn.shopify.com/s/files/1/0282/4382/0643/products/VisslesV1WirelessMechanicalKeyboardBulchBlackside_1024x1024.png?v=1621590415&ref=jkty8so55j",
         "title": "MECHANICAL KEYBOARD",
         "type": "affiliate"
     },
     {
-        "id": 6,
+        "id": 7,
         "url": "https://nexstand.eu/?aff=39",
         "image": "https://cdn.shopify.com/s/files/1/2321/5813/products/nexstand-k2-front-side_1100x.jpg?v=1622189151",
         "title": "LAPTOP STAND",
