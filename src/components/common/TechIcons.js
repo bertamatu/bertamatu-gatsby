@@ -17,6 +17,7 @@ import {
     SiPostman,
     SiGit,
     SiCypress,
+    SiTailwindcss,
 } from 'react-icons/si';
 
 const TechIcons = () => {
@@ -26,6 +27,7 @@ const TechIcons = () => {
             <FaCss3Alt />
             <FaSass />
             <FaBootstrap />
+            <SiTailwindcss />
             <IoLogoJavascript />
             <FaReact />
             <GrGatsbyjs />

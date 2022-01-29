@@ -29,7 +29,6 @@ const NavItem = styled(Link)`
     font-size: 14px;
     font-weight: 400;
     color: white;
-    font-family: Ubuntu;
     :after {
         position: absolute;
         bottom: 0;
@@ -38,7 +37,7 @@ const NavItem = styled(Link)`
         width: 0%;
         content: '';
         color: transparent;
-        background: #FA1E3F;
+        background: #fa1e3f;
         height: 1px;
         transition: all 0.4s ease-in;
     }
@@ -55,11 +54,9 @@ const NavItem = styled(Link)`
         z-index: 6;
         align-self: baseline;
         font-weight: 400;
-        font-family: -apple-system, Roboto, Ubuntu, Cantarell, 'Open Sans', sans-serif;
-
         :hover {
-        font-weight: 900;
-        transition: all 0.3s ease-in-out;
+            font-weight: 900;
+            transition: all 0.3s ease-in-out;
         }
     }
 `;

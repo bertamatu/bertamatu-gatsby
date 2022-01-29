@@ -23,7 +23,6 @@ const Button = styled.a`
     text-decoration: none;
     background-color: black;
     color: #fff;
-    font-family: Ubuntu, Roboto;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;

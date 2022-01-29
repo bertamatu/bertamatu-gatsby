@@ -22,7 +22,6 @@ const LogoDesign = styled(Link)`
     color: #000;
     font-size: 3.2rem;
     letter-spacing: 2px;
-    font-family: 'Yeseva One';
     text-transform: uppercase;
     :hover {
         color: #fc6c85;
@@ -39,8 +38,6 @@ const LogoDesign = styled(Link)`
 
 const DescriptionText = styled.p`
     font-weight: 300;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 3px;

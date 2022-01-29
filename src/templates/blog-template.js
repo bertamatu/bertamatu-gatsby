@@ -71,8 +71,6 @@ export const pageQuery = graphql`
 
 const Container = styled(Layout)`
     border: 1px solid black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 const Image = styled(Img)`
     border-radius: 5px;
@@ -86,8 +84,6 @@ const Image = styled(Img)`
   } */
 `;
 const Post = styled.article`
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     width: 80vw;
     margin: 0 auto;
@@ -100,8 +96,6 @@ const Title = styled.header`
     padding-top: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
 `;
 const DateBy = styled.small`
@@ -113,8 +107,6 @@ const Text = styled.p`
     padding-top: 1rem;
     font-size: 0.8rem;
     text-align: justify;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 const LinkBack = styled(Link)`
     text-decoration: none;

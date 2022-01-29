@@ -88,8 +88,6 @@ const LinksContainer = styled.section`
     margin: 0 auto;
     overflow-y: auto;
     font-size: 12px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 const Picture = styled.img`
@@ -99,7 +97,7 @@ const Picture = styled.img`
 `;
 
 const SectionTitle = styled.b`
-    color: #FA1E3F;
+    color: #fa1e3f;
     text-transform: uppercase;
     font-size: 15px;
 `;

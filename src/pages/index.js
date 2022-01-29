@@ -50,7 +50,6 @@ const AdditionalText = styled.div`
     margin-top: 10px;
     margin-left: 30px;
     text-transform: uppercase;
-    font-family: Ubuntu;
     @media (max-width: 768px) {
         font-size: 10px;
         letter-spacing: 10px;

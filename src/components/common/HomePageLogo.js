@@ -4,9 +4,7 @@ import styled from 'styled-components';
 const HomePageLogo = () => {
     return (
         <HomeLogo>
-            <LogoText>
-                {`<BERTA/>`}
-            </LogoText>
+            <LogoText>{`<BERTA/>`}</LogoText>
             <Description>Front-end Software Engineer</Description>
         </HomeLogo>
     );
@@ -14,15 +12,14 @@ const HomePageLogo = () => {
 
 const Description = styled.div`
     margin: 0 auto;
-    font-family: 'Ubuntu';
     text-transform: uppercase;
     margin-top: 10px;
     letter-spacing: 6px;
     @media (max-width: 768px) {
-      letter-spacing: 2px;
-      font-size: 13px;
+        letter-spacing: 2px;
+        font-size: 13px;
     }
-    ` 
+`;
 
 const HomeLogo = styled.div`
     z-index: 999;
@@ -42,7 +39,6 @@ const LogoText = styled.div`
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    font-family: Ubuntu;
     font-weight: 900;
     font-size: 100px;
     line-height: 1;

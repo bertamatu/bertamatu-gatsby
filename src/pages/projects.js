@@ -131,7 +131,6 @@ const ItemContainer = styled.section`
 const GithubLink = styled.a`
     text-decoration: none;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
 `;
@@ -148,8 +147,6 @@ const Projects = styled.section`
 const ProjectData = styled.section`
     font-size: 0.7rem;
     text-transform: uppercase;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 const DeploymentLink = styled.a`
     padding: 0.2rem;

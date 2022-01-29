@@ -138,8 +138,6 @@ const Image = styled(Img)`
     }
 `;
 const Post = styled.section`
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 20vw;
     margin: 7rem 1rem;
     align-self: center;
@@ -162,7 +160,6 @@ const ByDate = styled.p`
     font-size: 0.8rem;
     padding: 0 1rem;
     font-weight: 200;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     margin-top: -1rem;
 `;
@@ -194,13 +191,9 @@ const HelloMessage = styled.small`
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 100;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 const PostsList = styled.ul`
     list-style: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 1.2;

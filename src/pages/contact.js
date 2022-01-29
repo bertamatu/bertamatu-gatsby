@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { IoIosMail } from 'react-icons/io'
+import { IoIosMail } from 'react-icons/io';
 import contactGIF from '../data/images/gifs/gif_contact.webp';
 
 const Contact = ({ data }) => {
@@ -13,7 +13,7 @@ const Contact = ({ data }) => {
                 <img
                     src={contactGIF}
                     alt="berta codes"
-                    style={{ height: 300, marginTop: 20, marginBottom: 0}}
+                    style={{ height: 300, marginTop: 20, marginBottom: 0 }}
                 />
                 <Icons
                     href="mailto:berta.codes@gmail.com"
@@ -68,7 +68,6 @@ const ContactContainer = styled.section`
 const Icons = styled.a`
     text-decoration: none;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
     padding: 1rem;
