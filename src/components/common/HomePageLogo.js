@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const HomePageLogo = () => {
     return (
         <HomeLogo>
-            <LogoText>{`<BERTA/>`}</LogoText>
+            <code>Hello! I'm</code>
+            <LogoText>BERTA</LogoText>
             <Description>Front-end Software Engineer</Description>
         </HomeLogo>
     );
@@ -16,8 +17,9 @@ const Description = styled.div`
     margin-top: 10px;
     letter-spacing: 6px;
     @media (max-width: 768px) {
-        letter-spacing: 2px;
         font-size: 13px;
+        margin: 0 auto;
+        padding-left: 10px;
     }
 `;
 
@@ -26,6 +28,7 @@ const HomeLogo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100vw;
 `;
 
@@ -46,9 +49,11 @@ const LogoText = styled.div`
     color: black;
     text-shadow: -5px 2px 4px rgb(0 0 0 / 40%),
         2px -5px 6px rgb(255 255 255 / 18%);
+    padding-top: 10px;
+
     @media (max-width: 768px) {
         background-size: 90%;
-        font-size: 50px;
+        font-size: 80px;
     }
 `;
 

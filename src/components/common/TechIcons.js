@@ -18,6 +18,7 @@ import {
     SiGit,
     SiCypress,
     SiTailwindcss,
+    SiJira,
 } from 'react-icons/si';
 
 const TechIcons = () => {
@@ -39,6 +40,7 @@ const TechIcons = () => {
             <GrMysql />
             <SiPostman />
             <SiGit />
+            <SiJira />
         </Icons>
     );
 };
@@ -46,12 +48,11 @@ const TechIcons = () => {
 export default TechIcons;
 
 const Icons = styled.div`
-    font-size: 32px;
+    font-size: 18px;
     color: black;
-    padding: 0;
-    margin: 10px;
+    padding-top: 10px;
     text-align: center;
     @media (max-width: 768px) {
-        font-size: 14px;
+        font-size: 18px;
     }
 `;

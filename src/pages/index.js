@@ -12,14 +12,14 @@ const IndexPage = () => (
         <Layout>
             <Seo title="Home" />
             <HomePageLogo />
-            <TechIcons />
             <Image
                 src="https://media.giphy.com/media/5UutpfMIjPbZGI4van/source.gif"
                 alt="bertacodes"
             />
+            <TechIcons />
             <ConnectButton />
             <SocialIcons />
-            <AdditionalText> zerotomastery </AdditionalText>
+            <AdditionalText>z e r o t o m a s t e r y</AdditionalText>
         </Layout>
     </HomePage>
 );
@@ -30,7 +30,7 @@ const HomePage = styled.section`
     height: 90%;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,16 +43,11 @@ const Image = styled.img`
 `;
 
 const AdditionalText = styled.div`
-    color: black;
-    font-size: 10px;
-    letter-spacing: 30px;
+/    font-size: 16px;
     text-align: center;
-    margin-top: 10px;
-    margin-left: 30px;
     text-transform: uppercase;
     @media (max-width: 768px) {
-        font-size: 10px;
-        letter-spacing: 10px;
+        font-size: 12px;
     }
 `;
 
