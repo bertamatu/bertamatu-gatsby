@@ -9,7 +9,7 @@ const ConnectButton = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                let's connect and talk
+                lets' get social
             </Button>
         </>
     );
@@ -33,7 +33,7 @@ const Button = styled.a`
     justify-content: center;
     align-items: center;
     :hover {
-        background-color: #FA1E3F;
+        background-color: #fa1e3f;
         transition: 0.3s ease-in-out;
     }
 `;

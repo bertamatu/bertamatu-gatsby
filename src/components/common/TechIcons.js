@@ -11,10 +11,15 @@ import {
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { GrGatsbyjs, GrMysql } from 'react-icons/gr';
-import { SiTypescript, SiJest, SiPostman, SiGit } from 'react-icons/si';
+import {
+    SiTypescript,
+    SiJest,
+    SiPostman,
+    SiGit,
+    SiCypress,
+} from 'react-icons/si';
 
 const TechIcons = () => {
-
     return (
         <Icons>
             <FaHtml5 />
@@ -27,13 +32,14 @@ const TechIcons = () => {
             <FaVuejs />
             <SiTypescript />
             <SiJest />
+            <SiCypress />
             <FaDocker />
             <GrMysql />
             <SiPostman />
             <SiGit />
         </Icons>
-    )
-}
+    );
+};
 
 export default TechIcons;
 

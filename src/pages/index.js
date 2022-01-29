@@ -11,10 +11,10 @@ const IndexPage = () => (
     <HomePage>
         <Layout>
             <Seo title="Home" />
-            <HomePageLogo/>
+            <HomePageLogo />
             <TechIcons />
             <Image
-                src='https://media.giphy.com/media/5UutpfMIjPbZGI4van/source.gif'
+                src="https://media.giphy.com/media/5UutpfMIjPbZGI4van/source.gif"
                 alt="bertacodes"
             />
             <ConnectButton />
@@ -43,16 +43,16 @@ const Image = styled.img`
 `;
 
 const AdditionalText = styled.div`
-   color: black,;
-   font-size: 16px; 
-   letter-spacing: 30px;
-   text-align: center;
-   margin-top: 10px;
-   margin-left: 30px;
-   text-transform: uppercase;
-   font-family: Ubuntu;
-   @media (max-width: 768px) {
-        font-size: 12px;
+    color: black;
+    font-size: 10px;
+    letter-spacing: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    @media (max-width: 768px) {
+        font-size: 10px;
         letter-spacing: 10px;
     }
 `;
