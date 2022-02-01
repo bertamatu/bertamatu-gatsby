@@ -51,6 +51,35 @@ const LogoText = styled.div`
         2px -5px 6px rgb(255 255 255 / 18%);
     padding-top: 10px;
 
+    -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+        both;
+    animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+
+    @-webkit-keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+        40% {
+            opacity: 0.6;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     @media (max-width: 768px) {
         background-size: 90%;
         font-size: 80px;
