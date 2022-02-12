@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import TechIcons from '../components/common/TechIcons';
 
 const About = () => {
@@ -95,7 +95,19 @@ const About = () => {
                         </a>
                         <br />
                         <br />
-                        <TechIcons />
+                        <Link
+                            href="https://github.com/bertamatu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontSize: '3rem', color: '#000' }}
+                        >
+                            <FaGithub />
+                            <b style={{ fontSize: '14px' }}>
+                                {' '}
+                                Let's see the code!
+                            </b>
+                        </Link>
+
                         <div
                             style={{
                                 display: 'flex',
