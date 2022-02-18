@@ -1,11 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithubSquare, FaLinkedin, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare } from 'react-icons/fa';
+import {
+    FaGithubSquare,
+    FaLinkedin,
+    FaInstagramSquare,
+    FaTwitterSquare,
+    FaYoutubeSquare,
+} from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 
 const SocialIcons = () => {
     return (
-        <section style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <section
+            style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}
+        >
             <Icons
                 href="https://instagram.com/berta.codes"
                 target="_blank"
@@ -29,7 +41,7 @@ const SocialIcons = () => {
             </Icons>
 
             <Icons
-                href="https://www.youtube.com/channel/UCMqzzvA2OCepIrnvkK1sMEQ"
+                href="https://www.youtube.com/c/bertacodes"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -46,7 +58,7 @@ const SocialIcons = () => {
                 href="mailto:berta.codes@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{fontSize: '55px'}}
+                style={{ fontSize: '55px' }}
             >
                 <IoIosMail />
             </Icons>
@@ -63,7 +75,7 @@ const Icons = styled.a`
     padding: 0 6px;
     align-content: center;
     :hover {
-        color: #FA1E3F;
+        color: #fa1e3f;
         transition: 0.3s ease-in-out;
     }
 `;
