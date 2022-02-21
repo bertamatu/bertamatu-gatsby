@@ -125,6 +125,12 @@
       "url": "https://github.com/LeCoupa/awesome-cheatsheets",
       "title": "Awesome cheatsheets (various)",
       "type": "mustread"
+    },
+    {
+      "id": 21,
+      "url": "https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/",
+      "title": "Setup a CI/CD Pipeline with GitHub Actions and AWS",
+      "type": "mustread"
     }
   ]
 }
