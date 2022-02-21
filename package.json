@@ -31,7 +31,6 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.0.0",
     "react-icons": "^4.3.1",
-    "react-ig-feed": "^1.0.4",
     "styled-components": "^5.3.3",
     "typescript": "^4.5.5"
   },
