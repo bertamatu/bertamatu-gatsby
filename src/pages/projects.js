@@ -8,74 +8,77 @@ import Img from 'gatsby-image';
 
 const Work = ({ data }) => {
     return (
-        <WorkPage>
-            <Projects>
-                <ItemContainer>
-                    <GithubLink
-                        href="https://github.com/bertamatu"
+        <Layout>
+          <Projects>
+            <ItemContainer>
+              <h5 style={{marginTop: "20px", padding: "0 20px"}}>This portfolio was built in 2020. I'm keeping it here as an example for learning purposes to other aspiring developers.</h5>
+            </ItemContainer>
+            <ItemContainer>
+                <GithubLink
+                    href="https://github.com/bertamatu"
+                    target="_blank"
+                >
+                    <GoLogoGithub
+                        style={{
+                            fontSize: 150,
+                        }}
+                    />
+                    <br />
+                    <img
+                        src={workGIF}
+                        alt="work"
+                        style={{
+                            height: 200,
+                        }}
+                    />
+                </GithubLink>
+            </ItemContainer>
+            {data.allMarkdownRemark.edges.map((project, index) => (
+                <ItemContainer key={index}>
+                    <a
+                        href={project.node.frontmatter.githubLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <GoLogoGithub
-                            style={{
-                                fontSize: 150,
-                            }}
-                        />
+                        <ProjectImage
+                            style={{ height: 242, width: 200 }}
+                            fluid={
+                                project.node.frontmatter.postImage
+                                    .childImageSharp.fluid
+                            }
+                            alt={project.node.frontmatter.postImageAlt}
+                        ></ProjectImage>
+                    </a>
+
+                    <ProjectData>
                         <br />
-                        <img
-                            src={workGIF}
-                            alt="work"
-                            style={{
-                                height: 200,
-                            }}
-                        />
-                    </GithubLink>
-                </ItemContainer>
-                {data.allMarkdownRemark.edges.map((project, index) => (
-                    <ItemContainer key={index}>
-                        <a
+                        {project.node.frontmatter.title}
+                        <br />
+                        <DeploymentLink
+                            href={project.node.frontmatter.deploymentLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Preview
+                        </DeploymentLink>
+
+                        <br />
+                        <GithubLinkProject
                             href={project.node.frontmatter.githubLink}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <ProjectImage
-                                style={{ height: 242, width: 200 }}
-                                fluid={
-                                    project.node.frontmatter.postImage
-                                        .childImageSharp.fluid
-                                }
-                                alt={project.node.frontmatter.postImageAlt}
-                            ></ProjectImage>
-                        </a>
-
-                        <ProjectData>
-                            <br />
-                            {project.node.frontmatter.title}
-                            <br />
-                            <DeploymentLink
-                                href={project.node.frontmatter.deploymentLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Preview
-                            </DeploymentLink>
-
-                            <br />
-                            <GithubLinkProject
-                                href={project.node.frontmatter.githubLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GITHUB
-                            </GithubLinkProject>
-                            <br />
-                            <ReadMore to={project.node.frontmatter.slug}>
-                                READ MORE...
-                            </ReadMore>
-                        </ProjectData>
-                    </ItemContainer>
-                ))}
-            </Projects>
-        </WorkPage>
+                            GITHUB
+                        </GithubLinkProject>
+                        <br />
+                        <ReadMore to={project.node.frontmatter.slug}>
+                            READ MORE...
+                        </ReadMore>
+                    </ProjectData>
+                </ItemContainer>
+            ))}
+          </Projects>
+        </Layout>
     );
 };
 
@@ -108,26 +111,18 @@ export const data = graphql`
     }
 `;
 
-const WorkPage = styled(Layout)`
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    @media (min-width: 768px) {
-        flex-direction: row;
-    }
-`;
 const ItemContainer = styled.section`
-    width: 80vw;
+    width: 60vw;
     height: auto;
     margin-top: 10vh;
     text-align: center;
     border: 1px dotted gray;
     border-radius: 5px;
-    @media (min-width: 768px) {
-        width: 20vw;
-        margin: 10vh 0.5rem 1rem 0.5rem;
-    }
-`;
+
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(173, 173, 173, 0.75);
+    -moz-box-shadow:    1px 1px 5px 0px rgba(173, 173, 173, 0.75);
+    box-shadow:         1px 1px 5px 0px rgba(173, 173, 173, 0.75);
+  `;
 const GithubLink = styled.a`
     text-decoration: none;
     color: black;
@@ -136,6 +131,7 @@ const GithubLink = styled.a`
 `;
 const Projects = styled.section`
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
