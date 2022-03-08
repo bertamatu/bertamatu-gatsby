@@ -35,7 +35,7 @@ const Links = data => (
         <LinksContainer>
             <Picture
                 alt="bertacodes"
-                src='https://lh3.googleusercontent.com/a-/AOh14GiuR5Ue4nrWndtnkm_6nOzcsv4_V2gTSdBzC0SJHg=s83-c-mo'
+                src="https://lh3.googleusercontent.com/a-/AOh14GiuR5Ue4nrWndtnkm_6nOzcsv4_V2gTSdBzC0SJHg=s83-c-mo"
             />
             <SocialIcons />
             {personalLinks.map(link => {
@@ -45,6 +45,13 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
+            <LinkButton
+                href="http://turing.com/s/l5apE8 "
+                target="_blank"
+                style={{ backgroundColor: '#fa1e3f' }}
+            >
+                Apply to remote software jobs in the US
+            </LinkButton>
             <br />
             <SectionTitle>Developer roadmaps</SectionTitle>
             {roadmapsLinks.map(link => {
