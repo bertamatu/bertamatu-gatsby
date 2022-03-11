@@ -43,10 +43,9 @@ const Image = styled.img`
     margin: 0 auto;
     position: absolute;
     bottom: 0;
+    z-index: -1;
     @media (max-width: 768px) {
-      height: auto;
-      min-width: 300%;
-      right: -30vw;  
+      min-width:100vw
   }
 `;
 
