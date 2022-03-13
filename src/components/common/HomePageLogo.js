@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const HomePageLogo = () => {
     return (
         <HomeLogo>
-            <code>Hello! I'm</code>
             <LogoText>BERTA</LogoText>
             <Description>Front-end Software Engineer</Description>
         </HomeLogo>
@@ -15,11 +14,13 @@ const Description = styled.div`
     margin: 0 auto;
     text-transform: uppercase;
     margin-top: 10px;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
+    font-size: 11px;
     @media (max-width: 768px) {
-        font-size: 13px;
+        font-size: 11px;
         margin: 0 auto;
-        padding-left: 10px;
+        letter-spacing: 4px;
+
     }
 `;
 
@@ -35,7 +36,7 @@ const HomeLogo = styled.div`
 const LogoText = styled.div`
     /* background-image: url('https://media.giphy.com/media/1Aeg7GZ6tIor81AAIH/giphy.gif'); */
     /* background-image: url('https://media.giphy.com/media/l41lNx6qN1EB1jh9S/giphy-downsized.gif'); */
-    /* background-image: url('https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy-downsized.gif'); */
+    // background-image: url('https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy-downsized.gif'); */
     background-size: 23%;
     background-repeat: no-repeat;
     background-position: center;
@@ -47,8 +48,8 @@ const LogoText = styled.div`
     line-height: 1;
     text-align: center;
     color: black;
-    text-shadow: -5px 2px 4px rgb(0 0 0 / 40%),
-        2px -5px 6px rgb(255 255 255 / 18%);
+    text-shadow: -4px 2px 4px rgb(0 0 0 / 40%),
+        2px -5px 4px rgb(255 255 255 / 18%);
     padding-top: 10px;
 
     -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -81,8 +82,7 @@ const LogoText = styled.div`
     }
 
     @media (max-width: 768px) {
-        background-size: 90%;
-        font-size: 80px;
+        font-size: 120px;
     }
 `;
 
