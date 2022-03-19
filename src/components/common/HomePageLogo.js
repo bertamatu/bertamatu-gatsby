@@ -80,10 +80,6 @@ const LogoText = styled.div`
             opacity: 1;
         }
     }
-
-    @media (max-width: 768px) {
-        font-size: 120px;
-    }
 `;
 
 export default HomePageLogo;

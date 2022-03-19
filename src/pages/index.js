@@ -19,16 +19,16 @@ const IndexPage = ({data}) => (
             <ConnectButton />
             <SocialIcons />
             {/* <AdditionalText>z e r o t o m a s t e r y</AdditionalText> */}
+            <Image>
+              <Img fluid={data.file.childImageSharp.fluid} alt="bertacodes" />
+            </Image>
         </Layout>
-        <Image>
-          <Img fluid={data.file.childImageSharp.fluid} alt="bertacodes" />
-        </Image>
     </HomePage>
 );
 
 export const data = graphql`
   query BackgroundImage {
-    file(relativePath: {eq: "flowersBckg.png"}) {
+    file(relativePath: {eq: "flws.png"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -46,18 +46,16 @@ const HomePage = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
+
 `;
 
 const Image = styled.div`
-    width: 100%
-    z-index: -1;
-    position: relative;
-    bottom: -5vh;
-    @media (max-width: 868px) {
-      display: none;
-  }
-`;
+    max-width:300px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.45) 20px 25px 0 -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        `;
 
 // const AdditionalText = styled.div`
 //     font-size: 16px;
