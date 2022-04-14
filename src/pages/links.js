@@ -52,14 +52,6 @@ const Links = data => (
             >
                 Apply to remote software jobs in the US
             </LinkButton>
-            <LinkButton
-                href="http://turing.com/s/ml6i05"
-                target="_blank"
-                style={{ backgroundColor: '#fa1e3f' }}
-            >
-                Women in Tech Week
-            </LinkButton>
-
             <br />
             <SectionTitle>Developer roadmaps</SectionTitle>
             {roadmapsLinks.map(link => {
