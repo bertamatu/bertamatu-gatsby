@@ -1,9 +1,12 @@
 import React from 'react';
 import Navbar from './navbar/Navbar';
 import styled from 'styled-components';
-// import ConnectButton from './buttons/Connect';
-// import SocialIcons from './buttons/SocialIcons';
-// import Logo from './common/Logo';
+
+const Header = () => (
+    <HeaderStyle>
+        <Navbar />
+    </HeaderStyle>
+);
 
 const HeaderStyle = styled.header`
     position: fixed;
@@ -12,28 +15,5 @@ const HeaderStyle = styled.header`
     z-index: 1;
     background-color: #fff;
 `;
-
-// const HeaderItems = styled.section`
-//     position: absolute;
-//     top: 8.5vh;
-//     display: flex;
-//     justify-content: space-around;
-//     width: calc(100% - 30px);
-//     @media (max-width: 768px) {
-//         position: absolute;
-//         top: 5vh;
-//     }
-// `;
-
-const Header = () => (
-    <HeaderStyle>
-        {/* <HeaderItems>
-            <ConnectButton />
-            <Logo />
-            <SocialIcons />
-        </HeaderItems> */}
-        <Navbar />
-    </HeaderStyle>
-);
 
 export default Header;
