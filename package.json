@@ -11,7 +11,7 @@
     "acorn": "^8.7.0",
     "babel-plugin-styled-components": "^1.13.3",
     "core-js": "^3.22.0",
-    "gatsby": "^4.12.1",
+    "gatsby": "^4.7.2",
     "gatsby-background-image": "^1.6.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^3.14.0",
