@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { GoLogoGithub } from 'react-icons/go';
 import workGIF from '../data/images/gifs/giphy_work.gif';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Work = ({ data }) => {
     return (
@@ -42,9 +42,9 @@ const Work = ({ data }) => {
                     >
                         <ProjectImage
                             style={{ height: 242, width: 200 }}
-                            fluid={
+                            image={
                                 project.node.frontmatter.postImage
-                                    .childImageSharp.fluid
+                                    .childImageSharp.gatsbyImageData
                             }
                             alt={project.node.frontmatter.postImageAlt}
                         ></ProjectImage>
@@ -82,33 +82,28 @@ const Work = ({ data }) => {
     );
 };
 
-export const data = graphql`
-    query ProjectQuery {
-        allMarkdownRemark(
-            filter: { frontmatter: { type: { eq: "project" } } }
-        ) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        author
-                        title
-                        slug
-                        postImageAlt
-                        githubLink
-                        deploymentLink
-                        postImage {
-                            childImageSharp {
-                                fluid {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                }
+export const data = graphql`query ProjectQuery {
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "project"}}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          author
+          title
+          slug
+          postImageAlt
+          githubLink
+          deploymentLink
+          postImage {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)            
             }
+          }
         }
+      }
     }
+  }
+}
 `;
 
 const ItemContainer = styled.section`
@@ -160,7 +155,7 @@ const GithubLinkProject = styled.a`
     background: black;
     font-size: 0.65rem;
 `;
-const ProjectImage = styled(Img)`
+const ProjectImage = styled(GatsbyImage)`
     margin: 0 auto;
     border-radius: 50px 0 50px 0;
     margin-top: 1rem;

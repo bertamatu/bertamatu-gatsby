@@ -3,28 +3,25 @@ import { graphql } from 'gatsby';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { TiArrowBack } from 'react-icons/ti';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
-export const query = graphql`
-    query ($slug: String!) {
-        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-                slug
-                title
-                author
-                deploymentLink
-                githubLink
-                postImage {
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
+export const query = graphql`query ($slug: String!) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      slug
+      title
+      author
+      deploymentLink
+      githubLink
+      postImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
+      }
     }
+  }
+}
 `;
 
 export default function ProjectTemplate({ data }) {
@@ -33,7 +30,7 @@ export default function ProjectTemplate({ data }) {
     return (
         <Container>
             <Image
-                fluid={frontmatter.postImage.childImageSharp.fluid}
+                image={frontmatter.postImage.childImageSharp.gatsbyImageData}
                 alt={frontmatter.postImageAlt}
             ></Image>
             <br />
@@ -66,7 +63,7 @@ const Container = styled.section`
         height: 90vh;
     }
 `;
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
     width: 50%;
     margin: 0 auto;
     margin-top: 1rem;

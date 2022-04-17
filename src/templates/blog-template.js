@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { TiArrowBack } from 'react-icons/ti';
 import { GoPerson, GoCalendar } from 'react-icons/go';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function BlogTemplate({ data }) {
     const { markdownRemark } = data;
@@ -18,7 +18,7 @@ export default function BlogTemplate({ data }) {
                     Go back to blog page
                 </LinkBack>
                 <Image
-                    fluid={frontmatter.postImage.childImageSharp.fluid}
+                    image={frontmatter.postImage.childImageSharp.gatsbyImageData}
                     alt="developers-setup"
                 ></Image>
                 <Title>{frontmatter.title}</Title>
@@ -48,31 +48,28 @@ export default function BlogTemplate({ data }) {
     );
 }
 
-export const pageQuery = graphql`
-    query ($slug: String!) {
-        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-                author
-                slug
-                title
-                date
-                postImage {
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
+export const pageQuery = graphql`query ($slug: String!) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      author
+      slug
+      title
+      date
+      postImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
+      }
     }
+  }
+}
 `;
 
 const Container = styled(Layout)`
     border: 1px solid black;
 `;
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
     border-radius: 5px;
     margin: 1rem 0 0.5rem 0;
     height: 40vh;

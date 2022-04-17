@@ -2,38 +2,35 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 
-export const queryBlog = graphql`
-    query BlogQuery {
-        allMarkdownRemark(
-            sort: { order: DESC, fields: frontmatter___date }
-            filter: { frontmatter: { type: { eq: "post" } } }
-        ) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        author
-                        date
-                        deploymentLink
-                        githubLink
-                        intro
-                        slug
-                        title
-                        postImage {
-                            childImageSharp {
-                                fluid {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                }
+export const queryBlog = graphql`query BlogQuery {
+  allMarkdownRemark(
+    sort: {order: DESC, fields: frontmatter___date}
+    filter: {frontmatter: {type: {eq: "post"}}}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          author
+          date
+          deploymentLink
+          githubLink
+          intro
+          slug
+          title
+          postImage {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
             }
+          }
         }
+      }
     }
+  }
+}
 `;
 
 const BlogPage = ({ data }) => {
@@ -56,9 +53,9 @@ const BlogPage = ({ data }) => {
                             <Link to={post.node.frontmatter.slug}>
                                 <section>
                                     <Image
-                                        fluid={
+                                        image={
                                             post.node.frontmatter.postImage
-                                                .childImageSharp.fluid
+                                                .childImageSharp.gatsbyImageData
                                         }
                                         alt="developers-setup"
                                     ></Image>
@@ -131,7 +128,7 @@ const Article = styled.article`
         flex-direction: column;
     }
 `;
-const Image = styled(Img)`
+const Image = styled(GatsbyImage)`
     height: 30vh;
     @media (max-width: 768px) {
         margin-top: 2rem;

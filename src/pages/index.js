@@ -6,7 +6,7 @@ import SocialIcons from '../components/buttons/SocialIcons';
 import HomePageLogo from '../components/common/HomePageLogo';
 import ConnectButton from '../components/buttons/Connect';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const IndexPage = ({data}) => (
     <HomePage>
@@ -16,22 +16,19 @@ const IndexPage = ({data}) => (
             <ConnectButton />
             <SocialIcons />
             <Image>
-              <Img fluid={data.file.childImageSharp.fluid} alt="bertacodes" />
+              <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="bertacodes" />
             </Image>
         </Layout>
     </HomePage>
 );
 
-export const data = graphql`
-  query BackgroundImage {
-    file(relativePath: {eq: "flws.png"}) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const data = graphql`query BackgroundImage {
+  file(relativePath: {eq: "flws.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `;
 
 const HomePage = styled.section`
