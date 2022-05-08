@@ -9,7 +9,7 @@ const ConnectButton = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                lets' get social
+                let's get social
             </Button>
         </>
     );
@@ -21,7 +21,7 @@ const Button = styled.a`
     width: 302px;
     padding: 10px;
     text-decoration: none;
-    background-color: black;
+    background-color: #fa1e3f;
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
@@ -31,8 +31,14 @@ const Button = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
     :hover {
-        background-color: #fa1e3f;
         transition: 0.3s ease-in-out;
+        background-color: #000;
     }
 `;

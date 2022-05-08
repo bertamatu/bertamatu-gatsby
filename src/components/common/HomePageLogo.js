@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const HomePageLogo = () => {
     return (
         <HomeLogo>
-            <LogoText>BERTA</LogoText>
-            <Description>Front-end Software Engineer</Description>
+            <LogoText>Berta</LogoText>
+            <Description>Software Engineer</Description>
         </HomeLogo>
     );
 };
@@ -13,14 +13,14 @@ const HomePageLogo = () => {
 const Description = styled.div`
     margin: 0 auto;
     text-transform: uppercase;
-    margin-top: 10px;
-    letter-spacing: 4px;
+    letter-spacing: 11px;
+    padding-left: 11px;
     font-size: 11px;
+    padding-bottom: 16px;
     @media (max-width: 768px) {
         font-size: 11px;
         margin: 0 auto;
-        letter-spacing: 4px;
-
+        padding-left: 11px;
     }
 `;
 
@@ -29,11 +29,11 @@ const HomeLogo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
+    margin-top: -10px;
 `;
 
 const LogoText = styled.div`
+    font-family: none;
     /* background-image: url('https://media.giphy.com/media/1Aeg7GZ6tIor81AAIH/giphy.gif'); */
     /* background-image: url('https://media.giphy.com/media/l41lNx6qN1EB1jh9S/giphy-downsized.gif'); */
     // background-image: url('https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy-downsized.gif'); */
@@ -44,7 +44,7 @@ const LogoText = styled.div`
     -moz-background-clip: text;
     -webkit-background-clip: text;
     font-weight: 900;
-    font-size: 100px;
+    font-size: 128px;
     line-height: 1;
     text-align: center;
     color: black;
