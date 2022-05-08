@@ -40,20 +40,28 @@ const Links = data => (
             <SocialIcons />
             {personalLinks.map(link => {
                 return (
-                    <LinkButton href={link.url} target="_blank" key={link.id}>
+                    <LinkButton
+                        href={link.url}
+                        target="_blank"
+                        key={link.id}
+                        style={{ backgroundColor: 'rgb(250, 30, 63)' }}
+                    >
                         {link.title}
                     </LinkButton>
                 );
             })}
-            <LinkButton
+
+            {/* <LinkButton
                 href="http://turing.com/s/l5apE8 "
                 target="_blank"
                 style={{ backgroundColor: '#fa1e3f' }}
             >
                 Apply to remote software jobs in the US
-            </LinkButton>
+            </LinkButton> */}
             <br />
+
             <SectionTitle>Developer roadmaps</SectionTitle>
+            <Divider />
             {roadmapsLinks.map(link => {
                 return (
                     <LinkButton href={link.url} target="_blank" key={link.id}>
@@ -63,6 +71,7 @@ const Links = data => (
             })}
             <br />
             <SectionTitle>Javascript</SectionTitle>
+            <Divider />
             {javascriptLinks.map(link => {
                 return (
                     <LinkButton href={link.url} target="_blank" key={link.id}>
@@ -72,6 +81,7 @@ const Links = data => (
             })}
             <br />
             <SectionTitle>must read</SectionTitle>
+            <Divider />
             {mustReadLinks.map(link => {
                 return (
                     <LinkButton href={link.url} target="_blank" key={link.id}>
@@ -101,12 +111,15 @@ const Picture = styled.img`
     border-radius: 50%;
     height: 100px;
     margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 `;
 
 const SectionTitle = styled.b`
-    color: #fa1e3f;
+    color: #ff0033;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
 `;
 
 const LinkButton = styled.a`
@@ -125,9 +138,14 @@ const LinkButton = styled.a`
     align-items: center;
     margin-bottom: 5px;
     transition: all 300ms ease-in-out;
-
     &:hover {
         background: rgb(32 31 31 / 20%);
         color: black;
     }
+`;
+
+const Divider = styled.hr`
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
 `;

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "url": "http://www.berta.codes/about",
-      "title": "Portfolio | About me",
+      "title": "About me",
       "type": "personal"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": 12,
       "url": "https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/amp/",
-      "title": "Learn web development in 2021!",
+      "title": "Learn web development",
       "type": "roadmaps"
     },
     {
