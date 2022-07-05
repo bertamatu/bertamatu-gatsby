@@ -129,8 +129,8 @@ const LinkButton = styled.a`
     border-radius: 32px;
     text-align: center;
     cursor: pointer;
-    background: #000;
-    color: white;
+    background: rgb(32 31 31 / 10%);
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
@@ -138,9 +138,10 @@ const LinkButton = styled.a`
     align-items: center;
     margin-bottom: 5px;
     transition: all 300ms ease-in-out;
+    font-weight: bold;
     &:hover {
-        background: rgb(32 31 31 / 20%);
-        color: black;
+      background: rgb(32 31 31 / 20%);
+      color: white;
     }
 `;
 
