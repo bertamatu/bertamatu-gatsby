@@ -70,8 +70,7 @@ export default SocialIcons;
 
 const Icons = styled.a`
     text-decoration: none;
-    // color: #000;
-    color: #acacac;
+    color: #000;
     font-size: 38px;
     padding: 0 6px;
     align-content: center;

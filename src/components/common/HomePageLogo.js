@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const HomePageLogo = () => {
     return (
         <HomeLogo>
-            <LogoText>Berta</LogoText>
-            <Description>Software Engineer</Description>
+            <LogoText>BERTA</LogoText>
+            <Description>UI Software Engineer</Description>
         </HomeLogo>
     );
 };
@@ -13,10 +13,10 @@ const HomePageLogo = () => {
 const Description = styled.div`
     margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 11px;
+    letter-spacing: 9px;
     padding-left: 11px;
     font-size: 11px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
     @media (max-width: 768px) {
         font-size: 11px;
         margin: 0 auto;
@@ -33,7 +33,7 @@ const HomeLogo = styled.div`
 `;
 
 const LogoText = styled.div`
-    font-family: none;
+    font-family: system-ui;
     /* background-image: url('https://media.giphy.com/media/1Aeg7GZ6tIor81AAIH/giphy.gif'); */
     /* background-image: url('https://media.giphy.com/media/l41lNx6qN1EB1jh9S/giphy-downsized.gif'); */
     // background-image: url('https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy-downsized.gif'); */
@@ -44,7 +44,7 @@ const LogoText = styled.div`
     -moz-background-clip: text;
     -webkit-background-clip: text;
     font-weight: 900;
-    font-size: 128px;
+    font-size: 94px;
     line-height: 1;
     text-align: center;
     color: black;

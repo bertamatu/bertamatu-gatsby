@@ -120,7 +120,7 @@ const About = () => {
                             decided to join Instagram and do some networking
                             with software developers outhere. I've shared my
                             daily goals and losses when building my projects
-                            portfolio. Today there is a community of over 75k
+                            portfolio. Today there is a community of over 100k
                             people. I enjoy sharing my developer's journey and
                             helping and motivating others because I know how
                             much support is needed to become{' '}

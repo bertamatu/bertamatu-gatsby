@@ -17,8 +17,9 @@ const IndexPage = ({ data }) => (
                     alt="bertacodes"
                 /> */}
                 <img
-                    src="https://media.giphy.com/media/FiYYhKGizUKHK/giphy.gif"
+                    src="https://media.giphy.com/media/uB86ZyWQsnFSGYe2sA/giphy.gif"
                     alt="bertacodes"
+                    style={{filter: "hue-rotate(100deg)", margin: "0"}}
                 />
             </Image>
             <Seo title="Home" />
