@@ -1,19 +1,30 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import SetupItem from '../components/SetupItem';
-import SetupData from '../data/setup.json'
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Setup = () => {
     return (
         <Layout>
             <Container>
-                {
-                    SetupData
-                        .map(item => {
-                            return <SetupItem item={item}/>
-                        })
-                }
+                {/* {SetupData.map(item => <SetupItem item={item} />)} */}
+                <code>
+                    I'm sorry, I don't provide any information about the setup
+                    at the moment.
+                    <br />
+                    <br />
+                    But maybe you would like to connect with me on{' '}
+                    <a
+                        href="https://www.linkedin.com/in/bertam/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+                    ?
+                    <br />
+                    <br />
+                    Have a fantastic day!:)
+                </code>
             </Container>
         </Layout>
     );
@@ -22,14 +33,16 @@ const Setup = () => {
 export default Setup;
 
 const Container = styled('div')`
-margin-top: 11vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    margin-top: 16vh;
+    padding: 0 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     @media (min-width: 1024px) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
     }
-`
+`;
