@@ -41,6 +41,10 @@ module.exports = {
                 link: '/setup',
             },
             {
+              name: 'SUPPORT',
+              link: '/support',
+            },
+            {
                 name: 'CONTACT',
                 link: '/contact',
             },
