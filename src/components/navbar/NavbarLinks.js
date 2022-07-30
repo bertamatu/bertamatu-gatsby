@@ -12,6 +12,7 @@ const NavbarLinks = () => {
             {/* <NavItem to="/blog">BLOG</NavItem> */}
             <NavItem to="/links">LINKS</NavItem>
             <NavItem to="/setup">SETUP</NavItem>
+            <NavItem to="/support">SUPPORT</NavItem>
             <NavItem to="/contact">CONTACT</NavItem>
         </>
     );
