@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import data from '../data/data.json';
-import SocialIcons from '../components/buttons/SocialIcons';
+import Youtube from '../components/buttons/Youtube';
 
 const links = data.links;
 
@@ -35,16 +35,27 @@ const Links = data => (
         <LinksContainer>
             <Picture
                 alt="bertacodes"
-                src="https://lh3.googleusercontent.com/a-/AOh14GiuR5Ue4nrWndtnkm_6nOzcsv4_V2gTSdBzC0SJHg=s83-c-mo"
+                src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_400_400/0/1630502878061?e=1669248000&v=beta&t=xt-iriLpKZKx1jizTVUbSwnXH8qmKjC32l5G-_s7D7s"
             />
-            <SocialIcons />
+            <Youtube/>
+
+            <iframe 
+            width="340" 
+            height="180" 
+            src="https://www.youtube.com/embed/2Gdaj6lFVBs" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            />
+
             {personalLinks.map(link => {
                 return (
                     <LinkButton
                         href={link.url}
                         target="_blank"
                         key={link.id}
-                        style={{ backgroundColor: 'rgb(250, 30, 63)' }}
+                        // style={{ backgroundColor: 'rgb(250, 30, 63)' }}
                     >
                         {link.title}
                     </LinkButton>

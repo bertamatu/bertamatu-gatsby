@@ -124,7 +124,8 @@ module.exports = {
                     'Chonburi',
                     'Yeseva One',
                     'Vidaloka',
-                    'Major Mono Display'
+                    'Major Mono Display',
+                    'Oswald'
                 ],
                 display: 'swap',
             },

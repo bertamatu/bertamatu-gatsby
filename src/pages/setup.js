@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
+import Youtube from '../components/buttons/Youtube';
 
 const Setup = () => {
     return (
@@ -12,15 +13,8 @@ const Setup = () => {
                     at the moment.
                     <br />
                     <br />
-                    But maybe you would like to connect with me on{' '}
-                    <a
-                        href="https://www.linkedin.com/in/bertam/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-                    ?
+                    But maybe you would like to subscribe to my {' '}
+                    <Youtube/>
                     <br />
                     <br />
                     Have a fantastic day!:)
