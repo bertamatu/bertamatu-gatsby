@@ -11,7 +11,7 @@ import { IoIosMail } from 'react-icons/io';
 
 const SocialIcons = () => {
     return (
-        <section
+        <Container
             style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -39,7 +39,6 @@ const SocialIcons = () => {
             >
                 <FaGithubSquare />
             </Icons>
-
             <Icons
                 href="https://www.youtube.com/c/bertacodes"
                 target="_blank"
@@ -62,11 +61,17 @@ const SocialIcons = () => {
             >
                 <IoIosMail />
             </Icons>
-        </section>
+        </Container>
     );
 };
 
 export default SocialIcons;
+
+const Container = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
 const Icons = styled.a`
     text-decoration: none;
