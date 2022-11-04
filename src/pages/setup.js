@@ -2,13 +2,15 @@ import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 import Youtube from '../components/buttons/Youtube';
+import SetupItem from '../components/SetupItem';
+import SetupData from '../data/setup.json'
 
 const Setup = () => {
     return (
         <Layout>
             <Container>
-                {/* {SetupData.map(item => <SetupItem item={item} />)} */}
-                <code>
+                {SetupData.map(item => <SetupItem item={item} />)}
+                {/* <code>
                     I'm sorry, I don't provide any information about the setup
                     at the moment.
                     <br />
@@ -18,7 +20,7 @@ const Setup = () => {
                     <br />
                     <br />
                     Have a fantastic day!:)
-                </code>
+                </code> */}
             </Container>
         </Layout>
     );
