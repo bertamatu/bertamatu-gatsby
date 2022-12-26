@@ -13,6 +13,7 @@ const GalleryPage = () => {
     return (
         <Layout>
             <MainContent>
+            qq
             </MainContent>
         </Layout>
     );

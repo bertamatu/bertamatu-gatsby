@@ -1,13 +1,13 @@
 ---
 type: "project"
-slug: "/work/redux-auth-task"
+slug: "/work/redux-auth-task/"
 title: "LOGIN&DATA | ReactJs | Hooks | Auth"
 author: "@berta.codes"
 deploymentLink: "https://my-frontend-party.netlify.app/"
-githubLink: "https://github.com/bertamatu/frontend-party-ReactJsHooks"
+githubLink: "https://github.com/bertamatu/frontend-party-ReactJsHooks/"
 introImage: "redux-task.jpeg"
 postImage: "redux-task.jpeg"
-postImageAlt: "weather-app-reactjs-redux-hooks"
+postImageAlt: "weather-app-reactJs-redux-hooks"
 ---
 
 <b>Things I got familiar with:</b>

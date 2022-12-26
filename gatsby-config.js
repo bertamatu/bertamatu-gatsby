@@ -18,35 +18,35 @@ module.exports = {
             },
             {
                 name: 'ABOUT',
-                link: '/about',
+                link: '/about/',
             },
             {
                 name: 'PROJECTS',
-                link: '/projects',
+                link: '/projects/',
             },
             {
                 name: 'GALLERY',
-                link: '/gallery',
+                link: '/gallery/',
             },
             {
                 name: 'BLOG',
-                link: '/blog',
+                link: '/blog/',
             },
             {
                 name: 'LINKS',
-                link: '/links',
+                link: '/links/',
             },
             {
                 name: 'SETUP',
-                link: '/setup',
+                link: '/setup/',
             },
             {
               name: 'SUPPORT',
-              link: '/support',
+              link: '/support/',
             },
             {
                 name: 'CONTACT',
-                link: '/contact',
+                link: '/contact/',
             },
         ],
     },
@@ -131,4 +131,5 @@ module.exports = {
             },
         },
     ],
+  trailingSlash: `always`,
 };
