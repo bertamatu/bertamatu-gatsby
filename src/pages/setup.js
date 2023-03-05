@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import Youtube from '../components/buttons/Youtube';
+// import Youtube from '../components/buttons/Youtube';
 import SetupItem from '../components/SetupItem';
 import SetupData from '../data/setup.json'
 

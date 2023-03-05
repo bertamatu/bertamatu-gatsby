@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 export const queryBlog = graphql`query BlogQuery {
   allMarkdownRemark(
-    sort: {order: DESC, fields: frontmatter___date}
+    sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {type: {eq: "post"}}}
   ) {
     edges {
@@ -30,8 +30,7 @@ export const queryBlog = graphql`query BlogQuery {
       }
     }
   }
-}
-`;
+}`;
 
 const BlogPage = ({ data }) => {
     return (

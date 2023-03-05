@@ -8,23 +8,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         `./src/templates/project-template.js`
     );
 
-    const result = await graphql(`
-        {
-            allMarkdownRemark(
-                sort: { order: ASC, fields: [frontmatter___date] }
-                limit: 100
-            ) {
-                edges {
-                    node {
-                        frontmatter {
-                            slug
-                            type
-                        }
-                    }
-                }
-            }
+    const result = await graphql(`{
+  allMarkdownRemark(sort: {frontmatter: {date: ASC}}, limit: 100) {
+    edges {
+      node {
+        frontmatter {
+          slug
+          type
         }
-    `);
+      }
+    }
+  }
+}`);
     if (result.errors) {
         reporter.panicOnBuild(
             `gatsby-node.js | Error while running GraphQL query.`
