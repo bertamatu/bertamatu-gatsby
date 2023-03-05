@@ -5,50 +5,51 @@ require('dotenv').config({
 });
 
 module.exports = {
+    trailingSlash: `always`,
     siteMetadata: {
-        title: `berta.codes`,
-        titleTemplate: 'berta.codes',
-        description: `PORTFOLIO. Front-end software developer.`,
-        author: `@berta.codes`,
-        url: 'https://www.berta.codes',
-        menuLinks: [
-            {
-                name: 'HOME',
-                link: '/',
-            },
-            {
-                name: 'ABOUT',
-                link: '/about',
-            },
-            {
-                name: 'PROJECTS',
-                link: '/projects',
-            },
-            {
-                name: 'GALLERY',
-                link: '/gallery',
-            },
-            {
-                name: 'BLOG',
-                link: '/blog',
-            },
-            {
-                name: 'LINKS',
-                link: '/links',
-            },
-            {
-                name: 'SETUP',
-                link: '/setup',
-            },
-            {
-              name: 'SUPPORT',
-              link: '/support',
-            },
-            {
-                name: 'CONTACT',
-                link: '/contact',
-            },
-        ],
+          title: `berta.codes`,
+          titleTemplate: 'berta.codes',
+          description: `PORTFOLIO. Front-end software developer.`,
+          author: `@berta.codes`,
+          url: 'https://www.berta.codes',
+          menuLinks: [
+              {
+                  name: 'HOME',
+                  link: '/',
+              },
+              {
+                  name: 'ABOUT',
+                  link: '/about',
+              },
+              {
+                  name: 'PROJECTS',
+                  link: '/projects',
+              },
+              {
+                  name: 'GALLERY',
+                  link: '/gallery',
+              },
+              {
+                  name: 'BLOG',
+                  link: '/blog',
+              },
+              {
+                  name: 'LINKS',
+                  link: '/links',
+              },
+              {
+                  name: 'SETUP',
+                  link: '/setup',
+              },
+              {
+                name: 'SUPPORT',
+                link: '/support',
+              },
+              {
+                  name: 'CONTACT',
+                  link: '/contact',
+              },
+          ],
     },
     plugins: [
         {
@@ -131,4 +132,5 @@ module.exports = {
             },
         },
     ],
+    trailingSlash: `always`,
 };

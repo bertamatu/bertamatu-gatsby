@@ -37,7 +37,7 @@ export default function ProjectTemplate({ data }) {
             <h5>{frontmatter.title}</h5>
             <div>{frontmatter.author}</div>
             <div dangerouslySetInnerHTML={{ __html: html }}></div>
-            <LinkBack to="/Projects">
+            <LinkBack to="/projects">
                 <TiArrowBack />
                 Go back to work page
             </LinkBack>
