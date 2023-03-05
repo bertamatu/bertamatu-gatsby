@@ -33,10 +33,10 @@ const mustReadLinks = links
 const Links = data => (
     <Layout>
         <LinksContainer>
-            <Picture
+            {/* <Picture
                 alt="bertacodes"
                 src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_400_400/0/1630502878061?e=1669248000&v=beta&t=xt-iriLpKZKx1jizTVUbSwnXH8qmKjC32l5G-_s7D7s"
-            />
+            /> */}
             <Youtube/>
 
             <iframe 
