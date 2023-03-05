@@ -7,12 +7,12 @@ const NavbarLinks = () => {
         <>
             <NavItem to="/">HOME</NavItem>
             <NavItem to="/about">ABOUT</NavItem>
-            <NavItem to="/projects">PROJECTS</NavItem>
+            {/* <NavItem to="/projects">PROJECTS</NavItem> */}
             {/* <NavItem to="/gallery">GALLERY</NavItem> */}
             {/* <NavItem to="/blog">BLOG</NavItem> */}
             <NavItem to="/links">LINKS</NavItem>
             <NavItem to="/setup">SETUP</NavItem>
-            <NavItem to="/support">SUPPORT</NavItem>
+            {/* <NavItem to="/support">SUPPORT</NavItem> */}
             <NavItem to="/contact">CONTACT</NavItem>
         </>
     );
