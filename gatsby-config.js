@@ -53,14 +53,15 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: process.env.GATSBY_G_A,
-                head: true,
-                anonymize: true,
-                respectDNT: true,
-                pageTransitionDelay: 0,
+          resolve: `gatsby-plugin-google-gtag`,
+          options: {
+            trackingIds: [ 
+              process.env.GATSBY_GA4
+            ],
+            pluginConfig: {
+              head: true,
             },
+          },
         },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-catch-links`,
