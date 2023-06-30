@@ -7,61 +7,60 @@ require('dotenv').config({
 module.exports = {
     trailingSlash: `always`,
     siteMetadata: {
-          title: `berta.codes`,
-          titleTemplate: 'berta.codes',
-          description: `PORTFOLIO. Front-end software developer.`,
-          author: `@berta.codes`,
-          url: 'https://www.berta.codes',
-          menuLinks: [
-              {
-                  name: 'HOME',
-                  link: '/',
-              },
-              {
-                  name: 'ABOUT',
-                  link: '/about',
-              },
-              {
-                  name: 'PROJECTS',
-                  link: '/projects',
-              },
-              {
-                  name: 'GALLERY',
-                  link: '/gallery',
-              },
-              {
-                  name: 'BLOG',
-                  link: '/blog',
-              },
-              {
-                  name: 'LINKS',
-                  link: '/links',
-              },
-              {
-                  name: 'SETUP',
-                  link: '/setup',
-              },
-              {
+        title: `berta.codes`,
+        titleTemplate: 'berta.codes',
+        description: `PORTFOLIO. Front-end software developer.`,
+        author: `@berta.codes`,
+        url: 'https://www.berta.codes',
+        menuLinks: [
+            {
+                name: 'HOME',
+                link: '/',
+            },
+            {
+                name: 'ABOUT',
+                link: '/about',
+            },
+            {
+                name: 'PROJECTS',
+                link: '/projects',
+            },
+            {
+                name: 'GALLERY',
+                link: '/gallery',
+            },
+            {
+                name: 'BLOG',
+                link: '/blog',
+            },
+            {
+                name: 'LINKS',
+                link: '/links',
+            },
+            {
+                name: 'SETUP',
+                link: '/setup',
+            },
+            {
                 name: 'SUPPORT',
                 link: '/support',
-              },
-              {
-                  name: 'CONTACT',
-                  link: '/contact',
-              },
-          ],
+            },
+            {
+                name: 'CONTACT',
+                link: '/contact',
+            },
+        ],
     },
     plugins: [
         {
-          resolve: `gatsby-plugin-google-gtag`,
-          options: {
-            trackingIds: [ 
-              process.env.GATSBY_GA4
-            ],
-            pluginConfig: {
-              head: true,
+            resolve: `gatsby-plugin-gdpr-cookies`,
+            options: {
+                googleAnalytics: {
+                    trackingId: process.env.GATSBY_GA4,
+                    anonymize: true,
+                },
+                environments: ['production', 'development'],
             },
-          },
         },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-catch-links`,
@@ -127,7 +126,7 @@ module.exports = {
                     'Yeseva One',
                     'Vidaloka',
                     'Major Mono Display',
-                    'Oswald'
+                    'Oswald',
                 ],
                 display: 'swap',
             },
