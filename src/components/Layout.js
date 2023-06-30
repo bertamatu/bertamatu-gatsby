@@ -42,31 +42,20 @@ const Layout = ({ children }) => {
 
     const cookieConsentStyle = {
         backgroundColor: '#e3e3e3',
-        fontSize: '0.7rem',
+        fontSize: '12px',
         color: '#000',
-        transform: 'translateY(-20%)',
         boxShadow:
             'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
         width: '100%',
         border: '1px solid white',
         borderRadius: '4px',
-        display: 'flex',
-        flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center',
-        padding: `${isMobileView ? '0 30px' : '0 100px'}`,
+        padding: `${isMobileView ? '0 30px' : '0 250px'}`,
     };
 
     const buttonStyle = {
         background: '#a6f7d3',
         borderRadius: '4px',
-        fontWeight: 'bold',
-    };
-
-    const declineButtonStyle = {
-        backgroundColor: 'transparent',
-        borderRadius: '4px',
-        color: '#919191',
     };
 
     return (
@@ -75,24 +64,18 @@ const Layout = ({ children }) => {
             <main>{children}</main>
             <CookieConsent
                 location="bottom"
-                buttonText="Accept"
-                declineButtonText="Reject"
+                buttonText="Accept and Close"
                 cookieName="gatsby-gdpr-google-analytics"
-                enableDeclineButton
-                expires={150}
                 style={cookieConsentStyle}
                 buttonStyle={buttonStyle}
-                declineButtonStyle={declineButtonStyle}
                 onAccept={() => {
                     initializeAndTrack(location);
                 }}
             >
                 <div style={{ textAlign: 'justify' }}>
-                    I'm thrilled to have you here at{' '}
-                    <strong>Berta Codes</strong>! By clicking{' '}
-                    <strong>'Accept'</strong>, you're giving me the green light
-                    to use cookies and work my magic in creating a personalized
-                    experience just for you!{' '}
+                    We want to let you know that we use cookies on this website.
+                    To agree, please click the "Accept" button. You can withdraw
+                    your consent at any time by changing your browser settings.{' '}
                     <a
                         style={{ color: '#4287db' }}
                         href="https://www.iubenda.com/privacy-policy/96553161/cookie-policy"

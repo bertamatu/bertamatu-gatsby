@@ -89,16 +89,14 @@ const About = () => {
                                 TypeScript, and front-end testing - Jest and
                                 Cypress.
                             </li>
-                            <li>
-                                In <strong>2022</strong> I'm still enjoying the
-                                full-time front-end software engineer job. I'm
-                                learning some Java in my spare time. Also tried
-                                freelancing, but couldn't manage that due to the
-                                lack of time, so had to quit it. At the moment
-                                I'm supporting my team and trying out the UI
-                                lead hat.
-                            </li>
                         </ul>
+                        <div>
+                            Currently, I am a full-time front-end software
+                            engineer supporting my team as the lead for UI
+                            performance research and Cypress testing, and making
+                            critical decisions when required.
+                        </div>
+                        <br />
                         <Link
                             href="https://instagram.com/berta.codes"
                             target="_blank"
@@ -106,16 +104,17 @@ const About = () => {
                         >
                             <Instagram />
                             <IconTitle>
-                                Mentor and tech content creator.
+                                Tech content creator, mentor and speaker.
                             </IconTitle>
                         </Link>
                         <hr />
                         <section>
-                            In <strong>2020</strong>, just after finishing my
-                            studies, Covid happened. Everything got closed. No
-                            coding academies, no workshops, no meeting
-                            similar-minded people, nothing {'(!)'}. I had to
-                            find ways to keep moving toward my software
+                            Since <strong>2020</strong> mentoring and having fun
+                            on Social networks (Instagram/Linkedin). Just after
+                            finishing my studies, Covid happened. Everything got
+                            closed. No coding academies, no workshops, no
+                            meeting similar-minded people, nothing {'(!)'}. I
+                            had to find ways to keep moving toward my software
                             engineering career. After some investigation, I
                             decided to join Instagram and do some networking
                             with software developers outhere. I've shared my
@@ -125,9 +124,29 @@ const About = () => {
                             helping and motivating others because I know how
                             much support is needed to become{' '}
                             <strong>a self-taught software engineer</strong>.
+                            <br />
+                            <br />
+                            During <strong>2021-2022</strong> in partnership
+                            with Lithuania Junior Achievement (LJA)
+                            organization, I had the opportunity to visit schools
+                            in Lithuania. During these visits, I spoke to
+                            students about the tech world, software engineering,
+                            and startups, with the aim of encouraging them to be
+                            brave, creative, and curious.
+                            <br />
+                            <br />
+                            In <strong>2023</strong>, for the half of the year,
+                            I had the opportunity to be a mentor at The Kaunas
+                            University of Technology for the Product Development
+                            Project module. This module brings together
+                            researchers, lecturers, social partners, and student
+                            teams to collaborate on developing a product or
+                            service from idea to prototype. As a mentor, I
+                            provided guidance and advice to the student teams,
+                            along with other company representatives involved in
+                            the program.
                         </section>
                         <br />
-
                         <Link
                             href="https://github.com/bertamatu"
                             target="_blank"
@@ -140,21 +159,23 @@ const About = () => {
                         <div
                             style={{
                                 display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
                                 flexWrap: 'wrap',
                                 marginTop: '10px',
                             }}
                         >
                             <img
-                                src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&count_private=true&theme=default_repocard"
-                                width="500"
-                                height="auto"
-                                alt="berta matuliauskiene github"
-                                style={{ marginRight: '2px' }}
-                            />
-                            <img
                                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&&theme=default_repocard&&layout=compact&&show_icons=true"
                                 width="auto"
-                                height="198"
+                                height="168"
+                                alt="berta matuliauskiene github"
+                            />
+
+                            <img
+                                src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&count_private=true&theme=default_repocard"
+                                width="400"
+                                height="auto"
                                 alt="berta matuliauskiene github"
                             />
                         </div>
@@ -172,14 +193,14 @@ const AboutPage = styled.main`
 `;
 const AboutText = styled.article`
     margin: 80px auto;
-    font-size: 12px;
+    font-size: 13px;
     color: black;
     text-align: justify;
     padding: 0 50px;
     width: 100%;
     @media (min-width: 768px) {
         width: 55vw;
-        font-size: 12px;
+        font-size: 14px;
     }
 `;
 const Link = styled.a`
