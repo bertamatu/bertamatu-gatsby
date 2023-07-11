@@ -3,13 +3,15 @@ import Layout from '../components/Layout';
 import styled from 'styled-components';
 // import Youtube from '../components/buttons/Youtube';
 import SetupItem from '../components/SetupItem';
-import SetupData from '../data/setup.json'
+import SetupData from '../data/setup.json';
 
 const Setup = () => {
     return (
         <Layout>
             <Container>
-                {SetupData.map(item => <SetupItem item={item} />)}
+                {SetupData.map(item => (
+                    <SetupItem item={item} />
+                ))}
                 {/* <code>
                     I'm sorry, I don't provide any information about the setup
                     at the moment.
@@ -35,7 +37,7 @@ const Container = styled('div')`
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
