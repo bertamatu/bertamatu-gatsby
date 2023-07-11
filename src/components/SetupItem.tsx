@@ -53,12 +53,12 @@ font-size: 12px;
 font-weight: 600;
 text-align: center;
 margin-top: -10px;
-padding-bottom: 10px;
-
+padding: 10px;
+background-color: #f0f0f0;
 `
 
 const SetupImage = styled('img')`
 margin-bottom: 0;
-max-height: 300px;
+max-height: 160px;
 max-width: auto;
 `
