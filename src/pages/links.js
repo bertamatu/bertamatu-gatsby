@@ -118,14 +118,14 @@ const LinksContainer = styled.section`
     font-size: 12px;
 `;
 
-const Picture = styled.img`
-    border-radius: 50%;
-    height: 100px;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-`;
+// const Picture = styled.img`
+//     border-radius: 50%;
+//     height: 100px;
+//     margin-bottom: 10px;
+//     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+//         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+//         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+// `;
 
 const SectionTitle = styled.b`
     color: #ff0033;

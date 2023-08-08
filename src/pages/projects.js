@@ -2,14 +2,14 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import { GoLogoGithub } from 'react-icons/go';
+import { FaGithubSquare } from 'react-icons/fa';
 import workGIF from '../data/images/gifs/giphy_work.gif';
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Work = ({ data }) => {
+const Projects = ({ data }) => {
     return (
         <Layout>
-          <Projects>
+          <ProjectsContainer>
             <ItemContainer>
               <h5 style={{marginTop: "20px", padding: "0 20px"}}>This portfolio was built in 2020. I'm keeping it here as an example for learning purposes to other aspiring developers.</h5>
             </ItemContainer>
@@ -18,7 +18,7 @@ const Work = ({ data }) => {
                     href="https://github.com/bertamatu"
                     target="_blank"
                 >
-                    <GoLogoGithub
+                    <FaGithubSquare
                         style={{
                             fontSize: 150,
                         }}
@@ -77,7 +77,7 @@ const Work = ({ data }) => {
                     </ProjectData>
                 </ItemContainer>
             ))}
-          </Projects>
+          </ProjectsContainer>
         </Layout>
     );
 };
@@ -124,7 +124,7 @@ const GithubLink = styled.a`
     text-transform: uppercase;
     cursor: pointer;
 `;
-const Projects = styled.section`
+const ProjectsContainer = styled.section`
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -170,4 +170,4 @@ const ReadMore = styled(Link)`
     text-decoration: none;
 `;
 
-export default Work;
+export default Projects;
