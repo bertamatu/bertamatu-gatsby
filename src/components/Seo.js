@@ -9,7 +9,6 @@ const SEO = ({ title, description, image, article }) => {
 
   const {
     defaultTitle,
-    titleTemplate,
     defaultDescription,
     siteUrl,
     defaultImage,
