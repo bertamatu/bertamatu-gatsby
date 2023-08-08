@@ -1,28 +1,21 @@
-import React, { ReactElement } from 'react';
-import { StringObject } from '../types/types';
+import React from 'react';
 import styled from 'styled-components';
 
-const defaultProps = {
-    item: {} as StringObject
-}
-
-export type Props = typeof defaultProps;
-
-const SetupItem = (item: Props): ReactElement => {
+const SetupItem = (item) => {
     return (    
         <div>
             {
               Object.values(item)
-                .map( (property, index: number) => {
+                .map( (property, index) => {
                     return ( 
                         <Url 
-                            href={property.url as string} 
+                            href={property.url} 
                             key={index}
                             target="_blank"
                             rel="noopener noreferrer"        
                             >
                             <div style={{margin: '0 auto', padding: '20px'}} key={index}>
-                                <SetupImage src={property.image as string}/>
+                                <SetupImage src={property.image}/>
                             </div>
                             <Title>
                                 {property.title}
