@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-// import Youtube from '../components/buttons/Youtube';
 import SetupItem from '../components/SetupItem';
 import SetupData from '../data/setup.json';
 
@@ -12,17 +11,6 @@ const Setup = () => {
                 {SetupData.map(item => (
                     <SetupItem item={item} />
                 ))}
-                {/* <code>
-                    I'm sorry, I don't provide any information about the setup
-                    at the moment.
-                    <br />
-                    <br />
-                    But maybe you would like to subscribe to my {' '}
-                    <Youtube/>
-                    <br />
-                    <br />
-                    Have a fantastic day!:)
-                </code> */}
             </Container>
         </Layout>
     );

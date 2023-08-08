@@ -33,10 +33,6 @@ const mustReadLinks = links
 const Links = data => (
     <Layout>
         <LinksContainer>
-            {/* <Picture
-                alt="bertacodes"
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQEsbeAW_pIBXQ/profile-displayphoto-shrink_400_400/0/1630502878061?e=1669248000&v=beta&t=xt-iriLpKZKx1jizTVUbSwnXH8qmKjC32l5G-_s7D7s"
-            /> */}
             <Youtube/>
 
             <iframe 
@@ -61,16 +57,7 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-
-            {/* <LinkButton
-                href="http://turing.com/s/l5apE8 "
-                target="_blank"
-                style={{ backgroundColor: '#fa1e3f' }}
-            >
-                Apply to remote software jobs in the US
-            </LinkButton> */}
             <br />
-
             <SectionTitle>Developer roadmaps</SectionTitle>
             <Divider />
             {roadmapsLinks.map(link => {
@@ -109,7 +96,7 @@ export default Links;
 const LinksContainer = styled.section`
     max-width: 400px;
     width: 100%;
-    padding-top: 68px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,15 +104,6 @@ const LinksContainer = styled.section`
     overflow-y: auto;
     font-size: 12px;
 `;
-
-// const Picture = styled.img`
-//     border-radius: 50%;
-//     height: 100px;
-//     margin-bottom: 10px;
-//     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-//         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-//         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-// `;
 
 const SectionTitle = styled.b`
     color: #ff0033;
