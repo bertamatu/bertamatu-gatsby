@@ -15,10 +15,9 @@ const About = () => {
                             rel="noopener noreferrer"
                         >
                             <LinkedIn />
-                            <IconTitle>Creative software engineer.</IconTitle>
+                            <hr/>
                         </Link>
                     </header>
-                    <hr />
                     <h3>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</h3>
                     <ul>
                         <li>
@@ -103,11 +102,9 @@ const About = () => {
                             rel="noopener noreferrer"
                         >
                             <Instagram />
-                            <IconTitle>
-                                Tech content creator, mentor and speaker.
-                            </IconTitle>
+                            <hr/>
                         </Link>
-                        <hr />
+                        <h3>Tech content creator, mentor and speaker.</h3>
                         <section>
                             Since <strong>2020</strong> mentoring and having fun
                             on Social networks (Instagram/Linkedin). Just after
@@ -153,32 +150,18 @@ const About = () => {
                             rel="noopener noreferrer"
                         >
                             <Github />
-                            <IconTitle>Let's see the code!</IconTitle>
-                        </Link>
-                        <hr />
-                        <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                justifyContent: 'space-between',
-                                flexWrap: 'wrap',
-                                marginTop: '10px',
-                            }}
-                        >
-                            <img
-                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&&theme=default_repocard&&layout=compact&&show_icons=true"
-                                width="auto"
-                                height="168"
-                                alt="berta matuliauskiene github"
-                            />
+                            <hr/>
 
-                            <img
-                                src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&count_private=true&theme=default_repocard"
-                                width="400"
-                                height="auto"
-                                alt="berta matuliauskiene github"
-                            />
-                        </div>
+                        <h3>Let's see the code!</h3>
+                        <span><img src="https://img.shields.io/github/followers/bertamatu?style=social" height="16em" /></span>
+                        <span>&nbsp;&nbsp;</span>
+                        <span><img src="https://visitcount.itsvg.in/api?id=bertamatu&label=Profile%20Views&color=12&icon=1&pretty=false" height="17"/></span>
+                        <span>&nbsp;</span>
+                        <span><img src="https://img.shields.io/github/stars/bertamatu/bertamatu?style=plastic&color=white&labelColor=black" height="16" /></span>
+                        <br/>
+                        <span><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&layout=compact&show_icons=true&theme=graywhite&hide_border=true&icon_color=ff00ff&text_color=333"  height="135em"/></span>
+                        <img src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&theme=graywhite&hide_border=true&title_color=333&icon_color=FB4570&text_color=333" height="135em"/>
+                        </Link>
                     </div>
                 </AboutText>
             </Layout>
@@ -205,7 +188,7 @@ const AboutText = styled.article`
 `;
 const Link = styled.a`
     text-decoration: none;
-    color: #fa1e3f;
+    color: #000;
 `;
 const LinkedIn = styled(FaLinkedin)`
     font-size: 3rem;
@@ -221,11 +204,6 @@ const Github = styled(FaGithub)`
     font-size: 3rem;
     color: #000;
     margin-right: 0.5rem;
-`;
-const IconTitle = styled.div`
-    font-weight: bold;
-    font-size: 14px;
-    color: #000;
 `;
 
 export default About;
