@@ -6,8 +6,8 @@
   "main": "index.js",
   "dependencies": {
     "@types/jest": "^29.5.3",
-    "@types/node": "^20.4.8",
-    "@types/react": "^18.2.18",
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",
     "acorn": "^8.7.0",
     "babel-plugin-styled-components": "^2.1.4",
