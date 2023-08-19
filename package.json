@@ -1,17 +1,42 @@
 {
   "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "main": "index.js",
+  "private": true,
+  "author": "Berta Matuliauskiene berta.codes@gmail.com",
+  "description": "Portfolio of Berta Matuliauskiene, a skilled front-end developer and mentor.",
+  "homepage": "https://www.berta.codes",
+  "keywords": [
+    "bertamatu",
+    "berta codes",
+    "berta.codes",
+    "berta matuliauskiene"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default",
+    "social": {
+      "instagram": "https://instagram.com/berta.codes",
+      "linkedin": "https://www.linkedin.com/in/bertam/",
+      "github": "https://github.com/bertamatu"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "engines": {
+    "node": "^19.0.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
-    "@types/jest": "^29.5.3",
-    "@types/node": "^20.4.9",
-    "@types/react": "^18.2.19",
-    "@types/react-dom": "^18.2.7",
-    "acorn": "^8.7.0",
-    "babel-plugin-styled-components": "^2.1.4",
-    "core-js": "^3.22.0",
     "gatsby": "^5.11.0",
     "gatsby-background-image": "^1.6.0",
     "gatsby-image": "^3.11.0",
@@ -30,47 +55,25 @@
     "gatsby-transformer-remark": "^6.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "prop-types": "^15.8.1",
-    "react": "^18.2.0",
+    "react": "^18.2.*",
     "react-cookie-consent": "^8.0.1",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.2.*",
     "react-helmet": "^6.0.0",
     "react-icons": "^4.8.0",
-    "sharp": "^0.32.4",
     "styled-components": "^6.0.7",
     "typescript": "^5.1.6"
   },
-  "resolutions": {
-    "sharp": "0.24.0"
-  },
   "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.19",
+    "@types/react-dom": "^18.2.7",
     "@types/styled-components": "^5.1.25",
+    "babel-plugin-styled-components": "^2.1.4",
+    "core-js": "^3.22.0",
     "prettier": "^3.0.1"
   },
-  "keywords": [
-    "gatsby",
-    "bertamatu",
-    "berta codes",
-    "berta.codes",
-    "berta matuliauskiene"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "engines": {
-    "node": "19.0.0"
+  "resolutions": {
+    "sharp": "0.24.0"
   }
 }
