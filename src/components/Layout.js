@@ -6,6 +6,7 @@ import '../style/layout.css';
 import CookieConsent from 'react-cookie-consent';
 import { useLocation } from '@reach/router';
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
+import GlobalStyles from '../style/GlobalStyles';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -59,34 +60,38 @@ const Layout = ({ children }) => {
     };
 
     return (
-        <section style={sectionStyle}>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <main>{children}</main>
-            <CookieConsent
-                location="bottom"
-                buttonText="Accept and Close"
-                cookieName="gatsby-gdpr-google-analytics"
-                style={cookieConsentStyle}
-                buttonStyle={buttonStyle}
-                onAccept={() => {
-                    initializeAndTrack(location);
-                }}
-            >
-                <div style={{ textAlign: 'justify' }}>
-                    We want to let you know that we use cookies on this website.
-                    To agree, please click the "Accept" button. You can withdraw
-                    your consent at any time by changing your browser settings.{' '}
-                    <a
-                        style={{ color: '#4287db' }}
-                        href="https://www.iubenda.com/privacy-policy/96553161/cookie-policy"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Cookie Policy.
-                    </a>
-                </div>
-            </CookieConsent>
-        </section>
+        <>
+            <GlobalStyles />
+            <section style={sectionStyle}>
+                <Header siteTitle={data.site.siteMetadata.title} />
+                <main>{children}</main>
+                <CookieConsent
+                    location="bottom"
+                    buttonText="Accept and Close"
+                    cookieName="gatsby-gdpr-google-analytics"
+                    style={cookieConsentStyle}
+                    buttonStyle={buttonStyle}
+                    onAccept={() => {
+                        initializeAndTrack(location);
+                    }}
+                >
+                    <div style={{ textAlign: 'justify' }}>
+                        We want to let you know that we use cookies on this
+                        website. To agree, please click the "Accept" button. You
+                        can withdraw your consent at any time by changing your
+                        browser settings.{' '}
+                        <a
+                            style={{ color: '#4287db' }}
+                            href="https://www.iubenda.com/privacy-policy/96553161/cookie-policy"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Cookie Policy.
+                        </a>
+                    </div>
+                </CookieConsent>
+            </section>
+        </>
     );
 };
 

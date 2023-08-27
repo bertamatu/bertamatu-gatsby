@@ -24,40 +24,42 @@ const NavItem = styled(Link)`
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
-    margin: 1vw 1vw;
-    transition: all 200ms ease-in;
+    margin: 10px 10px;
+    // transition: all 200ms ease-in;
     position: relative;
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
-    :after {
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--black-color);
+
+    &::after {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        width: 0%;
+        width: 0;
         content: '';
-        color: transparent;
-        background: #fa1e3f;
-        height: 1px;
-        transition: all 0.4s ease-in;
+        background: var(--red-color);
+        height: 2px;
+        transition: width 0.4s ease-in;
     }
-    :hover {
-        transition: all 0.2s ease-in;
-        ::after {
+
+    &:hover {
+        &::after {
             width: 100%;
         }
     }
+
     @media (max-width: 768px) {
-        padding: 8px 40px;
-        margin-left: 25px;
-        font-size: 30px;
-        z-index: 6;
+        margin-left: 60px;
+        font-size: 24px;
+        z-index: 3;
         align-self: baseline;
-        font-weight: 400;
-        :hover {
+        font-weight: 100;
+
+        &:hover {
             font-weight: 900;
-            transition: all 0.3s ease-in-out;
+            transition: font-weight 0.3s ease-in-out;
         }
     }
 `;
+
