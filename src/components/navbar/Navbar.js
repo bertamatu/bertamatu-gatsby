@@ -5,22 +5,26 @@ import { HiMenu } from 'react-icons/hi';
 import { CgClose } from 'react-icons/cg';
 import SocialIcons from '../buttons/SocialIcons';
 
+const isBrowser = typeof window !== "undefined";
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(isBrowser ? window.innerWidth <= 768 : false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-      if (!isMobile && navbarOpen) {
-        setNavbarOpen(false);
-      }
-    };
+    if (isBrowser) {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+        if (!isMobile && navbarOpen) {
+          setNavbarOpen(false);
+        }
+      };
 
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, [navbarOpen, isMobile]);
 
   const toggleNavbar = () => {
