@@ -10,7 +10,7 @@ const Navbar = () => {
     const isMobile = window.innerWidth <= 768;
 
     useEffect(() => {
-        if (!isMobile && navbarOpen) {
+        if (typeof window !== 'undefined' &&!isMobile && navbarOpen) {
             setNavbarOpen(false);
         }
     }, [isMobile, navbarOpen]);
