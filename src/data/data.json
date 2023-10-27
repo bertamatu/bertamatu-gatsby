@@ -25,16 +25,16 @@
       "type": "roadmap"
     },
     {
-      "id": 6,
-      "url": "https://flaviocopes.com/vue-developer-roadmap/roadmap.svg",
-      "title": "Vue Js",
-      "type": "roadmap"
-    },
-    {
       "id": 7,
       "url": "https://res.cloudinary.com/practicaldev/image/fetch/s--4RIwaNsa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/am1x3w193daubmywq13d.jpg",
       "title": "Full-stack",
       "type": "roadmap"
+    },
+    {
+      "id": 80,
+      "url": "    https://www.linkedin.com/business/sales/blog/profile-best-practices/17-steps-to-a-better-linkedin-profile-in-2017",
+      "title": "20 LinkedIn Tips",
+      "type": "mustread"
     },
     {
       "id": 8,
