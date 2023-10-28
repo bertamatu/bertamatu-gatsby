@@ -153,14 +153,12 @@ const About = () => {
                             <hr/>
 
                         <h3>Let's see the code!</h3>
-                        <span><img src="https://img.shields.io/github/followers/bertamatu?style=social" height="16em" /></span>
+                        <span><img src="https://img.shields.io/github/followers/bertamatu?style=social" height="16em" alt='github berta codes matuliauskiene'/></span>
                         <span>&nbsp;&nbsp;</span>
-                        <span><img src="https://visitcount.itsvg.in/api?id=bertamatu&label=Profile%20Views&color=12&icon=1&pretty=false" height="17"/></span>
-                        <span>&nbsp;</span>
-                        <span><img src="https://img.shields.io/github/stars/bertamatu/bertamatu?style=plastic&color=white&labelColor=black" height="16" /></span>
+                        <span><img src="https://img.shields.io/github/stars/bertamatu/bertamatu?style=plastic&color=white&labelColor=black" height="16" alt='berta codes' /></span>
                         <br/>
-                        <span><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&layout=compact&show_icons=true&theme=graywhite&hide_border=true&icon_color=ff00ff&text_color=333"  height="135em"/></span>
-                        <img src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&theme=graywhite&hide_border=true&title_color=333&icon_color=FB4570&text_color=333" height="135em"/>
+                        <span><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&layout=compact&show_icons=true&theme=graywhite&hide_border=true&icon_color=ff00ff&text_color=333"  height="135em" alt='berta codes'/></span>
+                        <img src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&theme=graywhite&hide_border=true&title_color=333&icon_color=FB4570&text_color=333" height="135em" alt='berta codes'/>
                         </Link>
                     </div>
                 </AboutText>
