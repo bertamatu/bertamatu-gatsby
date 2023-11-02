@@ -38,7 +38,7 @@ const LogoDesign = styled(Link)`
 
 const DescriptionText = styled.p`
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -50,7 +50,7 @@ const DescriptionText = styled.p`
         top: 12vh;
         left: 0;
         right: -5vw;
-        font-size: 0.6rem;
+        font-size: 12px;
     }
 `;
 

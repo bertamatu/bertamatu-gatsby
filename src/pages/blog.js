@@ -153,7 +153,7 @@ const Title = styled.header`
 `;
 const ByDate = styled.p`
     color: rgba(0, 0, 0, 0.4);
-    font-size: 0.8rem;
+    font-size: 12px;
     padding: 0 1rem;
     font-weight: 200;
     margin: 0;
@@ -161,14 +161,14 @@ const ByDate = styled.p`
 `;
 const Intro = styled.p`
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 12px;
     padding: 0 1rem;
     margin: 0;
 `;
 const ReadMore = styled(Link)`
     text-decoration: none;
     color: rgb(255, 51, 51);
-    font-size: 0.8rem;
+    font-size: 12px;
     padding: 1rem;
     line-height: 1;
 `;
@@ -184,13 +184,13 @@ const BlogMenu = styled.aside`
     }
 `;
 const HelloMessage = styled.small`
-    font-size: 0.8rem;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 100;
 `;
 const PostsList = styled.ul`
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 12px;
     font-weight: 300;
     line-height: 1.2;
     text-transform: uppercase;

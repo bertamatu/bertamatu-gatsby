@@ -136,7 +136,7 @@ const ProjectsContainer = styled.section`
     }
 `;
 const ProjectData = styled.section`
-    font-size: 0.7rem;
+    font-size: 12px;
     text-transform: uppercase;
 `;
 const DeploymentLink = styled.a`
@@ -145,7 +145,7 @@ const DeploymentLink = styled.a`
     border-radius: 3px;
     color: white;
     background: red;
-    font-size: 0.65rem;
+    font-size: 12px;
 `;
 const GithubLinkProject = styled.a`
     padding: 0.2rem;
@@ -153,7 +153,7 @@ const GithubLinkProject = styled.a`
     border-radius: 3px;
     color: white;
     background: black;
-    font-size: 0.65rem;
+    font-size: 12px;
 `;
 const ProjectImage = styled(GatsbyImage)`
     margin: 0 auto;
@@ -165,7 +165,7 @@ const ProjectImage = styled(GatsbyImage)`
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
 `;
 const ReadMore = styled(Link)`
-    font-size: 0.7rem;
+    font-size: 12px;
     color: red;
     text-decoration: none;
 `;
