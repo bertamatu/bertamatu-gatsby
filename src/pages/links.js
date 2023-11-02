@@ -51,7 +51,6 @@ const Links = data => (
                         href={link.url}
                         target="_blank"
                         key={link.id}
-                        // style={{ backgroundColor: 'rgb(250, 30, 63)' }}
                     >
                         {link.title}
                     </LinkButton>
