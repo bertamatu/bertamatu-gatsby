@@ -14,11 +14,11 @@ const Description = styled.div`
     margin: 0 auto;
     text-transform: uppercase;
     letter-spacing: 9px;
-    padding-left: 11px;
-    font-size: 11px;
+    padding-left: 12px;
+    font-size: 12px;
     padding-bottom: 10px;
     @media (max-width: 768px) {
-        font-size: 11px;
+        font-size: 12px;
         margin: 0 auto;
         padding-left: 11px;
     }

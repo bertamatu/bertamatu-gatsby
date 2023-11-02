@@ -7,6 +7,7 @@ import CookieConsent from 'react-cookie-consent';
 import { useLocation } from '@reach/router';
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
 import GlobalStyles from '../style/GlobalStyles';
+import { Helmet } from 'react-helmet';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -61,6 +62,10 @@ const Layout = ({ children }) => {
 
     return (
         <>
+            <Helmet>
+                <meta name="description" content="Explore Berta Matuliauskiene's impressive portfolio and discover her coding expertise on berta.codes website." />
+                <meta name="keywords" content="bertacodes, berta.codes, berta matuliauskiene" />
+            </Helmet>
             <GlobalStyles />
             <section style={sectionStyle}>
                 <Header siteTitle={data.site.siteMetadata.title} />

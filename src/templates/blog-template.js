@@ -98,15 +98,15 @@ const Title = styled.header`
 const DateBy = styled.small`
     font-weight: 600;
     color: rgb(255, 51, 51);
-    font-size: 0.6rem;
+    font-size: 12px;
 `;
 const Text = styled.p`
     padding-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 12px;
     text-align: justify;
 `;
 const LinkBack = styled(Link)`
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 12px;
     color: salmon;
 `;

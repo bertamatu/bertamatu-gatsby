@@ -13,7 +13,7 @@ const footer = () => {
 const Footer = styled.footer`
     height: 4vh;
     color: white;
-    font-size: 0.6rem;
+    font-size: 12px;
     position: absolute;
     bottom: 0;
     width: 100%;

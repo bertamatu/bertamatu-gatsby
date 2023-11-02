@@ -57,7 +57,7 @@ const Container = styled.section`
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.54);
     text-align: center;
     background: rgba(211, 211, 211, 0.1);
-    font-size: 0.8rem;
+    font-size: 12px;
     @media (min-width: 768px) {
         width: 40vw;
         height: 90vh;
