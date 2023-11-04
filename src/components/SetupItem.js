@@ -15,7 +15,7 @@ const SetupItem = (item) => {
                             rel="noopener noreferrer"        
                             >
                             <div style={{margin: '0 auto', padding: '20px'}} key={index}>
-                                <SetupImage src={property.image}/>
+                                <SetupImage src={property.image} alt='bertacodes setup item'/>
                             </div>
                             <Title>
                                 {property.title}

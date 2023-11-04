@@ -63,8 +63,12 @@ const Layout = ({ children }) => {
     return (
         <>
             <Helmet>
+                <html lang="en" />    
+                <title>BERTA.CODES</title>
                 <meta name="description" content="Explore Berta Matuliauskiene's impressive portfolio and discover her coding expertise on berta.codes website." />
                 <meta name="keywords" content="bertacodes, berta.codes, berta matuliauskiene" />
+                <meta charset="UTF-8" />
+                <meta name="author" content="Berta.codes Berta Matuliauskiene" />
             </Helmet>
             <GlobalStyles />
             <section style={sectionStyle}>

@@ -153,9 +153,9 @@ const About = () => {
                             <hr/>
 
                         <h3>Let's see the code!</h3>
-                        <span><img src="https://img.shields.io/github/followers/bertamatu?style=social" height="16em" alt='github berta codes matuliauskiene'/></span>
+                        <span><img src="https://img.shields.io/github/followers/bertamatu?style=social" height="16em" width="auto" alt='github berta codes matuliauskiene'/></span>
                         <span>&nbsp;&nbsp;</span>
-                        <span><img src="https://img.shields.io/github/stars/bertamatu/bertamatu?style=plastic&color=white&labelColor=black" height="16" alt='berta codes' /></span>
+                        <span><img src="https://img.shields.io/github/stars/bertamatu/bertamatu?style=plastic&color=white&labelColor=black" height="16" width="auto" alt='berta codes' /></span>
                         <br/>
                         <span><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bertamatu&layout=compact&show_icons=true&theme=graywhite&hide_border=true&icon_color=ff00ff&text_color=333"  height="135em" alt='berta codes'/></span>
                         <img src="https://github-readme-stats.vercel.app/api?username=bertamatu&show_icons=true&theme=graywhite&hide_border=true&title_color=333&icon_color=FB4570&text_color=333" height="135em" alt='berta codes'/>
@@ -189,7 +189,7 @@ const Link = styled.a`
     color: #000;
 `;
 const LinkedIn = styled(FaLinkedin)`
-    font-size: 3rem;
+    font-size: 50px;
     margin-right: 0.5rem;
     color: #0e76a8;
 `;
@@ -199,7 +199,7 @@ const Instagram = styled(FaInstagramSquare)`
     color: #fb3958;
 `;
 const Github = styled(FaGithub)`
-    font-size: 3rem;
+    font-size: 50px;
     color: #000;
     margin-right: 0.5rem;
 `;

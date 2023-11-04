@@ -22,6 +22,7 @@ const SocialIcons = () => {
                 href="https://instagram.com/berta.codes"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Berta.codes on Instagram"
             >
                 <FaInstagramSquare />
             </Icons>
@@ -29,6 +30,7 @@ const SocialIcons = () => {
                 href="https://www.linkedin.com/in/bertam/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Berta.codes on Linkedin"
             >
                 <FaLinkedin />
             </Icons>
@@ -36,6 +38,7 @@ const SocialIcons = () => {
                 href="https://github.com/bertamatu"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Berta.codes on Github"
             >
                 <FaGithubSquare />
             </Icons>
@@ -43,6 +46,8 @@ const SocialIcons = () => {
                 href="https://www.youtube.com/c/bertacodes"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Berta.codes on Youtube"
+
             >
                 <FaYoutubeSquare />
             </Icons>
@@ -50,6 +55,7 @@ const SocialIcons = () => {
                 href="https://twitter.com/bertacodes"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit Berta.codes on Twitter"
             >
                 <FaTwitterSquare />
             </Icons>
@@ -58,6 +64,7 @@ const SocialIcons = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ fontSize: '55px' }}
+                aria-label="Contact Berta.codes via e-mail"
             >
                 <IoIosMail />
             </Icons>
