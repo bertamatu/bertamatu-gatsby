@@ -21,7 +21,7 @@ const Button = styled.a`
     width: 302px;
     padding: 10px;
     text-decoration: none;
-    background-color: #fa1e3f;
+    background-color: #000;
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
