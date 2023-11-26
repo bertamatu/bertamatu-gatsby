@@ -43,11 +43,9 @@ const Layout = ({ children }) => {
     };
 
     const cookieConsentStyle = {
-        backgroundColor: '#e3e3e3',
-        fontSize: '12px',
+        background: 'rgb(244 244 244)',
+        fontSize: '16px',
         color: '#000',
-        boxShadow:
-            'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
         width: '100%',
         border: '1px solid white',
         borderRadius: '4px',
@@ -56,8 +54,11 @@ const Layout = ({ children }) => {
     };
 
     const buttonStyle = {
-        background: '#a6f7d3',
+        background: '#000',
+        color: '#fff',
         borderRadius: '4px',
+        padding: '16px',
+        fontWeight: '900'
     };
 
     return (
@@ -75,6 +76,9 @@ const Layout = ({ children }) => {
                 <Header siteTitle={data.site.siteMetadata.title} />
                 <main>{children}</main>
                 <CookieConsent
+                    name="Accept cookies"
+                    id="rcc-confirm-button"
+                    aria-label="Accept cookies"
                     location="bottom"
                     buttonText="Accept and Close"
                     cookieName="gatsby-gdpr-google-analytics"
@@ -90,10 +94,11 @@ const Layout = ({ children }) => {
                         can withdraw your consent at any time by changing your
                         browser settings.{' '}
                         <a
-                            style={{ color: '#4287db' }}
                             href="https://www.iubenda.com/privacy-policy/96553161/cookie-policy"
                             target="_blank"
                             rel="noreferrer"
+                            name="Cookie Policy"
+                            aria-label="Cookie Policy"        
                         >
                             Cookie Policy.
                         </a>

@@ -34,13 +34,11 @@ const HomeLogo = styled.div`
 
 const LogoText = styled.div`
     font-family: system-ui;
-    /* background-image: url('https://media.giphy.com/media/1Aeg7GZ6tIor81AAIH/giphy.gif'); */
-    /* background-image: url('https://media.giphy.com/media/l41lNx6qN1EB1jh9S/giphy-downsized.gif'); */
-    // background-image: url('https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy-downsized.gif'); */
     background-size: 23%;
     background-repeat: no-repeat;
     background-position: center;
     color: transparent;
+    background-clip: border-box;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     font-weight: 900;
