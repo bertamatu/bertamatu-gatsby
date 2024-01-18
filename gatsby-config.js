@@ -22,6 +22,10 @@ module.exports = {
                 link: '/about',
             },
             {
+              name: 'ROADMAPS',
+              link: '/roadmaps',
+            },
+            {
                 name: 'PROJECTS',
                 link: '/projects',
             },

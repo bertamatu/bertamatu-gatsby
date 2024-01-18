@@ -33,18 +33,20 @@ const mustReadLinks = links
 const Links = data => (
     <Layout>
         <LinksContainer>
-            <Youtube/>
-
-            <iframe 
-            width="340" 
-            height="180" 
-            src="https://www.youtube.com/embed/2Gdaj6lFVBs" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            />
-
+          <Divider />
+            <SectionTitleText>GUIDES. TEMPLATES. ROADMAP.</SectionTitleText>
+            <span>Visit my shop and don't forget to subscribe!</span>
+            <br/>
+            <LinkButton
+                href="http://www.bertacodes.com"
+                target="_blank"
+                key="http://www.bertacodes.com"
+            >
+                BERTA.CODES E-SHOP
+            </LinkButton>
+            <br/>
+            <Divider />
+            <br/>
             {personalLinks.map(link => {
                 return (
                     <LinkButton
@@ -57,6 +59,16 @@ const Links = data => (
                 );
             })}
             <br />
+            <Youtube/>
+            <iframe 
+            width="340" 
+            height="180" 
+            src="https://www.youtube.com/embed/2Gdaj6lFVBs" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            />
             <SectionTitle>Developer roadmaps</SectionTitle>
             <Divider />
             {roadmapsLinks.map(link => {
@@ -95,7 +107,7 @@ export default Links;
 const LinksContainer = styled.section`
     max-width: 400px;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,6 +120,11 @@ const SectionTitle = styled.b`
     color: #ff0033;
     text-transform: uppercase;
     font-size: 16px;
+`;
+
+const SectionTitleText = styled.b`
+    text-transform: uppercase;
+    font-size: 20px;
 `;
 
 const LinkButton = styled.a`
