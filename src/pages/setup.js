@@ -15,8 +15,7 @@ const Setup = () => {
             <InfoContent>
                 <section>
                     <strong>Happy to see you here!</strong> The items in the list below are ones that I genuinely love and use in my daily life, 
-                    except the plant, although it does look cute! My goal is to inspire you with items that reflect my own taste and help you 
-                    create a stunning setup. <strong>Enjoy!</strong>"
+                    except the plant, although it does look cute! My goal is to not only inspire you with the design but also highlight the quality of these items. Each has been chosen for its durability and functionality, ensuring not just a stylish setup but also lasting satisfaction. <strong>Enjoy!</strong>
                 </section>
                     <LinkText to={AMAZON_URL} target='_blank'>
                         <AmazonIcon />
