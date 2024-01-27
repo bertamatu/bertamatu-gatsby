@@ -65,7 +65,9 @@ const Container = styled.section`
 `;
 const Image = styled(GatsbyImage)`
     width: 50%;
-    margin: 0 auto;
+    display: inline-flex;
+    align-self: center;
+    margin-bottom: 20px;
     margin-top: 1rem;
     margin-right: 1rem;
     border-radius: 50px 0 50px 0;
