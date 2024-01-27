@@ -14,24 +14,24 @@ const Projects = ({ data }) => {
               <h5 style={{marginTop: "20px", padding: "0 20px"}}>This portfolio was built in 2020. I'm keeping it here as an example for learning purposes to other aspiring developers.</h5>
             </ItemContainer>
             <ItemContainer>
-                <GithubLink
-                    href="https://github.com/bertamatu"
-                    target="_blank"
-                >
-                    <FaGithubSquare
-                        style={{
-                            fontSize: 150,
-                        }}
-                    />
-                    <br />
-                    <img
-                        src={workGIF}
-                        alt="work"
-                        style={{
-                            height: 200,
-                        }}
-                    />
-                </GithubLink>
+              <GithubLink
+                  href="https://github.com/bertamatu"
+                  target="_blank"
+              >
+                  <FaGithubSquare
+                      style={{
+                          fontSize: 150,
+                      }}
+                  />
+                  <br />
+                  <img
+                      src={workGIF}
+                      alt="work"
+                      style={{
+                          height: 200,
+                      }}
+                  />
+              </GithubLink>
             </ItemContainer>
             {data.allMarkdownRemark.edges.map((project, index) => (
                 <ItemContainer key={index}>
