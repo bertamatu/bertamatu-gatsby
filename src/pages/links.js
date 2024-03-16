@@ -12,12 +12,6 @@ const javascriptLinks = links
     })
     .filter(link => link.type.includes('javascript'));
 
-const roadmapsLinks = links
-    .map(link => {
-        return link;
-    })
-    .filter(link => link.type.includes('roadmap'));
-
 const personalLinks = links
     .map(link => {
         return link;
@@ -30,23 +24,25 @@ const mustReadLinks = links
     })
     .filter(link => link.type.includes('mustread'));
 
-const Links = data => (
+const Links = () => (
     <Layout>
         <LinksContainer>
-          <Divider />
-            <SectionTitleText>GUIDES. TEMPLATES. ROADMAP.</SectionTitleText>
-            <span>Visit my shop and don't forget to subscribe!</span>
-            <br/>
+            <a href='https://www.bertacodes.com/products/front-end-developer-roadmap'>
+              <img 
+                src='https://www.bertacodes.com/cdn/shop/files/Screenshot2024-03-09at15.52.47.png?v=1709992398&width=823' 
+                style={{ maxHeight: '300px' }} 
+                alt='bertacodes front-end developer roadmap'
+              />
+            </a>
+            <SectionTitleText>GUIDES. TEMPLATES. ROADMAPS.</SectionTitleText>
+            <div>Don't forget to subscribe at my e-shop!</div>
             <LinkButton
                 href="http://www.bertacodes.com"
                 target="_blank"
                 key="http://www.bertacodes.com"
             >
-                BERTA.CODES E-SHOP
+             Explore Instant Downloads
             </LinkButton>
-            <br/>
-            <Divider />
-            <br/>
             {personalLinks.map(link => {
                 return (
                     <LinkButton
@@ -58,7 +54,6 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
-            <br />
             <Youtube/>
             <iframe 
             width="340" 
@@ -69,16 +64,6 @@ const Links = data => (
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen
             />
-            <SectionTitle>Developer roadmaps</SectionTitle>
-            <Divider />
-            {roadmapsLinks.map(link => {
-                return (
-                    <LinkButton href={link.url} target="_blank" key={link.id}>
-                        {link.title}
-                    </LinkButton>
-                );
-            })}
-            <br />
             <SectionTitle>Javascript</SectionTitle>
             <Divider />
             {javascriptLinks.map(link => {
@@ -98,6 +83,7 @@ const Links = data => (
                     </LinkButton>
                 );
             })}
+            <br />
         </LinksContainer>
     </Layout>
 );
