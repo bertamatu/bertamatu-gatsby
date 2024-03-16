@@ -1,15 +1,9 @@
 {
   "links": [
     {
-      "id": 1,
-      "url": "http://www.berta.codes/about",
-      "title": "About me",
-      "type": "personal"
-    },
-    {
       "id": 2,
       "url": "https://www.amazon.com/shop/berta.codes",
-      "title": "SETUP",
+      "title": "MY SETUP",
       "type": "personal"
     },
     {
