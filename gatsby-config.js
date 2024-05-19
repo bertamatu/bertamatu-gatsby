@@ -14,44 +14,48 @@ module.exports = {
         url: 'https://www.berta.codes',
         menuLinks: [
             {
-                name: 'HOME',
-                link: '/',
+              name: 'HOME',
+              link: '/',
             },
             {
-                name: 'ABOUT',
-                link: '/about',
+              name: 'ABOUT',
+              link: '/about',
             },
             {
               name: 'ROADMAPS',
               link: '/roadmaps',
             },
             {
-                name: 'PROJECTS',
-                link: '/projects',
+              name: 'WECODEUI',
+              link: '/wecodeui',
             },
             {
-                name: 'GALLERY',
-                link: '/gallery',
+              name: 'PROJECTS',
+              link: '/projects',
             },
             {
-                name: 'BLOG',
-                link: '/blog',
+              name: 'GALLERY',
+              link: '/gallery',
             },
             {
-                name: 'LINKS',
-                link: '/links',
+              name: 'BLOG',
+              link: '/blog',
             },
             {
-                name: 'SETUP',
-                link: '/setup',
+              name: 'LINKS',
+              link: '/links',
             },
             {
-                name: 'SUPPORT',
-                link: '/support',
+              name: 'SETUP',
+              link: '/setup',
             },
             {
-                name: 'CONTACT',
-                link: '/contact',
+              name: 'SUPPORT',
+              link: '/support',
+            },
+            {
+              name: 'CONTACT',
+              link: '/contact',
             },
         ],
     },
