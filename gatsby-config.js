@@ -26,6 +26,10 @@ module.exports = {
               link: '/roadmaps',
             },
             {
+              name: 'wecodeui',
+              link: '/wecodeui',
+            },
+            {
                 name: 'PROJECTS',
                 link: '/projects',
             },

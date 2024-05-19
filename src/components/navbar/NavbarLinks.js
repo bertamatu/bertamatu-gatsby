@@ -8,6 +8,7 @@ const NavbarLinks = () => {
             <NavItem to="/">HOME</NavItem>
             <NavItem to="/about">ABOUT</NavItem>
             <NavItem to="/roadmaps">ROADMAPS</NavItem>
+            <NavItem to="/wecodeui">DISCORD</NavItem>
             {/* <NavItem to="/projects">PROJECTS</NavItem> */}
             {/* <NavItem to="/gallery">GALLERY</NavItem> */}
             {/* <NavItem to="/blog">BLOG</NavItem> */}
