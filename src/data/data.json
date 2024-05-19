@@ -1,28 +1,22 @@
 {
   "links": [
     {
-      "id": 2,
-      "url": "https://www.amazon.com/shop/berta.codes",
-      "title": "MY SETUP",
+      "id": 11,
+      "url": "http://www.bertacodes.com",
+      "title": "Front-End Developer Roadmap 2024",
       "type": "personal"
     },
     {
-      "id": 4,
-      "url": "https://miro.medium.com/max/2434/1*qan3U0peL-CSdtKaCwKohA.png",
-      "title": "Front-end",
-      "type": "roadmap"
+      "id": 2,
+      "url": "https://www.amazon.com/shop/berta.codes",
+      "title": "MY SETUP ITEMS",
+      "type": "personal"
     },
     {
-      "id": 5,
-      "url": "https://hackernoon.com/images/MQzhgEvAeOXyPo3IjFRz4IZU3K83-3k123yxw.jpg",
-      "title": "React Js",
-      "type": "roadmap"
-    },
-    {
-      "id": 7,
-      "url": "https://res.cloudinary.com/practicaldev/image/fetch/s--4RIwaNsa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/am1x3w193daubmywq13d.jpg",
-      "title": "Full-stack",
-      "type": "roadmap"
+      "id": 1,
+      "url": "https://github.com/bertamatu?tab=stars",
+      "title": "My Favorite GitHub Repositories",
+      "type": "mustread"
     },
     {
       "id": 80,
@@ -31,7 +25,7 @@
       "type": "mustread"
     },
     {
-      "id": 8,
+      "id": 3,
       "url": "https://trends.google.com/trends/explore?cat=31&q=Vue%20jobs,React%20jobs,Angular%20jobs",
       "title": "Google trends for JavaScript frameworks",
       "type": "javascript"
@@ -43,21 +37,9 @@
       "type": "javascript"
     },
     {
-      "id": 7,
-      "url": "https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/amp/",
-      "title": "The Self-Taught Developer's Guide",
-      "type": "mustread"
-    },
-    {
       "id": 8,
-      "url": "ttps://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site",
+      "url": "https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site",
       "title": "Publish your website on GITHUB",
-      "type": "mustread"
-    },
-    {
-      "id": 9,
-      "url": "https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/how-to-kickstart-a-career-in-tech/amp/",
-      "title": "TECH Career – A Step-by-Step Guide",
       "type": "mustread"
     },
     {
@@ -73,21 +55,9 @@
       "type": "mustread"
     },
     {
-      "id": 12,
-      "url": "https://www.freecodecamp.org/news/how-to-learn-web-dev-in-2021-roadmap/amp/",
-      "title": "Web development",
-      "type": "javascript"
-    },
-    {
       "id": 13,
       "url": "https://github.com/public-apis/public-apis",
       "title": "FREE PUBLIC APIS",
-      "type": "mustread"
-    },
-    {
-      "id": 14,
-      "url": "https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/how-to-put-a-website-online-guide-to-website-creation-custom-domain-and-hosting/amp/",
-      "title": "How to Put a Website Online?",
       "type": "mustread"
     },
     {
@@ -97,9 +67,9 @@
       "type": "mustread"
     },
     {
-      "id": 16,
-      "url": "https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/",
-      "title": "Wireframe: UX DESIGN tips.",
+      "id": 21,
+      "url": "https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/",
+      "title": "Setup a CI/CD Pipeline with GitHub Actions and AWS",
       "type": "mustread"
     },
     {
@@ -115,28 +85,10 @@
       "type": "mustread"
     },
     {
-      "id": 19,
-      "url": "https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf",
-      "title": "Javascript Cheat Sheet - PDF",
-      "type": "javascript"
-    },
-    {
       "id": 20,
       "url": "https://github.com/LeCoupa/awesome-cheatsheets",
       "title": "Awesome cheatsheets (various)",
       "type": "mustread"
-    },
-    {
-      "id": 21,
-      "url": "https://www.freecodecamp.org/news/how-to-setup-a-ci-cd-pipeline-with-github-actions-and-aws/",
-      "title": "Setup a CI/CD Pipeline with GitHub Actions and AWS",
-      "type": "mustread"
-    },
-    {
-      "id": 22,
-      "url": "https://miro.medium.com/max/1400/1*dAQJ-UDP3altoQKThbQs_w.jpeg",
-      "title": "Java",
-      "type": "roadmaps"
     }
   ]
 }

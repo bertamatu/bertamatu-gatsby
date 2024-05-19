@@ -27,63 +27,51 @@ const mustReadLinks = links
 const Links = () => (
     <Layout>
         <LinksContainer>
-            <a href='https://www.bertacodes.com/products/front-end-developer-roadmap'>
-              <img 
-                src='https://www.bertacodes.com/cdn/shop/files/Screenshot2024-03-09at15.52.47.png?v=1709992398&width=823' 
-                style={{ maxHeight: '300px' }} 
-                alt='bertacodes front-end developer roadmap'
-              />
-            </a>
-            <SectionTitleText>GUIDES. TEMPLATES. ROADMAPS.</SectionTitleText>
-            <div>Don't forget to subscribe at my e-shop!</div>
-            <LinkButton
-                href="http://www.bertacodes.com"
-                target="_blank"
-                key="http://www.bertacodes.com"
-            >
-             Explore Instant Downloads
-            </LinkButton>
-            {personalLinks.map(link => {
-                return (
-                    <LinkButton
-                        href={link.url}
-                        target="_blank"
-                        key={link.id}
-                    >
-                        {link.title}
-                    </LinkButton>
-                );
-            })}
-            <Youtube/>
-            <iframe 
-            width="340" 
-            height="180" 
-            src="https://www.youtube.com/embed/2Gdaj6lFVBs" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            />
-            <SectionTitle>Javascript</SectionTitle>
-            <Divider />
-            {javascriptLinks.map(link => {
-                return (
-                    <LinkButton href={link.url} target="_blank" key={link.id}>
-                        {link.title}
-                    </LinkButton>
-                );
-            })}
-            <br />
-            <SectionTitle>must read</SectionTitle>
-            <Divider />
-            {mustReadLinks.map(link => {
-                return (
-                    <LinkButton href={link.url} target="_blank" key={link.id}>
-                        {link.title}
-                    </LinkButton>
-                );
-            })}
-            <br />
+          <Youtube/>
+          <iframe 
+          width="300" 
+          height="180" 
+          src="https://www.youtube.com/embed/2Gdaj6lFVBs" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          />
+          <SectionTitle>Berta.codes</SectionTitle>
+          <Divider />
+          {personalLinks.map(link => {
+              return (
+                  <LinkButton
+                      href={link.url}
+                      target="_blank"
+                      key={link.id}
+                      style={{ background: '#C0C0C0'}}
+                  >
+                      {link.title}
+                  </LinkButton>
+              );
+          })}
+          <br />         
+          <SectionTitle>Javascript</SectionTitle>
+          <Divider />
+          {javascriptLinks.map(link => {
+              return (
+                  <LinkButton href={link.url} target="_blank" key={link.id}>
+                      {link.title}
+                  </LinkButton>
+              );
+          })}
+          <br />
+          <SectionTitle>must read</SectionTitle>
+          <Divider />
+          {mustReadLinks.map(link => {
+              return (
+                  <LinkButton href={link.url} target="_blank" key={link.id}>
+                      {link.title}
+                  </LinkButton>
+              );
+          })}
+          <br />
         </LinksContainer>
     </Layout>
 );
@@ -93,7 +81,6 @@ export default Links;
 const LinksContainer = styled.section`
     max-width: 400px;
     width: 100%;
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,11 +93,6 @@ const SectionTitle = styled.b`
     color: #ff0033;
     text-transform: uppercase;
     font-size: 16px;
-`;
-
-const SectionTitleText = styled.b`
-    text-transform: uppercase;
-    font-size: 20px;
 `;
 
 const LinkButton = styled.a`
