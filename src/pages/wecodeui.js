@@ -6,9 +6,9 @@ const Wecodeui = () => {
     return (
       <Layout>
         <Container>
-        <a href="https://discord.gg/8jTngJUYMk"  rel='noopener noreferrer' target='_blank'> 
-          <img src="https://www.wecodeui.com/cdn/shop/files/7_570e8c5f-193f-4ac9-8432-dbd9c701694b.png?v=1713623944&width=140" alt="wecodeui" />
-        </a>
+          <a href="https://discord.gg/8jTngJUYMk"  rel='noopener noreferrer' target='_blank'> 
+            <img src="https://www.wecodeui.com/cdn/shop/files/7_570e8c5f-193f-4ac9-8432-dbd9c701694b.png?v=1713623944&width=140" alt="wecodeui" />
+          </a>
           <h1><code>Welcome to WeCodeUI!</code></h1>
            <Code>
            <br />
@@ -23,7 +23,7 @@ const Wecodeui = () => {
             <br />
             <br />
             <strong>
-            It's a space where learning meets fun, where curiosity meets answers, and where strangers meet teammates.<br />
+              It's a space where learning meets fun, where curiosity meets answers, and where strangers meet teammates.<br />
             </strong>
             <br />
             Don't hesitate!<br />
@@ -41,12 +41,12 @@ const Wecodeui = () => {
               <br />
               The founder behind this idea is me,{' '}
               <a href="https://instagram.com/berta.codes" target='_blank' rel='noopener noreferrer'>
-              Berta.codes
+                Berta.codes
               </a>.
               I am a self-taught developer who switched careers from finance to tech in 2020! 
               I have some experiences to share to make your journey less of a bumpy ride! If you want to make your journey even more fun, you may get my roadmap{' '}
               <a href="https://www.wecodeui.com/products/front-end-developer-roadmap" target='_blank' rel='noopener noreferrer'>
-              here
+                here
               </a>
               .
             </FooterText>
