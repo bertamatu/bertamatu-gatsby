@@ -35,10 +35,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "update": "npm i -g npm-check-updates && ncu -u && npm i"
+    "update": "npx npm-check-updates -u && npm install"
   },
   "dependencies": {
-    "gatsby": "^5.13.4",
+    "gatsby": "^5.13.6",
     "gatsby-background-image": "^1.6.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^5.13.1",
@@ -56,23 +56,23 @@
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "prop-types": "^15.8.1",
-    "react": "^18.2.*",
+    "react": "^18.3.*",
     "react-cookie-consent": "^9.0.0",
-    "react-dom": "^18.2.*",
+    "react-dom": "^18.3.*",
     "react-helmet": "^6.1.0",
-    "react-icons": "^5.0.1",
-    "styled-components": "^6.1.8",
-    "typescript": "^5.3.3"
+    "react-icons": "^5.2.1",
+    "styled-components": "^6.1.11",
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.11.16",
-    "@types/react": "^18.2.52",
-    "@types/react-dom": "^18.2.18",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@types/styled-components": "^5.1.34",
     "babel-plugin-styled-components": "^2.1.4",
-    "core-js": "^3.35.1",
-    "prettier": "^3.2.4"
+    "core-js": "^3.37.1",
+    "prettier": "^3.3.1"
   },
   "resolutions": {
     "sharp": "0.24.0"
