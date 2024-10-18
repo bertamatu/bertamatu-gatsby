@@ -1,6 +1,20 @@
 [
   {
     "id": 0.012,
+    "url": "https://www.amazon.com/dp/B0CPGW5W9Q?linkCode=ssc&tag=onamzbertamat-20&creativeASIN=B0CPH22JXW&asc_item-id=amzn1.ideas.2JB3JSK75G0W&ref_=aip_sf_list_spv_ons_list_d_asin&th=1",
+    "image": "https://m.media-amazon.com/images/I/71hDW3vtlUL._AC_SX679_.jpg",
+    "title": "Razer Iskur V2 Chair",
+    "type": "affiliate"
+  },
+  {
+    "id": 0.0123,
+    "url": "https://www.amazon.com/dp/B07SKCLW2G?linkCode=ssc&tag=onamzbertamat-20&creativeASIN=B07SKCLW2G&asc_item-id=amzn1.ideas.DQRMJP3XQJX6&ref_=aip_sf_list_spv_ons_d_qv_asin&th=1",
+    "image": "https://m.media-amazon.com/images/I/71Z7AYSy8QL._AC_SX679_.jpg",
+    "title": "Razer Kraken Gaming Headset",
+    "type": "affiliate"
+  },
+  {
+    "id": 0.012,
     "url": "https://www.amazon.com/dp/B0BZPJ2TGL?linkCode=ssc&tag=onamzbertamat-20&creativeASIN=B0BZPJ2TGL&asc_item-id=amzn1.ideas.3N7O2T4IL3ON5&ref_=aip_sf_list_spv_ofs_mixed_d_asin",
     "image": "https://m.media-amazon.com/images/I/6193EH52pqL._AC_SX679_.jpg",
     "title": "Ink Tablet Digital Paper",
@@ -82,7 +96,6 @@
     "image": "https://m.media-amazon.com/images/I/61CKrZWOcrL._AC_SX679_.jpg",
     "title": "SSD Portable Hard Drive",
     "type": "affiliate"
-
   },
   {
     "id": 0.03,
@@ -106,7 +119,7 @@
     "type": "affiliate"
   },
   {
-    "id": 0.010,
+    "id": 0.01,
     "url": "https://www.amazon.com/dp/B08RNHCZ3K?linkCode=ssc&tag=onamzbertamat-20&creativeASIN=B08RNHCZ3K&asc_item-id=amzn1.ideas.17ACDLUUF4ITJ&ref_=aip_sf_list_spv_ofs_mixed_d_asin",
     "image": "https://m.media-amazon.com/images/I/51gpajLTbGL._AC_SX679_.jpg",
     "title": "Anker PowerConf C300 Smart Webcam",
